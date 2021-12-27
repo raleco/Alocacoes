@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distribuiu_Pontos__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF((Pontos_distribuidos__c) &gt; 0 ,true,false) || IF((Escolheu_Nao_Distribuir_Pontos__c) = true, true, false)</formula>
+    <label>Distribuiu Pontos?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

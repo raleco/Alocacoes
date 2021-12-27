@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pontos_distribuidos__c</fullName>
+    <externalId>false</externalId>
+    <label>Pontos distribuídos</label>
+    <summarizedField>Gameficacao__c.Ponto__c</summarizedField>
+    <summaryForeignKey>Gameficacao__c.Distribuidor__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

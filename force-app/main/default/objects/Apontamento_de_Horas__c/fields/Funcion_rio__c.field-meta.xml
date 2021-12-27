@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funcion_rio__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Funcionário ao qual o apontamento de horas está relacionado</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Qual funcionario este apontamento está relacionado</inlineHelpText>
+    <label>Funcionário</label>
+    <referenceTo>Employee__c</referenceTo>
+    <relationshipLabel>Apontamento de Horas</relationshipLabel>
+    <relationshipName>Apontamento_de_Horas</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

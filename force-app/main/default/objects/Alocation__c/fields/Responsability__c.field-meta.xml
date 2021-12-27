@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsability__c</fullName>
+    <externalId>false</externalId>
+    <label>Atribuição</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Analista de Negócios 1</fullName>
+                <default>false</default>
+                <label>Analista de Negócios 1</label>
+            </value>
+            <value>
+                <fullName>Analista de Negócios 2</fullName>
+                <default>false</default>
+                <label>Analista de Negócios 2</label>
+            </value>
+            <value>
+                <fullName>Analista de Sistema Pleno 1</fullName>
+                <default>false</default>
+                <label>Analista de Sistema Pleno 1</label>
+            </value>
+            <value>
+                <fullName>Analista de Sistema Pleno 2</fullName>
+                <default>false</default>
+                <label>Analista de Sistema Pleno 2</label>
+            </value>
+            <value>
+                <fullName>Analista de Sistemas</fullName>
+                <default>false</default>
+                <label>Analista de Sistemas</label>
+            </value>
+            <value>
+                <fullName>Analista de Sistemas 2</fullName>
+                <default>false</default>
+                <label>Analista de Sistemas 2</label>
+            </value>
+            <value>
+                <fullName>Analista de Sistemas Senior</fullName>
+                <default>false</default>
+                <label>Analista de Sistemas Senior</label>
+            </value>
+            <value>
+                <fullName>Analista Funcional</fullName>
+                <default>true</default>
+                <label>Analista Funcional</label>
+            </value>
+            <value>
+                <fullName>Arquiteto de Solução</fullName>
+                <default>false</default>
+                <label>Arquiteto de Solução</label>
+            </value>
+            <value>
+                <fullName>Consultor 1</fullName>
+                <default>false</default>
+                <label>Consultor 1</label>
+            </value>
+            <value>
+                <fullName>Consultor 2</fullName>
+                <default>false</default>
+                <label>Consultor 2</label>
+            </value>
+            <value>
+                <fullName>Consultor Salesforce</fullName>
+                <default>false</default>
+                <label>Consultor Salesforce</label>
+            </value>
+            <value>
+                <fullName>Consultor Salesforce/Vlocity</fullName>
+                <default>false</default>
+                <label>Consultor Salesforce/Vlocity</label>
+            </value>
+            <value>
+                <fullName>Consultor Salesforce 2</fullName>
+                <default>false</default>
+                <label>Consultor Salesforce 2</label>
+            </value>
+            <value>
+                <fullName>Consultor Senior 1</fullName>
+                <default>false</default>
+                <label>Consultor Senior 1</label>
+            </value>
+            <value>
+                <fullName>Consultor Senior 2</fullName>
+                <default>false</default>
+                <label>Consultor Senior 2</label>
+            </value>
+            <value>
+                <fullName>Consultor Vlocity</fullName>
+                <default>false</default>
+                <label>Consultor Vlocity</label>
+            </value>
+            <value>
+                <fullName>Coordenador de Sistemas 1</fullName>
+                <default>false</default>
+                <label>Coordenador de Sistemas 1</label>
+            </value>
+            <value>
+                <fullName>Coordenador de Sistemas 2</fullName>
+                <default>false</default>
+                <label>Coordenador de Sistemas 2</label>
+            </value>
+            <value>
+                <fullName>Desenvolvedor</fullName>
+                <default>false</default>
+                <label>Desenvolvedor</label>
+            </value>
+            <value>
+                <fullName>Desenvolvedor Salesforce</fullName>
+                <default>false</default>
+                <label>Desenvolvedor Salesforce</label>
+            </value>
+            <value>
+                <fullName>Diretor</fullName>
+                <default>false</default>
+                <label>Diretor</label>
+            </value>
+            <value>
+                <fullName>Especialista Salesforce</fullName>
+                <default>false</default>
+                <label>Especialista Salesforce</label>
+            </value>
+            <value>
+                <fullName>Especialista Vlocity</fullName>
+                <default>false</default>
+                <label>Especialista Vlocity</label>
+            </value>
+            <value>
+                <fullName>Gerente 1</fullName>
+                <default>false</default>
+                <label>Gerente 1</label>
+            </value>
+            <value>
+                <fullName>Gerente 2</fullName>
+                <default>false</default>
+                <label>Gerente 2</label>
+            </value>
+            <value>
+                <fullName>Gerente do Projeto</fullName>
+                <default>false</default>
+                <label>Gerente do Projeto</label>
+            </value>
+            <value>
+                <fullName>Gerente Senior 1</fullName>
+                <default>false</default>
+                <label>Gerente Senior 1</label>
+            </value>
+            <value>
+                <fullName>Gerente Senior 2</fullName>
+                <default>false</default>
+                <label>Gerente Senior 2</label>
+            </value>
+            <value>
+                <fullName>Gestor Shared Services</fullName>
+                <default>false</default>
+                <label>Gestor Shared Services</label>
+            </value>
+            <value>
+                <fullName>Líder de Operação</fullName>
+                <default>false</default>
+                <label>Líder de Operação</label>
+            </value>
+            <value>
+                <fullName>Líder de Planejamento e Controle</fullName>
+                <default>false</default>
+                <label>Líder de Planejamento e Controle</label>
+            </value>
+            <value>
+                <fullName>Líder do Integrador</fullName>
+                <default>false</default>
+                <label>Líder do Integrador</label>
+            </value>
+            <value>
+                <fullName>Líder do Prime</fullName>
+                <default>false</default>
+                <label>Líder do Prime</label>
+            </value>
+            <value>
+                <fullName>Programador Junior 1</fullName>
+                <default>false</default>
+                <label>Programador Junior 1</label>
+            </value>
+            <value>
+                <fullName>Programador Junior 2</fullName>
+                <default>false</default>
+                <label>Programador Junior 2</label>
+            </value>
+            <value>
+                <fullName>Programador Senior 1</fullName>
+                <default>false</default>
+                <label>Programador Senior 1</label>
+            </value>
+            <value>
+                <fullName>Programador Senior 2</fullName>
+                <default>false</default>
+                <label>Programador Senior 2</label>
+            </value>
+            <value>
+                <fullName>Programador Senior Especialista</fullName>
+                <default>false</default>
+                <label>Programador Senior Especialista</label>
+            </value>
+            <value>
+                <fullName>Quality Assurance</fullName>
+                <default>false</default>
+                <label>Quality Assurance</label>
+            </value>
+            <value>
+                <fullName>RTE</fullName>
+                <default>false</default>
+                <label>RTE</label>
+            </value>
+            <value>
+                <fullName>Scrum Master</fullName>
+                <default>false</default>
+                <label>Scrum Master</label>
+            </value>
+            <value>
+                <fullName>Sócio</fullName>
+                <default>false</default>
+                <label>Sócio</label>
+            </value>
+            <value>
+                <fullName>Sócio Revisor</fullName>
+                <default>false</default>
+                <label>Sócio Revisor</label>
+            </value>
+            <value>
+                <fullName>STE</fullName>
+                <default>false</default>
+                <label>STE</label>
+            </value>
+            <value>
+                <fullName>UX Designer</fullName>
+                <default>false</default>
+                <label>UX Designer</label>
+            </value>
+            <value>
+                <fullName>Sócio Integrador</fullName>
+                <default>false</default>
+                <label>Sócio Integrador</label>
+            </value>
+            <value>
+                <fullName>Delivery Leader</fullName>
+                <default>false</default>
+                <label>Delivery Leader</label>
+            </value>
+            <value>
+                <fullName>Desenvolvedor Velocity</fullName>
+                <default>false</default>
+                <label>Desenvolvedor Velocity</label>
+            </value>
+            <value>
+                <fullName>Desenvolvedor digital</fullName>
+                <default>false</default>
+                <label>Desenvolvedor digital</label>
+            </value>
+            <value>
+                <fullName>Release management</fullName>
+                <default>false</default>
+                <label>Release management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

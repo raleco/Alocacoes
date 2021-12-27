@@ -1,0 +1,41 @@
+<aura:component implements="flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="recordId" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" /> 
+    
+    
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-2 slds-large-size_3-of-12 slds-align_absolute-center" style="background:red">
+            <div style="height: 210px; width: 100%;" class="slds-image slds-image--card slds-align_absolute-center">
+                <lightning:recordViewForm class="fotoPerfil" recordId="{!v.recordId}" objectApiName="Employee__c">
+                    <lightning:outputField fieldName="Foto__c" variant = "label-hidden" />
+                </lightning:recordViewForm>
+            </div>
+        </div>
+        
+        <div class="slds-col slds-size_1-of-1 slds-large-size_9-of-12 slds-text-align_center" style="background:blue">
+            <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Employee__c">
+                <table class="slds-table slds-max-medium-table_stacked-horizontal">
+                    <tbody>
+                        <tr class="slds-hint-parent">
+                            <td class="slds-cell-shrink">
+                                <div class="slds-truncate"> <lightning:outputField fieldName="Name"/></div>
+                                <div class="slds-truncate"> <lightning:outputField fieldName="Office__c"/></div>
+                                <div class="slds-truncate"> <lightning:outputField fieldName="Email__c"/></div>
+                            </td>
+                            <td class="slds-cell-shrink">
+                                <div class="slds-truncate"> <lightning:outputField fieldName="Time__c"/></div>
+                                <div class="slds-truncate"> <lightning:outputField fieldName="Practice__c"/></div>
+                                <div class="slds-truncate"> <lightning:outputField fieldName="Roles__c"/></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </lightning:recordViewForm>
+        </div>
+    </div>
+    <div class="slds-m-vertical_x-small slds-size_1-of-1 slds-large-size_12-of-12 slds-text-align_center" style="background:blue">
+        <span >121212</span>
+    </div>
+    
+    
+</aura:component>

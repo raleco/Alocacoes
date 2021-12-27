@@ -1,0 +1,18 @@
+.THIS .fotoPerfil {
+    height: 100%; 
+    width: 100%;
+    align-content: center;
+}
+
+.THIS .slds-truncate {
+    text-overflow: inherit;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    text-align: center;
+    height: 70px;
+}
+
+.THIS .testFundo{
+    background: red;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funcionarios_Nao_Alocados</fullName>
+    <columns>NAME</columns>
+    <columns>Roles__c</columns>
+    <columns>Email__c</columns>
+    <columns>Alocation__c</columns>
+    <columns>Practice__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Inactive</value>
+    </filters>
+    <filters>
+        <field>Practice__c</field>
+        <operation>equals</operation>
+        <value>SALESFORCE/DIGITAL SOLUTIONS,SALESFORCE/DIGITAL SOLUTIONS/MOBILE,SALESFORCE/DIGITAL SOLUTIONS / TMT,SALESFORCE/EA SAP,SALESFORCE/DIGITAL SOLUTIONS / EA SAP / TSA,SALESFORCE/DIGITAL SOLUTIONS / EA SAP,SALESFORCE/DIGITAL SOLUTIONS / TS&amp;T</value>
+    </filters>
+    <filters>
+        <field>Alocation__c</field>
+        <operation>equals</operation>
+        <value>SP</value>
+    </filters>
+    <filters>
+        <field>Alocacoes_Ativas__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Funcionários Não Alocados</label>
+</ListView>

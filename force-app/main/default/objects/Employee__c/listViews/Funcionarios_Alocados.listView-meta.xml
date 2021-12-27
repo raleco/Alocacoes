@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funcionarios_Alocados</fullName>
+    <columns>Alocacoes_Ativas__c</columns>
+    <columns>NAME</columns>
+    <columns>Roles__c</columns>
+    <columns>Email__c</columns>
+    <columns>Alocation__c</columns>
+    <columns>Quantidade_de_Snapshots__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Alocacoes_Ativas__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active,Ativo</value>
+    </filters>
+    <filters>
+        <field>Roles__c</field>
+        <operation>equals</operation>
+        <value>ANALISTA DE NEGOCIOS 1</value>
+    </filters>
+    <label>Funcionários Alocados</label>
+</ListView>
