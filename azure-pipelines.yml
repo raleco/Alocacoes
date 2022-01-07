@@ -10,10 +10,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Deloitte ORG!
+- script: echo Pipeline Deloitte ORG!
   displayName: 'Run a one-line script'
 
 - script: |
-    echo A serem definidas as etapas do pipeline.
+    echo A serem definidas as etapas do pipeline...
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
