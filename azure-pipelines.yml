@@ -10,10 +10,14 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Pipeline Deloitte ORG!
-  displayName: 'Run a one-line script'
+- script: echo SCRATCH ORG
+  displayName: 'Criar Scratch Org'
 
-- script: |
-    echo A serem definidas as etapas do pipeline...
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- script: echo TEST
+  displayName: 'Testes do apex'
+
+- script: echo DEPLOY DEV
+  displayName: 'Deploy em dev'
+
+- script: echo DEPLOY HOMOLOG
+  displayName: 'Deploy em homolog'
