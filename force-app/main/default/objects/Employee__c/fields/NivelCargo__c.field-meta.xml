@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NivelCargo__c</fullName>
+    <description>Campo formula para definiçao do nível do cargo do funcionário.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+(ISPICKVAL(Roles__c, &quot;ANALISTA DE NEGOCIOS 1&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE NEGOCIOS 2&quot;)),&quot;ANALISTA DE NEGOCIOS&quot;,
+IF((ISPICKVAL(Roles__c, &quot;ADMINISTRATIVO&quot;)),&quot;ADMINISTRATIVO&quot;,
+IF((ISPICKVAL(Roles__c, &quot;ANALISTA DE SISTEMAS JUNIOR 1&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS JUNIOR 2&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS JUNIOR 3&quot;)
+|| ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS PLENO 1&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS PLENO 2&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS PLENO 3&quot;)
+|| ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS SENIOR 1&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS SENIOR 2&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS SENIOR 3&quot;)
+|| ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS SENIOR 4&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS SENIOR ESPECIALISTA&quot;)),&quot;ANALISTA DE SISTEMAS&quot;,
+IF((ISPICKVAL(Roles__c, &quot;ARQUITETO ESPECIALISTA DE SOLUÇÕES 1&quot;) || ISPICKVAL(Roles__c,&quot;ARQUITETO ESPECIALISTA DE SOLUÇÕES 2&quot;)
+|| ISPICKVAL(Roles__c,&quot;ARQUITETO ESPECIALISTA DE SOLUÇÕES 3&quot;) || ISPICKVAL(Roles__c,&quot;ARQUITETO ESPECIALISTA DE SOLUÇÕES 4&quot;)),&quot;ARQUITETO ESPECIALISTA DE SOLUÇÕES&quot;,
+IF((ISPICKVAL(Roles__c, &quot;CONSULTOR 1&quot;) || ISPICKVAL(Roles__c,&quot;CONSULTOR 2&quot;) || ISPICKVAL(Roles__c,&quot;CONSULTOR SENIOR 1&quot;)
+|| ISPICKVAL(Roles__c,&quot;CONSULTOR SENIOR 2&quot;) || ISPICKVAL(Roles__c,&quot;CONSULTOR SENIOR ESPECIALISTA&quot;)),&quot;CONSULTOR&quot;,
+IF((ISPICKVAL(Roles__c, &quot;COORDENADOR DE SISTEMAS 1&quot;) || ISPICKVAL(Roles__c,&quot;COORDENADOR DE SISTEMAS 2&quot;)),&quot;COORDENADOR DE SISTEMAS&quot;,
+IF((ISPICKVAL(Roles__c, &quot;DIRETOR&quot;)),&quot;DIRETOR&quot;,
+IF((ISPICKVAL(Roles__c, &quot;GERENTE 1&quot;) || ISPICKVAL(Roles__c,&quot;GERENTE 2&quot;) || ISPICKVAL(Roles__c,&quot;GERENTE DE SISTEMAS 1&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE ESPECIALISTA&quot;) || ISPICKVAL(Roles__c,&quot;GERENTE SENIOR&quot;)),&quot;GERENTE&quot;,
+IF((ISPICKVAL(Roles__c, &quot;PROGRAMADOR JUNIOR 1&quot;) || ISPICKVAL(Roles__c,&quot;PROGRAMADOR JUNIOR 2&quot;) || ISPICKVAL(Roles__c,&quot;PROGRAMADOR JUNIOR 3&quot;)
+|| ISPICKVAL(Roles__c,&quot;PROGRAMADOR PLENO 1&quot;) || ISPICKVAL(Roles__c,&quot;PROGRAMADOR PLENO 2&quot;)
+|| ISPICKVAL(Roles__c,&quot;PROGRAMADOR SENIOR 1&quot;) || ISPICKVAL(Roles__c,&quot;PROGRAMADOR SENIOR 2&quot;)),&quot;PROGRAMADOR&quot;,
+IF((ISPICKVAL(Roles__c, &quot;SOCIO&quot;)),&quot;SOCIO&quot;,&quot;&quot;)))))))))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Nível do cargo do funcionário</inlineHelpText>
+    <label>Nivel do Cargo</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

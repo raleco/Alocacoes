@@ -11,6 +11,11 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>ADMINISTRATIVO</fullName>
+                <default>false</default>
+                <label>ADMINISTRATIVO</label>
+            </value>
+            <value>
                 <fullName>ANALISTA DE NEGOCIOS 1</fullName>
                 <default>false</default>
                 <label>ANALISTA DE NEGOCIOS 1</label>
@@ -119,6 +124,11 @@
                 <fullName>CONSULTOR SENIOR ESPECIALISTA</fullName>
                 <default>false</default>
                 <label>CONSULTOR SENIOR ESPECIALISTA</label>
+            </value>
+            <value>
+                <fullName>COORDENADOR DE SISTEMAS 1</fullName>
+                <default>false</default>
+                <label>COORDENADOR DE SISTEMAS 1</label>
             </value>
             <value>
                 <fullName>COORDENADOR DE SISTEMAS 2</fullName>
