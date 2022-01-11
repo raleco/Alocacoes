@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CentroCustoProjeto__c</fullName>
+    <description>Conteúdo presente no campo Centro de Custo presente no Projeto ligado a Alocação.</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Project_Name__r.CentroCusto__c)</formula>
+    <inlineHelpText>Conteúdo presente no campo Centro de Custo presente no Projeto ligado a Alocação.</inlineHelpText>
+    <label>Centro de Custo do Projeto</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
