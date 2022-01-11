@@ -265,6 +265,46 @@
                 <default>false</default>
                 <label>Release management</label>
             </value>
+            <value>
+                <fullName>Desenvolvedor Mkt Cloud</fullName>
+                <default>false</default>
+                <label>Desenvolvedor Mkt Cloud</label>
+            </value>
+            <value>
+                <fullName>Funcional Salesforce</fullName>
+                <default>false</default>
+                <label>Funcional Salesforce</label>
+            </value>
+            <value>
+                <fullName>Funcional Mkt Cloud</fullName>
+                <default>false</default>
+                <label>Funcional Mkt Cloud</label>
+            </value>
+            <value>
+                <fullName>Funcional Vlocity</fullName>
+                <default>false</default>
+                <label>Funcional Vlocity</label>
+            </value>
+            <value>
+                <fullName>Tester</fullName>
+                <default>false</default>
+                <label>Tester</label>
+            </value>
+            <value>
+                <fullName>Tech Leader</fullName>
+                <default>false</default>
+                <label>Tech Leader</label>
+            </value>
+            <value>
+                <fullName>PMO</fullName>
+                <default>false</default>
+                <label>PMO</label>
+            </value>
+            <value>
+                <fullName>Gerente do Projeto Diretor</fullName>
+                <default>false</default>
+                <label>Gerente do Projeto Diretor</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

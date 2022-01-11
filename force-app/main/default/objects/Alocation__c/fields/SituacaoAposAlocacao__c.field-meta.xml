@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SituacaoAposAlocacao__c</fullName>
+    <description>Descreve qual será a situação do funcionário após a alocação atual.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Descreve qual será a situação do funcionário após a alocação atual.</inlineHelpText>
+    <label>Situação após Alocação</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reservado</fullName>
+                <default>false</default>
+                <label>Reservado</label>
+            </value>
+            <value>
+                <fullName>Férias</fullName>
+                <default>false</default>
+                <label>Férias</label>
+            </value>
+            <value>
+                <fullName>Disponível</fullName>
+                <default>false</default>
+                <label>Disponível</label>
+            </value>
+            <value>
+                <fullName>Licença</fullName>
+                <default>false</default>
+                <label>Licença</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
