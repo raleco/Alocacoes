@@ -4,6 +4,11 @@
 
 package.xml
 
+force-app/main/default/classes
+force-app/main/default/triggers
+force-app/main/default/components
+force-app/main/default/pages
+
 # LWC configuration files
 **/jsconfig.json
 **/.eslintrc.json
