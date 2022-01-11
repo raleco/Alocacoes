@@ -1,29 +1,117 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
-- task: SFDX@0
-  inputs:
-    username: 'alamaral_dev@deloitte.com'
-    password: 'deloitte@2021'
-    url: 'https://login.salesforce.com/'
 
 trigger:
-- main
+  branches:
+    include:
+     - develop
+  paths:
+    exclude:
+    - 'docs/*'
 
-pool:
-  vmImage: ubuntu-latest
 
-steps:
-- script: echo SCRATCH ORG
-  displayName: 'Criar Scratch Org'
+variables:
+ - group: Tokens
 
-- script: echo TEST
-  displayName: 'Testes do apex'
 
-- script: echo DEPLOY DEV
-  displayName: 'Deploy em dev'
 
-- script: echo DEPLOY HOMOLOG
-  displayName: 'Deploy em homolog'
+stages:
+
+#Merge to Develop, Deploy Alpha builds
+- stage: Alpha
+  condition: eq(variables['build.sourceBranch'], 'refs/heads/develop')
+  dependsOn: []
+  jobs:
+
+
+  - deployment: BuildCLI
+    displayName: sfdx-plugin
+    timeoutInMinutes: 20
+    pool:
+      vmImage: 'ubuntu-latest'
+    environment: alpha
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+             - template: build_templates/buildcli.yml
+               parameters:
+                commitToGit: true
+                version: 'alpha'
+                publish: true
+
+
+
+#Beta Stage
+- stage: Beta
+  condition: and(succeeded('Alpha'),eq(variables['build.sourceBranch'], 'refs/heads/develop'))
+  dependsOn: Alpha
+  jobs:
+
+
+  - deployment: BuildCLI
+    displayName: sfdx-plugin
+    timeoutInMinutes: 20
+    pool:
+      vmImage: 'ubuntu-latest'
+    environment: beta
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+             - template: build_templates/buildcli.yml
+               parameters:
+                commitToGit: false
+                version: 'beta'
+                publish: false
+
+
+
+
+# Hotfix stage
+- stage: Hotfix
+  displayName: Hotfix
+  dependsOn: []
+  condition: startsWith(variables['Build.SourceBranch'], 'refs/heads/release')
+
+  jobs:
+  - deployment: BuildCLI
+    displayName: sfdx-plugin
+    timeoutInMinutes: 20
+    pool:
+      vmImage: 'ubuntu-latest'
+    environment: hotfix
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+             - template: build_templates/buildcli.yml
+               parameters:
+                commitToGit: false
+                version: 'hotfix'
+                publish: true
+
+
+#Prod Stage
+- stage: Prod
+  condition: or(and(succeeded('Beta'),eq(variables['build.sourceBranch'], 'refs/heads/develop')), and(succeeded('Hotfix'),startsWith(variables['build.sourceBranch'], 'refs/heads/release')))
+  dependsOn:
+    - Beta
+    - Hotfix
+  jobs:
+
+
+  - deployment: BuildCLI
+    displayName: sfdx-plugin
+    timeoutInMinutes: 30
+    pool:
+      vmImage: 'ubuntu-latest'
+    environment: prod
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+             - template: build_templates/buildcli.yml
+               parameters:
+                commitToGit: false
+                bump: 'patch'
+                version: 'latest'
+                publish: false
