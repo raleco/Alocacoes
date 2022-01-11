@@ -6,8 +6,8 @@ trigger:
     exclude:
     - 'docs/*'
 
-variables:
- - group: Tokens
+# variables:
+#  - group: Tokens
 
 stages:
 
