@@ -1,107 +1,46 @@
 trigger:
-  branches:
-    include:
-     - develop
-  paths:
-    exclude:
-    - 'docs/*'
+- master
 
-# variables:
-#  - group: Tokens
+pool:
+  vmImage: 'ubuntu-latest'
 
-stages:
+steps:
 
-#Merge to Develop, Deploy Alpha builds
-- stage: Alpha
-  condition: eq(variables['build.sourceBranch'], 'refs/heads/develop')
-  dependsOn: []
-  jobs:
+- task: sfpwowerscript-installsfdx-task@6
+  inputs:
+    isTelemetryEnabled: true
 
-  - deployment: BuildCLI
-    displayName: sfdx-plugin
-    timeoutInMinutes: 20
-    pool:
-      vmImage: 'ubuntu-latest'
-    environment: alpha
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-             - template: build_templates/buildcli.yml
-               parameters:
-                commitToGit: true
-                version: 'alpha'
-                publish: true
+- task: sfpwowerscript-authenticateorg-task@8
+  inputs:
+    method: 'Credentials'
+    username: '$(SalesforceUsername)'
+    password: '$(SalesforcePassword)'
+    securitytoken: '$(SalesforceSecurityToken)'
+    alias: 'AzureDevOpsScratchOrg'
+    isdevhub: true
+    isTelemetryEnabled: true
 
+- task: sfpowerscript-deploysourcetoorg-task@7
+  inputs:
+    target_org: 'AzureDevOpsScratchOrg'
+    project_directory: './'
+    source_directory: 'force-app'
+    checkonly: false
+    wait_time: '20'
+    testlevel: 'NoTestRun'
+    isToBreakBuildIfEmpty: true
+    isTelemetryEnabled: true
 
-
-#Beta Stage
-- stage: Beta
-  condition: and(succeeded('Alpha'),eq(variables['build.sourceBranch'], 'refs/heads/develop'))
-  dependsOn: Alpha
-  jobs:
-
-  - deployment: BuildCLI
-    displayName: sfdx-plugin
-    timeoutInMinutes: 20
-    pool:
-      vmImage: 'ubuntu-latest'
-    environment: beta
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-             - template: build_templates/buildcli.yml
-               parameters:
-                commitToGit: false
-                version: 'beta'
-                publish: false
-
-# Hotfix stage
-- stage: Hotfix
-  displayName: Hotfix
-  dependsOn: []
-  condition: startsWith(variables['Build.SourceBranch'], 'refs/heads/release')
-
-  jobs:
-  - deployment: BuildCLI
-    displayName: sfdx-plugin
-    timeoutInMinutes: 20
-    pool:
-      vmImage: 'ubuntu-latest'
-    environment: hotfix
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-             - template: build_templates/buildcli.yml
-               parameters:
-                commitToGit: false
-                version: 'hotfix'
-                publish: true
+- task: sfpwowerscript-triggerapextest-task@6
+  inputs:
+    target_org: 'AzureDevOpsScratchOrg'
+    testlevel: 'RunAllTestsInOrg'
+    wait_time: '60'
+    isTelemetryEnabled: true
 
 
-#Prod Stage
-- stage: Prod
-  condition: or(and(succeeded('Beta'),eq(variables['build.sourceBranch'], 'refs/heads/develop')), and(succeeded('Hotfix'),startsWith(variables['build.sourceBranch'], 'refs/heads/release')))
-  dependsOn:
-    - Beta
-    - Hotfix
-  jobs:
-
-  - deployment: BuildCLI
-    displayName: sfdx-plugin
-    timeoutInMinutes: 30
-    pool:
-      vmImage: 'ubuntu-latest'
-    environment: prod
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-             - template: build_templates/buildcli.yml
-               parameters:
-                commitToGit: false
-                bump: 'patch'
-                version: 'latest'
-                publish: false
+- task: sfpwowerscript-validateapextestcoverage-task@3
+  inputs:
+    target_org: 'AzureDevOpsScratchOrg'
+    test_coverage: '75'
+    isTelemetryEnabled: true
