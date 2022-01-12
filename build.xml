@@ -1,7 +1,17 @@
-<!-- Shows deploying code & running tests for package 'codepkg' -->
-<target name="deployCode">
-  <!-- Upload the contents of the "codepkg" package, running the tests for just 1 class -->
-  <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployroot="codepkg">
-	<runTest>SampleDeployClass</runTest>
-  </sf:deploy>
-</target>
+<project name="Test" default="test" basedir=".">
+	<property environment="env"/>
+	<taskdef resource="com/salesforce/antlib.xml">
+      <classpath>
+          <pathelement location="./ant-salesforce.jar" />
+      </classpath>
+	</taskdef>
+	<target name="retrieve">
+		<sf:retrieve username="${SRC_USERNAME}" password="${SRC_PASSWD}" serverurl="${SRC_URL}" retrieveTarget="src" unpackaged="src/package.xml"/>
+	</target>
+	<target name="deployValidate">
+		<sf:deploy username="${DEST_USERNAME}" password="${DEST_PASSWD}" serverurl="${DEST_URL}" deployRoot="src" rollbackOnError="true" checkonly="true"/>
+	</target>
+	<target name="deploy">
+		<sf:deploy username="${DEST_USERNAME}" password="${DEST_PASSWD}"    serverurl="${DEST_URL}" deployRoot="src" rollbackOnError="true" />
+	</target>
+</project>
