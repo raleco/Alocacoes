@@ -1,23 +1,21 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# Ant
+# Build your Java projects and run tests with Apache Ant.
+# Add steps that save build artifacts and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- main
+- azure-pipelines
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo SCRATCH ORG
-  displayName: 'Criar Scratch Org'
-
-- script: echo TEST
-  displayName: 'Testes do apex'
-
-- script: echo DEPLOY DEV
-  displayName: 'Deploy em dev'
-
-- script: echo DEPLOY HOMOLOG
-  displayName: 'Deploy em homolog'
+- task: Ant@1
+  inputs:
+    workingDirectory: ''
+    buildFile: 'build.xml'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/TEST-*.xml'
