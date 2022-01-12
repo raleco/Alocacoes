@@ -12,10 +12,10 @@ pool:
 steps:
 - task: Ant@1
   inputs:
-    workingDirectory: 'build/build.xml'
+    workingDirectory: ''
     buildFile: 'build.xml'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
+    publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
