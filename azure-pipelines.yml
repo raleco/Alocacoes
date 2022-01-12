@@ -5,42 +5,5 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-
-- task: sfpwowerscript-installsfdx-task@6
-  inputs:
-    isTelemetryEnabled: true
-
-- task: sfpwowerscript-authenticateorg-task@8
-  inputs:
-    method: 'Credentials'
-    username: '$(SalesforceUsername)'
-    password: '$(SalesforcePassword)'
-    securitytoken: '$(SalesforceSecurityToken)'
-    alias: 'AzureDevOpsScratchOrg'
-    isdevhub: true
-    isTelemetryEnabled: true
-
-- task: sfpowerscript-deploysourcetoorg-task@7
-  inputs:
-    target_org: 'AzureDevOpsScratchOrg'
-    project_directory: './'
-    source_directory: 'force-app'
-    checkonly: false
-    wait_time: '20'
-    testlevel: 'NoTestRun'
-    isToBreakBuildIfEmpty: true
-    isTelemetryEnabled: true
-
-- task: sfpwowerscript-triggerapextest-task@6
-  inputs:
-    target_org: 'AzureDevOpsScratchOrg'
-    testlevel: 'RunAllTestsInOrg'
-    wait_time: '60'
-    isTelemetryEnabled: true
-
-
-- task: sfpwowerscript-validateapextestcoverage-task@3
-  inputs:
-    target_org: 'AzureDevOpsScratchOrg'
-    test_coverage: '75'
-    isTelemetryEnabled: true
+- script: echo'y' | sfdx plugins:install sfpowerkit
+displayName: 'Instalar plugin'
