@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataFinalContratoAnteiorADataInicial</fullName>
+    <active>true</active>
+    <description>A data de termino do Contrato não pode ser anterior a data do início do Contrato.</description>
+    <errorConditionFormula>OR(
+ YEAR(DataInicioContrato__c)&gt; YEAR(DataFimContrato__c),
+ AND(
+  DAY(DataInicioContrato__c) &gt; DAY(DataFimContrato__c) ,
+  MONTH(DataInicioContrato__c)= MONTH(DataFimContrato__c),
+  YEAR(DataInicioContrato__c)= YEAR(DataFimContrato__c)
+ ),
+ AND(
+  MONTH(DataInicioContrato__c)&gt; MONTH(DataFimContrato__c),
+  YEAR(DataInicioContrato__c)= YEAR(DataFimContrato__c)
+ )
+)</errorConditionFormula>
+    <errorDisplayField>DataFimContrato__c</errorDisplayField>
+    <errorMessage>A data de termino do Contrato não pode ser anterior a data do início do Contrato.</errorMessage>
+</ValidationRule>
