@@ -6,4 +6,4 @@ pool:
 
 steps:
 - script: echo'y' | sfdx plugins:install sfpowerkit
-displayName: 'Instalar plugin'
+  displayName: 'Instalar plugin'
