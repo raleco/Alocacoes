@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Pilar__c</fullName>
+    <fullName>Reference__c</fullName>
+    <description>Campo de registro da referência da nota e pontuação.</description>
     <externalId>false</externalId>
-    <label>Pilar</label>
+    <label>Referência</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -11,14 +12,14 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Salesforce</fullName>
+                <fullName>TOEIC</fullName>
                 <default>false</default>
-                <label>Salesforce</label>
+                <label>TOEIC</label>
             </value>
             <value>
-                <fullName>CS&amp;AD</fullName>
+                <fullName>Outras</fullName>
                 <default>false</default>
-                <label>CS&amp;AD</label>
+                <label>Outras</label>
             </value>
         </valueSetDefinition>
     </valueSet>

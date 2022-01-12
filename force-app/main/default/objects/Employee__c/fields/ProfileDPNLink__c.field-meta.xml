@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>LinkPerfilDPN__c</fullName>
+    <fullName>ProfileDPNLink__c</fullName>
     <description>Campo URL para acesso ao perfil DPN do funcionário.</description>
     <externalId>false</externalId>
     <inlineHelpText>DPN do funcionário.</inlineHelpText>
