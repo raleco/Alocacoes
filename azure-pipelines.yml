@@ -1,9 +1,7 @@
 trigger:
 - master
+- dev
+- homolog
 
 pool:
   vmImage: 'ubuntu-latest'
-
-steps:
-- script: echo'y' | sfdx plugins:install sfpowerkit
-  displayName: 'Instalar plugin'
