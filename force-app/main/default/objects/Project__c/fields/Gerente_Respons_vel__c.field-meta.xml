@@ -2,8 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Gerente_Respons_vel__c</fullName>
     <deleteConstraint>Restrict</deleteConstraint>
-    <description>Código do Gerente.</description>
+    <description>Código do Gerente do Projeto.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Código do Gerente do Projeto.</inlineHelpText>
     <label>Gerente Responsável</label>
     <referenceTo>Employee__c</referenceTo>
     <relationshipLabel>Projetos</relationshipLabel>

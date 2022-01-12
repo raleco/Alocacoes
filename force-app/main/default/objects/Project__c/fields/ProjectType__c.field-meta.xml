@@ -11,6 +11,11 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Investimento</fullName>
+                <default>false</default>
+                <label>Investimento</label>
+            </value>
+            <value>
                 <fullName>Implementação</fullName>
                 <default>false</default>
                 <label>Implementação</label>
@@ -34,6 +39,21 @@
                 <fullName>Discovery</fullName>
                 <default>false</default>
                 <label>Discovery</label>
+            </value>
+            <value>
+                <fullName>Sustentação</fullName>
+                <default>false</default>
+                <label>Sustentação</label>
+            </value>
+            <value>
+                <fullName>EvoluçãoAssessment</fullName>
+                <default>false</default>
+                <label>Evolução Assessment</label>
+            </value>
+            <value>
+                <fullName>Interno</fullName>
+                <default>false</default>
+                <label>Interno</label>
             </value>
         </valueSetDefinition>
     </valueSet>
