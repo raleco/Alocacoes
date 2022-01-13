@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Coachs__c</fullName>
+    <fullName>Alocacao__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
-    <description>Campo para registrar o coach do funcionário</description>
     <externalId>false</externalId>
-    <inlineHelpText>Coach do funcionário</inlineHelpText>
-    <label>Coach</label>
-    <referenceTo>Employee__c</referenceTo>
-    <relationshipLabel>Coachee</relationshipLabel>
+    <label>Alocação</label>
+    <referenceTo>Alocation__c</referenceTo>
+    <relationshipLabel>Funcionários</relationshipLabel>
     <relationshipName>Funcion_rios</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>

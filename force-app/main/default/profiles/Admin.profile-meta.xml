@@ -5,6 +5,22 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>SimilarEmployeeTriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SimilarEmployeeTriggerHelper</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TriggerHandlerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
@@ -258,7 +274,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Employee__c.Allocation__c</field>
+        <field>Employee__c.Alocacao__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -303,6 +319,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Employee__c.Bairro__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Employee__c.Banking_and_Capital_Markets__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -333,7 +354,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Employee__c.City__c</field>
+        <field>Employee__c.Cidade__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -368,7 +389,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Employee__c.Complement__c</field>
+        <field>Employee__c.Complemento__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -674,11 +695,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Employee__c.MonthYearAdmission__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee__c.Neighborhood__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
