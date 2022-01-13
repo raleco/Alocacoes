@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>CentroCusto__c</fullName>
-    <description>Tipo de Centro de Custo para o Projeto.</description>
+    <fullName>CostCenter__c</fullName>
+    <description>Type of Cost Center for the Project.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Tipo de Centro de Custo para o Projeto.</inlineHelpText>
-    <label>Centro de Custo</label>
+    <inlineHelpText>Type of Cost Center for the Project.</inlineHelpText>
+    <label>Cost center</label>
     <required>true</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

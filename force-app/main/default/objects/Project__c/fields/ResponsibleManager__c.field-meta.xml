@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Gerente_Respons_vel__c</fullName>
+    <fullName>ResponsibleManager__c</fullName>
     <deleteConstraint>Restrict</deleteConstraint>
-    <description>Código do Gerente do Projeto.</description>
+    <description>Project Manager Code.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Código do Gerente do Projeto.</inlineHelpText>
-    <label>Gerente Responsável</label>
+    <inlineHelpText>Project Manager Code.</inlineHelpText>
+    <label>Responsible Manager</label>
     <referenceTo>Employee__c</referenceTo>
-    <relationshipLabel>Projetos</relationshipLabel>
+    <relationshipLabel>Projects (Gerente Responsável)</relationshipLabel>
     <relationshipName>Projetos</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>

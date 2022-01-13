@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>ValidaPreenchimentoEngagement</fullName>
+    <fullName>ValidaFillingEngagement</fullName>
     <active>true</active>
-    <description>Todo projeto deve possuir um número de Engagement.</description>
+    <description>Every project must have an Engagement number.</description>
     <errorConditionFormula>ISBLANK( Engagement__c )</errorConditionFormula>
     <errorDisplayField>Engagement__c</errorDisplayField>
-    <errorMessage>Favor preencher o campo Engagement.</errorMessage>
+    <errorMessage>Please fill in the Engagement field.</errorMessage>
 </ValidationRule>
