@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Situacao__c</fullName>
-    <description>Descreve em qual estado de alocação se encontra um funcionário.</description>
+    <fullName>StatusAllocation__c</fullName>
+    <description>Describes which allocation state an employee is in.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Descreve em qual estado de alocação se encontra um funcionário.</inlineHelpText>
-    <label>Situação</label>
+    <inlineHelpText>Describes which allocation state an employee is in.</inlineHelpText>
+    <label>Status allocation</label>
     <required>true</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -13,24 +13,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Alocado</fullName>
+                <fullName>Allocated</fullName>
                 <default>false</default>
-                <label>Alocado</label>
+                <label>Allocated</label>
             </value>
             <value>
-                <fullName>Férias</fullName>
+                <fullName>Vacation</fullName>
                 <default>false</default>
-                <label>Férias</label>
+                <label>Vacation</label>
             </value>
             <value>
-                <fullName>Disponível</fullName>
+                <fullName>Available</fullName>
                 <default>false</default>
-                <label>Disponível</label>
+                <label>Available</label>
             </value>
             <value>
-                <fullName>Licença</fullName>
+                <fullName>License</fullName>
                 <default>false</default>
-                <label>Licença</label>
+                <label>License</label>
             </value>
             <value>
                 <fullName>Promotion</fullName>
@@ -38,14 +38,14 @@
                 <label>Promotion</label>
             </value>
             <value>
-                <fullName>Administrativo</fullName>
+                <fullName>Administrative</fullName>
                 <default>false</default>
-                <label>Administrativo</label>
+                <label>Administrative</label>
             </value>
             <value>
-                <fullName>Interno</fullName>
+                <fullName>Internal</fullName>
                 <default>false</default>
-                <label>Interno</label>
+                <label>Internal</label>
             </value>
         </valueSetDefinition>
     </valueSet>

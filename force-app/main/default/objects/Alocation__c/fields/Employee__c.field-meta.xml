@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Employee__c</fullName>
-    <description>Identificação do Funcionário ligado a essa Alocação.</description>
+    <description>Identification of the Employee linked to this Allocation.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Identificação do Funcionário ligado a essa Alocação.</inlineHelpText>
-    <label>Funcionário</label>
+    <inlineHelpText>Identification of the Employee linked to this Allocation.</inlineHelpText>
+    <label>Employee</label>
     <referenceTo>Employee__c</referenceTo>
-    <relationshipLabel>Alocações</relationshipLabel>
+    <relationshipLabel>Alocations (Funcionário)</relationshipLabel>
     <relationshipName>Allocations</relationshipName>
     <relationshipOrder>0</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>

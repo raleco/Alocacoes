@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Categoria__c</fullName>
+    <fullName>Workload__c</fullName>
+    <description>Represents the employee&apos;s workload in this Allocation.</description>
     <externalId>false</externalId>
-    <label>Categoria da Alocação</label>
-    <required>true</required>
+    <inlineHelpText>Represents the employee&apos;s workload in this Allocation.</inlineHelpText>
+    <label>Workload</label>
+    <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -11,19 +13,14 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Investimento</fullName>
-                <default>false</default>
-                <label>Investimento</label>
+                <fullName>Full-Time</fullName>
+                <default>true</default>
+                <label>Full-Time</label>
             </value>
             <value>
-                <fullName>Projeto</fullName>
+                <fullName>Part-Time</fullName>
                 <default>false</default>
-                <label>Projeto</label>
-            </value>
-            <value>
-                <fullName>QJT</fullName>
-                <default>false</default>
-                <label>QJT</label>
+                <label>Part-Time</label>
             </value>
         </valueSetDefinition>
     </valueSet>

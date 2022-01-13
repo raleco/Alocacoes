@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Responsability__c</fullName>
+    <description>The responsibility rests with someone who holds the chosen position.</description>
     <externalId>false</externalId>
-    <label>Atribuição</label>
+    <inlineHelpText>The responsibility rests with someone who holds the chosen position.</inlineHelpText>
+    <label>Attribution</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -11,199 +13,199 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Analista de Negócios 1</fullName>
+                <fullName>Business Analyst 1</fullName>
                 <default>false</default>
-                <label>Analista de Negócios 1</label>
+                <label>Business Analyst 1</label>
             </value>
             <value>
-                <fullName>Analista de Negócios 2</fullName>
+                <fullName>Business Analyst 2</fullName>
                 <default>false</default>
-                <label>Analista de Negócios 2</label>
+                <label>Business Analyst 2</label>
             </value>
             <value>
-                <fullName>Analista de Sistema Pleno 1</fullName>
+                <fullName>Full System Analyst 1</fullName>
                 <default>false</default>
-                <label>Analista de Sistema Pleno 1</label>
+                <label>Full System Analyst 1</label>
             </value>
             <value>
-                <fullName>Analista de Sistema Pleno 2</fullName>
+                <fullName>Full System Analyst 2</fullName>
                 <default>false</default>
-                <label>Analista de Sistema Pleno 2</label>
+                <label>Full System Analyst 2</label>
             </value>
             <value>
-                <fullName>Analista de Sistemas</fullName>
+                <fullName>System analyst</fullName>
                 <default>false</default>
-                <label>Analista de Sistemas</label>
+                <label>System analyst</label>
             </value>
             <value>
-                <fullName>Analista de Sistemas 2</fullName>
+                <fullName>System analyst 2</fullName>
                 <default>false</default>
-                <label>Analista de Sistemas 2</label>
+                <label>System analyst 2</label>
             </value>
             <value>
-                <fullName>Analista de Sistemas Senior</fullName>
+                <fullName>Senior System Analyst</fullName>
                 <default>false</default>
-                <label>Analista de Sistemas Senior</label>
+                <label>Senior System Analyst</label>
             </value>
             <value>
-                <fullName>Analista Funcional</fullName>
+                <fullName>Functional analyst</fullName>
                 <default>true</default>
-                <label>Analista Funcional</label>
+                <label>Functional analyst</label>
             </value>
             <value>
-                <fullName>Arquiteto de Solução</fullName>
+                <fullName>Solution Architect</fullName>
                 <default>false</default>
-                <label>Arquiteto de Solução</label>
+                <label>Solution Architect</label>
             </value>
             <value>
-                <fullName>Consultor 1</fullName>
+                <fullName>Consultant 1</fullName>
                 <default>false</default>
-                <label>Consultor 1</label>
+                <label>Consultant 1</label>
             </value>
             <value>
-                <fullName>Consultor 2</fullName>
+                <fullName>Consultant 2</fullName>
                 <default>false</default>
-                <label>Consultor 2</label>
+                <label>Consultant 2</label>
             </value>
             <value>
-                <fullName>Consultor Salesforce</fullName>
+                <fullName>Salesforce Consultant</fullName>
                 <default>false</default>
-                <label>Consultor Salesforce</label>
+                <label>Salesforce Consultant</label>
             </value>
             <value>
-                <fullName>Consultor Salesforce/Vlocity</fullName>
+                <fullName>Salesforce/Vlocity Consultant</fullName>
                 <default>false</default>
-                <label>Consultor Salesforce/Vlocity</label>
+                <label>Salesforce/Vlocity Consultant</label>
             </value>
             <value>
-                <fullName>Consultor Salesforce 2</fullName>
+                <fullName>Salesforce Consultant 2</fullName>
                 <default>false</default>
-                <label>Consultor Salesforce 2</label>
+                <label>Salesforce Consultant 2</label>
             </value>
             <value>
-                <fullName>Consultor Senior 1</fullName>
+                <fullName>Senior Consultant 1</fullName>
                 <default>false</default>
-                <label>Consultor Senior 1</label>
+                <label>Senior Consultant 1</label>
             </value>
             <value>
-                <fullName>Consultor Senior 2</fullName>
+                <fullName>Senior Consultant 2</fullName>
                 <default>false</default>
-                <label>Consultor Senior 2</label>
+                <label>Senior Consultant 2</label>
             </value>
             <value>
-                <fullName>Consultor Vlocity</fullName>
+                <fullName>Vlocity Consultant</fullName>
                 <default>false</default>
-                <label>Consultor Vlocity</label>
+                <label>Vlocity Consultant</label>
             </value>
             <value>
-                <fullName>Coordenador de Sistemas 1</fullName>
+                <fullName>Systems Coordinator 1</fullName>
                 <default>false</default>
-                <label>Coordenador de Sistemas 1</label>
+                <label>Systems Coordinator 1</label>
             </value>
             <value>
-                <fullName>Coordenador de Sistemas 2</fullName>
+                <fullName>Systems Coordinator 2</fullName>
                 <default>false</default>
-                <label>Coordenador de Sistemas 2</label>
+                <label>Systems Coordinator 2</label>
             </value>
             <value>
-                <fullName>Desenvolvedor</fullName>
+                <fullName>Developer</fullName>
                 <default>false</default>
-                <label>Desenvolvedor</label>
+                <label>Developer</label>
             </value>
             <value>
-                <fullName>Desenvolvedor Salesforce</fullName>
+                <fullName>Salesforce Developer</fullName>
                 <default>false</default>
-                <label>Desenvolvedor Salesforce</label>
+                <label>Salesforce Developer</label>
             </value>
             <value>
-                <fullName>Diretor</fullName>
+                <fullName>Director</fullName>
                 <default>false</default>
-                <label>Diretor</label>
+                <label>Director</label>
             </value>
             <value>
-                <fullName>Especialista Salesforce</fullName>
+                <fullName>Salesforce Specialist</fullName>
                 <default>false</default>
-                <label>Especialista Salesforce</label>
+                <label>Salesforce Specialist</label>
             </value>
             <value>
-                <fullName>Especialista Vlocity</fullName>
+                <fullName>Vlocity Specialist</fullName>
                 <default>false</default>
-                <label>Especialista Vlocity</label>
+                <label>Vlocity Specialist</label>
             </value>
             <value>
-                <fullName>Gerente 1</fullName>
+                <fullName>Manager 1</fullName>
                 <default>false</default>
-                <label>Gerente 1</label>
+                <label>Manager 1</label>
             </value>
             <value>
-                <fullName>Gerente 2</fullName>
+                <fullName>Manager 2</fullName>
                 <default>false</default>
-                <label>Gerente 2</label>
+                <label>Manager 2</label>
             </value>
             <value>
-                <fullName>Gerente do Projeto</fullName>
+                <fullName>Project Manager</fullName>
                 <default>false</default>
-                <label>Gerente do Projeto</label>
+                <label>Project Manager</label>
             </value>
             <value>
-                <fullName>Gerente Senior 1</fullName>
+                <fullName>Senior Manager 1</fullName>
                 <default>false</default>
-                <label>Gerente Senior 1</label>
+                <label>Senior Manager 1</label>
             </value>
             <value>
-                <fullName>Gerente Senior 2</fullName>
+                <fullName>Senior Manager 2</fullName>
                 <default>false</default>
-                <label>Gerente Senior 2</label>
+                <label>Senior Manager 2</label>
             </value>
             <value>
-                <fullName>Gestor Shared Services</fullName>
+                <fullName>Shared Services Manager</fullName>
                 <default>false</default>
-                <label>Gestor Shared Services</label>
+                <label>Shared Services Manager</label>
             </value>
             <value>
-                <fullName>Líder de Operação</fullName>
+                <fullName>Operation Leader</fullName>
                 <default>false</default>
-                <label>Líder de Operação</label>
+                <label>Operation Leader</label>
             </value>
             <value>
-                <fullName>Líder de Planejamento e Controle</fullName>
+                <fullName>Planning and Control Leader</fullName>
                 <default>false</default>
-                <label>Líder de Planejamento e Controle</label>
+                <label>Planning and Control Leader</label>
             </value>
             <value>
-                <fullName>Líder do Integrador</fullName>
+                <fullName>Integrator Leader</fullName>
                 <default>false</default>
-                <label>Líder do Integrador</label>
+                <label>Integrator Leader</label>
             </value>
             <value>
-                <fullName>Líder do Prime</fullName>
+                <fullName>Prime Leader</fullName>
                 <default>false</default>
-                <label>Líder do Prime</label>
+                <label>Prime Leader</label>
             </value>
             <value>
-                <fullName>Programador Junior 1</fullName>
+                <fullName>Junior Programmer 1</fullName>
                 <default>false</default>
-                <label>Programador Junior 1</label>
+                <label>Junior Programmer 1</label>
             </value>
             <value>
-                <fullName>Programador Junior 2</fullName>
+                <fullName>Junior Programmer 2</fullName>
                 <default>false</default>
-                <label>Programador Junior 2</label>
+                <label>Junior Programmer 2</label>
             </value>
             <value>
-                <fullName>Programador Senior 1</fullName>
+                <fullName>Senior Programmer 1</fullName>
                 <default>false</default>
-                <label>Programador Senior 1</label>
+                <label>Senior Programmer 1</label>
             </value>
             <value>
-                <fullName>Programador Senior 2</fullName>
+                <fullName>Senior Programmer 2</fullName>
                 <default>false</default>
-                <label>Programador Senior 2</label>
+                <label>Senior Programmer 2</label>
             </value>
             <value>
-                <fullName>Programador Senior Especialista</fullName>
+                <fullName>Specialist Senior Programmer</fullName>
                 <default>false</default>
-                <label>Programador Senior Especialista</label>
+                <label>Specialist Senior Programmer</label>
             </value>
             <value>
                 <fullName>Quality Assurance</fullName>
@@ -221,14 +223,14 @@
                 <label>Scrum Master</label>
             </value>
             <value>
-                <fullName>Sócio</fullName>
+                <fullName>Partner</fullName>
                 <default>false</default>
-                <label>Sócio</label>
+                <label>Partner</label>
             </value>
             <value>
-                <fullName>Sócio Revisor</fullName>
+                <fullName>Reviewer Partner</fullName>
                 <default>false</default>
-                <label>Sócio Revisor</label>
+                <label>Reviewer Partner</label>
             </value>
             <value>
                 <fullName>STE</fullName>
@@ -241,9 +243,9 @@
                 <label>UX Designer</label>
             </value>
             <value>
-                <fullName>Sócio Integrador</fullName>
+                <fullName>Integrating Partner</fullName>
                 <default>false</default>
-                <label>Sócio Integrador</label>
+                <label>Integrating Partner</label>
             </value>
             <value>
                 <fullName>Delivery Leader</fullName>
@@ -251,14 +253,14 @@
                 <label>Delivery Leader</label>
             </value>
             <value>
-                <fullName>Desenvolvedor Velocity</fullName>
+                <fullName>Velocity Developer</fullName>
                 <default>false</default>
-                <label>Desenvolvedor Velocity</label>
+                <label>Velocity Developer</label>
             </value>
             <value>
-                <fullName>Desenvolvedor digital</fullName>
+                <fullName>Digital Developer</fullName>
                 <default>false</default>
-                <label>Desenvolvedor digital</label>
+                <label>Digital Developer</label>
             </value>
             <value>
                 <fullName>Release management</fullName>
@@ -266,24 +268,24 @@
                 <label>Release management</label>
             </value>
             <value>
-                <fullName>Desenvolvedor Mkt Cloud</fullName>
+                <fullName>Mkt Cloud Developer</fullName>
                 <default>false</default>
-                <label>Desenvolvedor Mkt Cloud</label>
+                <label>Mkt Cloud Developer</label>
             </value>
             <value>
-                <fullName>Funcional Salesforce</fullName>
+                <fullName>Salesforce Functional</fullName>
                 <default>false</default>
-                <label>Funcional Salesforce</label>
+                <label>Salesforce Functional</label>
             </value>
             <value>
-                <fullName>Funcional Mkt Cloud</fullName>
+                <fullName>Mkt Cloud Functional</fullName>
                 <default>false</default>
-                <label>Funcional Mkt Cloud</label>
+                <label>Mkt Cloud Functional</label>
             </value>
             <value>
-                <fullName>Funcional Vlocity</fullName>
+                <fullName>Vlocity Functional</fullName>
                 <default>false</default>
-                <label>Funcional Vlocity</label>
+                <label>Vlocity Functional</label>
             </value>
             <value>
                 <fullName>Tester</fullName>
@@ -301,9 +303,9 @@
                 <label>PMO</label>
             </value>
             <value>
-                <fullName>Gerente do Projeto Diretor</fullName>
+                <fullName>Project Manager Director</fullName>
                 <default>false</default>
-                <label>Gerente do Projeto Diretor</label>
+                <label>Project Manager Director</label>
             </value>
         </valueSetDefinition>
     </valueSet>

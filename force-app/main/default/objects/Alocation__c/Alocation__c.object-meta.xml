@@ -154,17 +154,17 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <gender>Feminine</gender>
-    <label>Alocação</label>
+    <label>Allocation</label>
     <nameField>
         <displayFormat>AL-{0000}</displayFormat>
-        <label>Código Alocação</label>
+        <label>Allocation code</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Alocações</pluralLabel>
+    <pluralLabel>Alocations</pluralLabel>
     <searchLayouts>
         <searchResultsAdditionalFields>Employee__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Responsability__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Project_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ProjectName__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
