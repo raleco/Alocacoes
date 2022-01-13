@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Alocado_Projeto__c</fullName>
+    <fullName>AllocatedProject__c</fullName>
     <defaultValue>0</defaultValue>
+    <description>Project employee allocations.</description>
     <externalId>false</externalId>
-    <label>Alocado Projeto</label>
+    <inlineHelpText>Project employee allocations.</inlineHelpText>
+    <label>Allocated Project</label>
     <precision>18</precision>
     <required>false</required>
     <scale>0</scale>

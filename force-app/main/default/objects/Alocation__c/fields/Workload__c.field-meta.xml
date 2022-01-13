@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Carga_Horaria__c</fullName>
+    <fullName>Workload__c</fullName>
+    <description>Represents the employee&apos;s workload in this Allocation.</description>
     <externalId>false</externalId>
-    <label>Carga Horária</label>
+    <inlineHelpText>Represents the employee&apos;s workload in this Allocation.</inlineHelpText>
+    <label>Workload</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

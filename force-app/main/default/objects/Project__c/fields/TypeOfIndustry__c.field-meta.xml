@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TypeOfIndustry__c</fullName>
+    <description>Tipo de Industria envolvida no Projeto.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Tipo de Industria envolvida no Projeto.</inlineHelpText>
     <label>Tipo de Indústria</label>
     <required>false</required>
     <trackTrending>false</trackTrending>

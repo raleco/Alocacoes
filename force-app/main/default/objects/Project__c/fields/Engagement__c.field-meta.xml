@@ -2,7 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Engagement__c</fullName>
     <caseSensitive>false</caseSensitive>
+    <description>Código usado no Billing, define o custo/investimento de um projeto.</description>
     <externalId>true</externalId>
+    <inlineHelpText>Código usado no Billing, define o custo/investimento de um projeto.</inlineHelpText>
     <label>Engagement</label>
     <length>255</length>
     <required>false</required>

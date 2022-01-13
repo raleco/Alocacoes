@@ -11,24 +11,58 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Proposta</fullName>
+                <fullName>Previsto</fullName>
                 <default>false</default>
-                <label>Proposta</label>
+                <label>Previsto</label>
+            </value>
+            <value>
+                <fullName>Não iniciado</fullName>
+                <default>false</default>
+                <label>Não iniciado</label>
+            </value>
+            <value>
+                <fullName>Em andamento</fullName>
+                <default>false</default>
+                <label>Em andamento</label>
+            </value>
+            <value>
+                <fullName>Concluído</fullName>
+                <default>false</default>
+                <label>Concluído</label>
+            </value>
+            <value>
+                <fullName>Paralisado</fullName>
+                <default>false</default>
+                <label>Paralisado</label>
+            </value>
+            <value>
+                <fullName>Cancelado</fullName>
+                <default>false</default>
+                <label>Cancelado</label>
             </value>
             <value>
                 <fullName>Em desenvolvimento</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Em desenvolvimento</label>
             </value>
             <value>
                 <fullName>Entregue</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Entregue</label>
             </value>
             <value>
                 <fullName>Inativo</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Inativo</label>
+            </value>
+            <value>
+                <fullName>Proposta</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Proposta</label>
             </value>
         </valueSetDefinition>
     </valueSet>
