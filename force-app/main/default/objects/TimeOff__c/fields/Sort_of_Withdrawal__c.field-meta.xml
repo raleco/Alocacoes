@@ -40,6 +40,16 @@
                 <default>false</default>
                 <label>Happy Day</label>
             </value>
+            <value>
+                <fullName>Licença Médica</fullName>
+                <default>false</default>
+                <label>Licença Médica</label>
+            </value>
+            <value>
+                <fullName>Ausência Pontual</fullName>
+                <default>false</default>
+                <label>Ausência Pontual</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

@@ -35,6 +35,11 @@
                 <default>false</default>
                 <label>Discovery</label>
             </value>
+            <value>
+                <fullName>Melhoria</fullName>
+                <default>false</default>
+                <label>Melhoria</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

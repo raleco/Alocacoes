@@ -157,7 +157,7 @@
     <label>Alocação</label>
     <nameField>
         <displayFormat>AL-{0000}</displayFormat>
-        <label>Código da Alocação</label>
+        <label>Código Alocação</label>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Alocações</pluralLabel>

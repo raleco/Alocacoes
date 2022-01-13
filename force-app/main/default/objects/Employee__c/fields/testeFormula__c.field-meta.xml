@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>testeFormula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    (ISPICKVAL(Roles__c, &quot;ANALISTA DE NEGOCIOS 1&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE NEGOCIOS 2&quot;)),&quot;ANALISTA DE NEGOCIOS&quot;,
+    IF(ISPICKVAL(Roles__c, &quot;ANALISTA DE SISTEMAS 1&quot;),&quot;ANALISTA DE SISTEMAS&quot;,&quot;&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>teste</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
