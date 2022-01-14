@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>ProjectName__c</fullName>
+    <fullName>Project__c</fullName>
     <description>Identification of the Project in which the Employee is allocated.</description>
     <externalId>false</externalId>
     <inlineHelpText>Identification of the Project in which the Employee is allocated.</inlineHelpText>
     <label>Project</label>
     <referenceTo>Project__c</referenceTo>
     <relationshipLabel>Alocations</relationshipLabel>
-    <relationshipName>Allocations</relationshipName>
-    <relationshipOrder>1</relationshipOrder>
+    <relationshipName>ProjectAllocations</relationshipName>
+    <!-- <relationshipOrder>1</relationshipOrder> -->
     <reparentableMasterDetail>false</reparentableMasterDetail>
     <trackTrending>false</trackTrending>
-    <type>MasterDetail</type>
-    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    <type>Lookup</type>
+    <!-- <writeRequiresMasterRead>false</writeRequiresMasterRead> -->
 </CustomField>
