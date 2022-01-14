@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>TipoContrato__c</fullName>
-    <description>Determina qual o tipo de Contrato do Projeto.</description>
+    <fullName>TypeContract__c</fullName>
+    <description>Determines which type of Project Contract.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Determina qual o tipo de Contrato do Projeto.</inlineHelpText>
-    <label>Tipo de Contrato</label>
+    <inlineHelpText>Determines which type of Project Contract.</inlineHelpText>
+    <label>Type of contract</label>
     <required>true</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -18,9 +18,9 @@
                 <label>Time Material</label>
             </value>
             <value>
-                <fullName>Escopo Fechado</fullName>
+                <fullName>Closed Scope</fullName>
                 <default>false</default>
-                <label>Escopo Fechado</label>
+                <label>Closed Scope</label>
             </value>
             <value>
                 <fullName>Squad</fullName>
@@ -28,9 +28,9 @@
                 <label>Squad</label>
             </value>
             <value>
-                <fullName>Esteira Express</fullName>
+                <fullName>Delivery Pipeline</fullName>
                 <default>false</default>
-                <label>Esteira Express</label>
+                <label>Delivery Pipeline</label>
             </value>
         </valueSetDefinition>
     </valueSet>

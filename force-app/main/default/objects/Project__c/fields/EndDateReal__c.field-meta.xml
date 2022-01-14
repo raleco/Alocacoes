@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>DataInicioContrato__c</fullName>
-    <description>Data de início do Contrato do Projeto.</description>
+    <fullName>EndDateReal__c</fullName>
+    <description>Effective end date of the project.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Data de início do Contrato do Projeto.</inlineHelpText>
-    <label>Data de início do Contrato</label>
+    <inlineHelpText>Effective end date of the project.</inlineHelpText>
+    <label>End date (Real)</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Date</type>
