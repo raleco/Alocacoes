@@ -4,7 +4,7 @@
     <description>Campo para descrever a atuação do funcionário.</description>
     <externalId>false</externalId>
     <inlineHelpText>Area atual do funcionário.</inlineHelpText>
-    <label>Atuando Como</label>
+    <label>Acting As</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>TextArea</type>

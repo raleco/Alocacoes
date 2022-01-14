@@ -4,7 +4,7 @@
     <description>Campo para registrar a data de admissão do funcionário.</description>
     <externalId>false</externalId>
     <inlineHelpText>Data de admissão do funcionário</inlineHelpText>
-    <label>Data de Admissão</label>
+    <label>Admission Date</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Date</type>

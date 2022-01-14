@@ -143,7 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Objeto para cadastro de perfis semelhantes dos funcionários.</description>
+    <description>Objeto responsável por gerenciar perfis semelhantes dos funcionários.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -155,13 +155,13 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <gender>Masculine</gender>
-    <label>Perfil Semelhante do Funcionário</label>
+    <label>Similar Employee Profile</label>
     <nameField>
         <displayFormat>PS-{0000}</displayFormat>
         <label>Código do Perfil Semelhante</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Perfis Semelhantes dos Funcionários</pluralLabel>
+    <pluralLabel>Similar Employee Profiles</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

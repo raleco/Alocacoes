@@ -3,7 +3,8 @@
     <fullName>OtherReference__c</fullName>
     <description>Campo de preenchimento obrigatório caso o campo referência seja preenchido com o &quot;Outras&quot;.</description>
     <externalId>false</externalId>
-    <label>Outra Referência</label>
+    <inlineHelpText>Outras referencias que não estão na lista.</inlineHelpText>
+    <label>Other Reference</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>TextArea</type>

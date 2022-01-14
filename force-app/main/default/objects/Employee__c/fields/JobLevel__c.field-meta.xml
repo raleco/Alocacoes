@@ -25,7 +25,7 @@ IF((ISPICKVAL(Roles__c, &quot;SOCIO&quot;)),&quot;SOCIO&quot;,&quot;&quot;))))))
 )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Nível do cargo do funcionário</inlineHelpText>
-    <label>Nivel do Cargo</label>
+    <label>JobLevel</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

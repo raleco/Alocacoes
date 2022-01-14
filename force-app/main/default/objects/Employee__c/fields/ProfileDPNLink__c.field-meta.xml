@@ -4,7 +4,7 @@
     <description>Campo URL para acesso ao perfil DPN do funcionário.</description>
     <externalId>false</externalId>
     <inlineHelpText>DPN do funcionário.</inlineHelpText>
-    <label>Link Perfil DPN</label>
+    <label>Profile DPN Link</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Url</type>

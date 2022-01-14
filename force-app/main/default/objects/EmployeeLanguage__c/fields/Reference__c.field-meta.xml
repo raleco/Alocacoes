@@ -3,7 +3,8 @@
     <fullName>Reference__c</fullName>
     <description>Campo de registro da referência da nota e pontuação.</description>
     <externalId>false</externalId>
-    <label>Referência</label>
+    <inlineHelpText>Referência da nota e pontuação.</inlineHelpText>
+    <label>Reference</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

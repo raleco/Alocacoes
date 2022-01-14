@@ -3,7 +3,8 @@
     <fullName>ReferenceScore__c</fullName>
     <description>Campo para registrar a pontuação de referência do funcionário.</description>
     <externalId>false</externalId>
-    <label>Pontuação de Referência</label>
+    <inlineHelpText>Pontuação de referência do funcionário.</inlineHelpText>
+    <label>Reference Score</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>TextArea</type>

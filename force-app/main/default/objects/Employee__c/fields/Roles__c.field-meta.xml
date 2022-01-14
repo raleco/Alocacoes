@@ -4,7 +4,7 @@
     <description>Campo para registrar o cargo do funcionário.</description>
     <externalId>false</externalId>
     <inlineHelpText>Cargo do funcionário</inlineHelpText>
-    <label>Cargo</label>
+    <label>Roles</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

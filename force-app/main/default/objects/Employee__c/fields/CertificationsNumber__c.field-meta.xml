@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Numero_de_Certificacoes__c</fullName>
+    <fullName>CertificationsNumber__c</fullName>
+    <description>Campo para registrar o número de certificações do funcionário.</description>
     <externalId>false</externalId>
-    <label>Número de Certificações</label>
+    <inlineHelpText>Número de certificações do funcionário.</inlineHelpText>
+    <label>Certifications Number</label>
     <summaryForeignKey>Certification__c.Employee_Name__c</summaryForeignKey>
     <summaryOperation>count</summaryOperation>
     <trackTrending>false</trackTrending>

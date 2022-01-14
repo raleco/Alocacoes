@@ -3,7 +3,8 @@
     <fullName>Language__c</fullName>
     <description>Campo de lista de opções para registrar os idiomas dos funcionários.</description>
     <externalId>false</externalId>
-    <label>Idioma</label>
+    <inlineHelpText>Idiomas dos funcionários</inlineHelpText>
+    <label>Language</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

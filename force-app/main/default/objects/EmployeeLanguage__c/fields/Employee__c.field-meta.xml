@@ -3,9 +3,10 @@
     <fullName>Employee__c</fullName>
     <description>Relacionamento mestre detalhe objeto-funcionário.</description>
     <externalId>false</externalId>
-    <label>Funcionário</label>
+    <inlineHelpText>Nome do funcionário</inlineHelpText>
+    <label>Employee</label>
     <referenceTo>Employee__c</referenceTo>
-    <relationshipLabel>Idiomas dos Funcionários</relationshipLabel>
+    <relationshipLabel>Employee Language</relationshipLabel>
     <relationshipName>EmployeeLanguage</relationshipName>
     <relationshipOrder>0</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>

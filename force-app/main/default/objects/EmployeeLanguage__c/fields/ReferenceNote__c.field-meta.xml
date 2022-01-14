@@ -3,7 +3,8 @@
     <fullName>ReferenceNote__c</fullName>
     <description>Campo para registrar a nota de referência do idioma do funcionário.</description>
     <externalId>false</externalId>
-    <label>Nota de Referência</label>
+    <inlineHelpText>Nota de referência do idioma do funcionário.</inlineHelpText>
+    <label>Reference Note</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>TextArea</type>

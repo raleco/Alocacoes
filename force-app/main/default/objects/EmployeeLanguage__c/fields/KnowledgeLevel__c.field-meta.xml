@@ -3,7 +3,8 @@
     <fullName>KnowledgeLevel__c</fullName>
     <description>Campo para registrar o nível de conhecimento de idioma.</description>
     <externalId>false</externalId>
-    <label>Nível de Conhecimento</label>
+    <inlineHelpText>Nível de conhecimento do idioma</inlineHelpText>
+    <label>Knowledge Level</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

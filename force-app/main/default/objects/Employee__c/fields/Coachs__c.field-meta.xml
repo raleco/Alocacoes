@@ -7,7 +7,6 @@
     <inlineHelpText>Coach do funcionário</inlineHelpText>
     <label>Coach</label>
     <referenceTo>Employee__c</referenceTo>
-    <relationshipLabel>Coachee</relationshipLabel>
     <relationshipName>Funcion_rios</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>

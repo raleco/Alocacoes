@@ -6,8 +6,8 @@
     <columns>Roles__c</columns>
     <columns>Alocation__c</columns>
     <columns>Email__c</columns>
-    <columns>Telefone__c</columns>
-    <columns>Numero_de_Certificacoes__c</columns>
+    <columns>Phone__c</columns>
+    <columns>CertificationsNumber__c</columns>
     <columns>AdmissionDate__c</columns>
     <columns>Alocacoes_Ativas__c</columns>
     <filterScope>Everything</filterScope>

@@ -143,7 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Objeto responsável por registrar os idiomas dos funcionários.</description>
+    <description>Objeto responsável por gerenciar idiomas do funcionário.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -155,13 +155,13 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <gender>Feminine</gender>
-    <label>Idiomas do Funcionário</label>
+    <label>Employee Language</label>
     <nameField>
         <displayFormat>IF-{0000}</displayFormat>
         <label>Código do Idioma</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Idiomas dos Funcionários</pluralLabel>
+    <pluralLabel>Employee Language</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

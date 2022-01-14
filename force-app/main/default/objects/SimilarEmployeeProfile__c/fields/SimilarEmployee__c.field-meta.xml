@@ -4,7 +4,8 @@
     <deleteConstraint>Restrict</deleteConstraint>
     <description>Relacionamento de pesquisa funcionário semelhante</description>
     <externalId>false</externalId>
-    <label>Funcionário Semelhante</label>
+    <inlineHelpText>Funcionário similar</inlineHelpText>
+    <label>Similar Employee</label>
     <lookupFilter>
         <active>true</active>
         <errorMessage>Funcionário semelhante não pode ser o mesmo do funcionário de origem.</errorMessage>
@@ -16,7 +17,7 @@
         <isOptional>false</isOptional>
     </lookupFilter>
     <referenceTo>Employee__c</referenceTo>
-    <relationshipLabel>Perfis Semelhantes dos Funcionários (Funcionário Semelhante)</relationshipLabel>
+    <relationshipLabel>Similar Employee Profiles (Funcionário Semelhante)</relationshipLabel>
     <relationshipName>FuncionarioSemelhante</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>

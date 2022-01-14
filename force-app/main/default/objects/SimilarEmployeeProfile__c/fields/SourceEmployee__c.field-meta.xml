@@ -4,9 +4,10 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <description>Relacionamento de pesquisa funcionário de origem.</description>
     <externalId>false</externalId>
-    <label>Funcionário de Origem</label>
+    <inlineHelpText>Funcionário de origem</inlineHelpText>
+    <label>Source Employee</label>
     <referenceTo>Employee__c</referenceTo>
-    <relationshipLabel>Perfis Semelhantes dos Funcionários</relationshipLabel>
+    <relationshipLabel>Similar Employee Profiles (Funcionário de Origem)</relationshipLabel>
     <relationshipName>FuncionarioOrigem</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>

@@ -14,7 +14,7 @@
 )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Categoria do cargo do funcionário.</inlineHelpText>
-    <label>Categoria do Cargo</label>
+    <label>JobCategory</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

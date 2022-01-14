@@ -2,10 +2,12 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Allocation__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
+    <description>Campo para registrar a alocação do funcionário.</description>
     <externalId>false</externalId>
-    <label>Alocação</label>
+    <inlineHelpText>Alocação do funcionário.</inlineHelpText>
+    <label>Allocation</label>
     <referenceTo>Alocation__c</referenceTo>
-    <relationshipLabel>Funcionários</relationshipLabel>
+    <relationshipLabel>Employees</relationshipLabel>
     <relationshipName>Funcion_rios</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>
