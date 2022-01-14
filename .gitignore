@@ -13,6 +13,9 @@ force-app/main/default/profiles
 #force-app/main/default/triggers
 force-app/main/default/components
 force-app/main/default/pages
+force-app/main/default/applications
+force-app/main/default/flexipages
+force-app/main/default/layouts
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
