@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Realizou_Onboarding_Em__c</fullName>
-    <externalId>false</externalId>
-    <label>Realizou onboarding em</label>
-    <required>false</required>
-    <trackTrending>false</trackTrending>
-    <type>Date</type>
-</CustomField>
