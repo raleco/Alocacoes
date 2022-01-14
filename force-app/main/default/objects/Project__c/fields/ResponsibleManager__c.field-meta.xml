@@ -7,8 +7,8 @@
     <inlineHelpText>Project Manager Code.</inlineHelpText>
     <label>Responsible Manager</label>
     <referenceTo>Employee__c</referenceTo>
-    <relationshipLabel>Projects (Gerente Responsável)</relationshipLabel>
-    <relationshipName>Projetos</relationshipName>
+    <relationshipLabel>Projects (Responsible Manager)</relationshipLabel>
+    <relationshipName>Projects</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>
