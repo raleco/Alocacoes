@@ -10,12 +10,24 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- checkout: self
+
+- script: |
+    echo "Build Type: $(BUILD_TYPE)"
+  displayName: 'Confirming Variables'
+
 - task: Ant@1
   inputs:
-    workingDirectory: ''
+    # workingDirectory: ''
+    # buildFile: 'build.xml'
+    # javaHomeOption: 'JDKVersion'
+    # jdkVersionOption: '1.8'
+    # jdkArchitectureOption: 'x64'
+    # publishJUnitResults: false
+    # testResultsFiles: '**/TEST-*.xml'
     buildFile: 'build.xml'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
+    options: 
+    targets: 'deployCodeCheckOnly'
     publishJUnitResults: false
-    testResultsFiles: '**/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    displayName: 'Deploy to the target Org'
