@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinalDateContractPreviousTheInitialDate</fullName>
+    <active>true</active>
+    <description>The end date of the Agreement cannot be earlier than the start date of the Agreement.</description>
+    <errorConditionFormula>OR(
+ YEAR(ContractStartDate__c)&gt; YEAR(ContractEndDate__c),
+ AND(
+  DAY(ContractStartDate__c) &gt; DAY(ContractEndDate__c) ,
+  MONTH(ContractStartDate__c)= MONTH(ContractEndDate__c),
+  YEAR(ContractStartDate__c)= YEAR(ContractEndDate__c)
+ ),
+ AND(
+  MONTH(ContractStartDate__c)&gt; MONTH(ContractEndDate__c),
+  YEAR(ContractStartDate__c)= YEAR(ContractEndDate__c)
+ )
+)</errorConditionFormula>
+    <errorDisplayField>ContractEndDate__c</errorDisplayField>
+    <errorMessage>The end date of the Agreement cannot be earlier than the start date of the Agreement.</errorMessage>
+</ValidationRule>

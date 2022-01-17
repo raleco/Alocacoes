@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>CloudPlatform__c</fullName>
+    <description>Refers to the cloud used in the project.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Refere-se à nuvem utilizada no projeto.</inlineHelpText>
-    <label>Nuvem</label>
+    <inlineHelpText>Refers to the cloud used in the project.</inlineHelpText>
+    <label>Cloud</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>MultiselectPicklist</type>
@@ -72,9 +73,9 @@
                 <label>Pardot</label>
             </value>
             <value>
-                <fullName>Integração</fullName>
+                <fullName>Integration</fullName>
                 <default>false</default>
-                <label>Integração</label>
+                <label>Integration</label>
             </value>
             <value>
                 <fullName>Field Service</fullName>

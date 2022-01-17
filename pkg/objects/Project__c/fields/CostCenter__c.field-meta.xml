@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CostCenter__c</fullName>
+    <description>Type of Cost Center for the Project.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of Cost Center for the Project.</inlineHelpText>
+    <label>Cost center</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Nefeles</fullName>
+                <default>false</default>
+                <label>Nefeles</label>
+            </value>
+            <value>
+                <fullName>Customer &amp; Marketing</fullName>
+                <default>false</default>
+                <label>Customer &amp; Marketing</label>
+            </value>
+            <value>
+                <fullName>Operate</fullName>
+                <default>false</default>
+                <label>Operate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

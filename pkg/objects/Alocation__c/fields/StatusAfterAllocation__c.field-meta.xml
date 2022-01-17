@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusAfterAllocation__c</fullName>
+    <description>Describe what the employee&apos;s status will be after the current allocation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe what the employee&apos;s status will be after the current allocation.</inlineHelpText>
+    <label>Status after Allocation</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reserved</fullName>
+                <default>false</default>
+                <label>Reserved</label>
+            </value>
+            <value>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+                <label>Vacation</label>
+            </value>
+            <value>
+                <fullName>Available</fullName>
+                <default>false</default>
+                <label>Available</label>
+            </value>
+            <value>
+                <fullName>License</fullName>
+                <default>false</default>
+                <label>License</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
