@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Criterio_de_Avaliacao__c</fullName>
+    <externalId>false</externalId>
+    <label>Critério de Avaliação</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Apoio Técnico</fullName>
+                <default>false</default>
+                <label>Apoio Técnico</label>
+            </value>
+            <value>
+                <fullName>Capacitação</fullName>
+                <default>false</default>
+                <label>Capacitação</label>
+            </value>
+            <value>
+                <fullName>Coach</fullName>
+                <default>false</default>
+                <label>Coach</label>
+            </value>
+            <value>
+                <fullName>Coworking</fullName>
+                <default>false</default>
+                <label>Coworking</label>
+            </value>
+            <value>
+                <fullName>KPI</fullName>
+                <default>false</default>
+                <label>KPI</label>
+            </value>
+            <value>
+                <fullName>Métodos</fullName>
+                <default>false</default>
+                <label>Métodos</label>
+            </value>
+            <value>
+                <fullName>People</fullName>
+                <default>false</default>
+                <label>People</label>
+            </value>
+            <value>
+                <fullName>Pré Vendas</fullName>
+                <default>false</default>
+                <label>Pré Vendas</label>
+            </value>
+            <value>
+                <fullName>Vendas</fullName>
+                <default>false</default>
+                <label>Vendas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

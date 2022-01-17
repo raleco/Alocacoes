@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categoria__c</fullName>
+    <externalId>false</externalId>
+    <label>Categoria</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DIRETOR</fullName>
+                <default>false</default>
+                <label>DIRETOR</label>
+            </value>
+            <value>
+                <fullName>GERENTE</fullName>
+                <default>false</default>
+                <label>GERENTE</label>
+            </value>
+            <value>
+                <fullName>GERENTE SR</fullName>
+                <default>false</default>
+                <label>GERENTE SR</label>
+            </value>
+            <value>
+                <fullName>SENIOR</fullName>
+                <default>false</default>
+                <label>SENIOR</label>
+            </value>
+            <value>
+                <fullName>SOCIO</fullName>
+                <default>false</default>
+                <label>SOCIO</label>
+            </value>
+            <value>
+                <fullName>STAFF</fullName>
+                <default>false</default>
+                <label>STAFF</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

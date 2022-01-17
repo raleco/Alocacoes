@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TimeOffCompLayout</fullName>
+    <fields>Employee__c</fields>
+    <fields>Sort_of_Withdrawal__c</fields>
+    <fields>WithdrawalStatus__c</fields>
+    <fields>StartDate__c</fields>
+    <fields>EndDate__c</fields>
+    <label>TimeOffCompLayout</label>
+</CompactLayout>

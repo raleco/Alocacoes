@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funcionario_Alocado__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Alocacoes_Ativas__c &gt;= 1 ,&quot;Alocado&quot;, IF (Alocacoes_Ativas__c = 0 || NULL, &quot;Não Alocado&quot;, &quot;ERRO&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Funcionário Alocado</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

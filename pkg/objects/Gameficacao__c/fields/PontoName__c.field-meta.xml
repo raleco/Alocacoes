@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PontoName__c</fullName>
+    <externalId>false</externalId>
+    <formula>( Pontuado__r.Name ) &amp; &quot; &quot; &amp; &quot;-- &quot; &amp;  TEXT(Ponto__c) &amp; &quot; &quot; &amp; &quot;pontos&quot; &amp; &quot; e os critério(s) de avaliação foi/foram &quot; &amp; IF ( INCLUDES ( Criterio_de_Avaliacao__c , &quot;Coworking&quot;), &quot;Coworking; &quot;,null ) &amp; IF ( INCLUDES ( Criterio_de_Avaliacao__c , &quot;People&quot;), &quot;People; &quot;,null ) &amp; IF ( INCLUDES ( Criterio_de_Avaliacao__c , &quot;Métodos&quot;), &quot;Métodos; &quot;,null ) &amp; IF ( INCLUDES ( Criterio_de_Avaliacao__c , &quot;Pré Vendas&quot;), &quot;Pré Vendas; &quot;,null ) &amp; IF ( INCLUDES ( Criterio_de_Avaliacao__c , &quot;Vendas&quot;), &quot;Vendas; &quot;,null ) &amp; IF ( INCLUDES ( Criterio_de_Avaliacao__c , &quot;Capacitação&quot;), &quot;Capacitação; &quot;,null ) &amp; IF ( INCLUDES ( Criterio_de_Avaliacao__c , &quot;KPI&quot;), &quot;KPI; &quot;,null ) &amp; IF ( INCLUDES ( Criterio_de_Avaliacao__c , &quot;Coach&quot;), &quot;Coach; &quot;,null ) &amp; IF ( INCLUDES ( Criterio_de_Avaliacao__c , &quot;Apoio Técnico&quot;), &quot;Apoio Técnico; &quot;,null ) &amp; BR()</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PontoName</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

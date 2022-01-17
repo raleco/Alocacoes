@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funcionario_por_Industria</fullName>
+    <columns>NAME</columns>
+    <columns>Automotive__c</columns>
+    <columns>Banking_and_Capital_Markets__c</columns>
+    <columns>Defense_Security_and_Justice__c</columns>
+    <columns>Industrial_Products_and_Constructions__c</columns>
+    <columns>Insurance__c</columns>
+    <columns>Investment_Management__c</columns>
+    <columns>Life_Sciences__c</columns>
+    <columns>Media_and_Entertainment__c</columns>
+    <columns>Oil_Gas_and_Chemicals__c</columns>
+    <columns>Technology__c</columns>
+    <columns>Transport__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Funcionario por Industria</label>
+</ListView>

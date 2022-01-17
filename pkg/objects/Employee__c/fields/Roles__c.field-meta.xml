@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Roles__c</fullName>
+    <externalId>false</externalId>
+    <label>Cargo</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ANALISTA DE NEGOCIOS 1</fullName>
+                <default>false</default>
+                <label>ANALISTA DE NEGOCIOS 1</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE NEGOCIOS 2</fullName>
+                <default>false</default>
+                <label>ANALISTA DE NEGOCIOS 2</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE SISTEMAS JUNIOR 1</fullName>
+                <default>false</default>
+                <label>ANALISTA DE SISTEMAS JUNIOR 1</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE SISTEMAS JUNIOR 2</fullName>
+                <default>false</default>
+                <label>ANALISTA DE SISTEMAS JUNIOR 2</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE SISTEMAS JUNIOR 3</fullName>
+                <default>false</default>
+                <label>ANALISTA DE SISTEMAS JUNIOR 3</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE SISTEMAS PLENO 1</fullName>
+                <default>false</default>
+                <label>ANALISTA DE SISTEMAS PLENO 1</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE SISTEMAS PLENO 2</fullName>
+                <default>false</default>
+                <label>ANALISTA DE SISTEMAS PLENO 2</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE SISTEMAS PLENO 3</fullName>
+                <default>false</default>
+                <label>ANALISTA DE SISTEMAS PLENO 3</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE SISTEMAS SENIOR 1</fullName>
+                <default>false</default>
+                <label>ANALISTA DE SISTEMAS SENIOR 1</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE SISTEMAS SENIOR 2</fullName>
+                <default>false</default>
+                <label>ANALISTA DE SISTEMAS SENIOR 2</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE SISTEMAS SENIOR 3</fullName>
+                <default>false</default>
+                <label>ANALISTA DE SISTEMAS SENIOR 3</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE SISTEMAS SENIOR 4</fullName>
+                <default>false</default>
+                <label>ANALISTA DE SISTEMAS SENIOR 4</label>
+            </value>
+            <value>
+                <fullName>ANALISTA DE SISTEMAS SENIOR ESPECIALISTA</fullName>
+                <default>false</default>
+                <label>ANALISTA DE SISTEMAS SENIOR ESPECIALISTA</label>
+            </value>
+            <value>
+                <fullName>ARQUITETO ESPECIALISTA DE SOLUÇÕES 1</fullName>
+                <default>false</default>
+                <label>ARQUITETO ESPECIALISTA DE SOLUÇÕES 1</label>
+            </value>
+            <value>
+                <fullName>ARQUITETO ESPECIALISTA DE SOLUÇÕES 2</fullName>
+                <default>false</default>
+                <label>ARQUITETO ESPECIALISTA DE SOLUÇÕES 2</label>
+            </value>
+            <value>
+                <fullName>ARQUITETO ESPECIALISTA DE SOLUÇÕES 3</fullName>
+                <default>false</default>
+                <label>ARQUITETO ESPECIALISTA DE SOLUÇÕES 3</label>
+            </value>
+            <value>
+                <fullName>ARQUITETO ESPECIALISTA DE SOLUÇÕES 4</fullName>
+                <default>false</default>
+                <label>ARQUITETO ESPECIALISTA DE SOLUÇÕES 4</label>
+            </value>
+            <value>
+                <fullName>CONSULTOR 1</fullName>
+                <default>false</default>
+                <label>CONSULTOR 1</label>
+            </value>
+            <value>
+                <fullName>CONSULTOR 2</fullName>
+                <default>false</default>
+                <label>CONSULTOR 2</label>
+            </value>
+            <value>
+                <fullName>CONSULTOR SENIOR 1</fullName>
+                <default>false</default>
+                <label>CONSULTOR SENIOR 1</label>
+            </value>
+            <value>
+                <fullName>CONSULTOR SENIOR 2</fullName>
+                <default>false</default>
+                <label>CONSULTOR SENIOR 2</label>
+            </value>
+            <value>
+                <fullName>CONSULTOR SENIOR ESPECIALISTA</fullName>
+                <default>false</default>
+                <label>CONSULTOR SENIOR ESPECIALISTA</label>
+            </value>
+            <value>
+                <fullName>COORDENADOR DE SISTEMAS 2</fullName>
+                <default>false</default>
+                <label>COORDENADOR DE SISTEMAS 2</label>
+            </value>
+            <value>
+                <fullName>DIRETOR</fullName>
+                <default>false</default>
+                <label>DIRETOR</label>
+            </value>
+            <value>
+                <fullName>GERENTE 1</fullName>
+                <default>false</default>
+                <label>GERENTE 1</label>
+            </value>
+            <value>
+                <fullName>GERENTE 2</fullName>
+                <default>false</default>
+                <label>GERENTE 2</label>
+            </value>
+            <value>
+                <fullName>GERENTE DE SISTEMAS 1</fullName>
+                <default>false</default>
+                <label>GERENTE DE SISTEMAS 1</label>
+            </value>
+            <value>
+                <fullName>GERENTE ESPECIALISTA</fullName>
+                <default>false</default>
+                <label>GERENTE ESPECIALISTA</label>
+            </value>
+            <value>
+                <fullName>GERENTE SENIOR</fullName>
+                <default>false</default>
+                <label>GERENTE SENIOR</label>
+            </value>
+            <value>
+                <fullName>PROGRAMADOR JUNIOR 1</fullName>
+                <default>false</default>
+                <label>PROGRAMADOR JUNIOR 1</label>
+            </value>
+            <value>
+                <fullName>PROGRAMADOR JUNIOR 2</fullName>
+                <default>false</default>
+                <label>PROGRAMADOR JUNIOR 2</label>
+            </value>
+            <value>
+                <fullName>PROGRAMADOR JUNIOR 3</fullName>
+                <default>false</default>
+                <label>PROGRAMADOR JUNIOR 3</label>
+            </value>
+            <value>
+                <fullName>PROGRAMADOR PLENO 1</fullName>
+                <default>false</default>
+                <label>PROGRAMADOR PLENO 1</label>
+            </value>
+            <value>
+                <fullName>PROGRAMADOR PLENO 2</fullName>
+                <default>false</default>
+                <label>PROGRAMADOR PLENO 2</label>
+            </value>
+            <value>
+                <fullName>PROGRAMADOR SENIOR 1</fullName>
+                <default>false</default>
+                <label>PROGRAMADOR SENIOR 1</label>
+            </value>
+            <value>
+                <fullName>PROGRAMADOR SENIOR 2</fullName>
+                <default>false</default>
+                <label>PROGRAMADOR SENIOR 2</label>
+            </value>
+            <value>
+                <fullName>PROGRAMADOR SENIOR ESPECIALISTA</fullName>
+                <default>false</default>
+                <label>PROGRAMADOR SENIOR ESPECIALISTA</label>
+            </value>
+            <value>
+                <fullName>SOCIO</fullName>
+                <default>false</default>
+                <label>SOCIO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

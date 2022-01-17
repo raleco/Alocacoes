@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aloca_o_de_PNTs</fullName>
+    <columns>NAME</columns>
+    <columns>Employee__c</columns>
+    <columns>Project_Name__c</columns>
+    <columns>Data_De_Inicio__c</columns>
+    <columns>Data_de_Termino__c</columns>
+    <columns>Engagement__c</columns>
+    <columns>Alocado_Projeto__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Alocado_Projeto__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Project_Name__c</field>
+        <operation>equals</operation>
+        <value>PROMOTION</value>
+    </filters>
+    <label>Alocação de PNTs</label>
+</ListView>

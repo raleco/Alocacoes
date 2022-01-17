@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funcionario_por_nuvem</fullName>
+    <columns>NAME</columns>
+    <columns>Analytics__c</columns>
+    <columns>App_Builder__c</columns>
+    <columns>CPQ__c</columns>
+    <columns>Community_Builder__c</columns>
+    <columns>Financial_Service_Cloud__c</columns>
+    <columns>Marketing_Cloud__c</columns>
+    <columns>Salesforce_Platform__c</columns>
+    <columns>Sales_Cloud__c</columns>
+    <columns>Vlocity__c</columns>
+    <columns>Field_Service__c</columns>
+    <columns>Pardot__c</columns>
+    <columns>Service_Cloud__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Inactive</value>
+    </filters>
+    <filters>
+        <field>Practice__c</field>
+        <operation>notContain</operation>
+        <value>DC - ORACLE,DC - Premmia,DC - SALESFORCE,DC - SALESFORCE/Angular Frond End,DC - SAP,DC - SERASA,DC - SI,DC - SUCCESSFACTORS,DC - ALL</value>
+    </filters>
+    <filters>
+        <field>Alocation__c</field>
+        <operation>equals</operation>
+        <value>SP</value>
+    </filters>
+    <label>Funcionario por nuvem</label>
+</ListView>

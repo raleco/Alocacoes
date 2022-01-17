@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pontuacao_das_Requisicoes__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Pontos por requisição caso o documento foi utilizado nos últimos 30 dias.</inlineHelpText>
+    <label>Pontuação das Requisições (30 dias)</label>
+    <summarizedField>Requisicoes__c.Ponto_por_utilizacao__c</summarizedField>
+    <summaryForeignKey>Requisicoes__c.Requerente__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
