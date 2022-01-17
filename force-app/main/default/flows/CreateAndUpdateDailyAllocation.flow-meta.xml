@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Runs the Apex class which creates new daily allocations</description>
+        <name>CreateNewDailyAllocation</name>
+        <label>Create new Daily Allocation</label>
+        <locationX>132</locationX>
+        <locationY>512</locationY>
+        <actionName>CreateDailyAllocationService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>allocations</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Runs the Apex class which deletes the daily allocations</description>
+        <name>DeleteDailyAllocation</name>
+        <label>Delete Daily Allocation</label>
+        <locationX>419</locationX>
+        <locationY>512</locationY>
+        <actionName>DeleteDailyAllocationService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>CreateNewDailyAllocation</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>allocations</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>53.0</apiVersion>
+    <decisions>
+        <description>Decides whether it is a new allocation or an allocation update.</description>
+        <name>CreateOrUpdate</name>
+        <label>Create or update?</label>
+        <locationX>273</locationX>
+        <locationY>381</locationY>
+        <defaultConnectorLabel>Resultado padrão</defaultConnectorLabel>
+        <rules>
+            <name>Update</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LastModifiedDate</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.CreatedDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>DeleteDailyAllocation</targetReference>
+            </connector>
+            <label>Update</label>
+        </rules>
+        <rules>
+            <name>Create</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LastModifiedDate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.CreatedDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CreateNewDailyAllocation</targetReference>
+            </connector>
+            <label>Create</label>
+        </rules>
+    </decisions>
+    <description>After creating or updating an Allocation, Daily Allocations are created.</description>
+    <interviewLabel>Create and Update Daily Allocation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create and Update Daily Allocation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>156</locationX>
+        <locationY>49</locationY>
+        <connector>
+            <targetReference>CreateOrUpdate</targetReference>
+        </connector>
+        <object>Alocation__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
