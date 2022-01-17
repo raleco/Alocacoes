@@ -7,8 +7,8 @@
          so unset values are treated as empty. Without this, ant expressions such as ${sf.username}
          will be treated literally. -->
     <condition property="sf.username" value="alamaral@deloitte.com.dev"> <not> <isset property="sf.username"/> </not> </condition>
-    <condition property="sf.password" value="deloitte@2022"> <not> <isset property="sf.password"/> </not> </condition>
-    <condition property="sf.sessionId" value="yCAoO2jj6LPKPguQul5bJo1PO"> <not> <isset property="sf.sessionId"/> </not> </condition>
+    <condition property="sf.password" value="deloitte@2022yCAoO2jj6LPKPguQul5bJo1PO"> <not> <isset property="sf.password"/> </not> </condition>
+    <condition property="sf.sessionId" value=""> <not> <isset property="sf.sessionId"/> </not> </condition>
 
     <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
         <classpath>
