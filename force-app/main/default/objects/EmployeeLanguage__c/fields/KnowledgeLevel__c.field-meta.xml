@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Office__c</fullName>
-    <description>Campo para registrar o escritório do funcionário.</description>
+    <fullName>KnowledgeLevel__c</fullName>
+    <description>Campo para registrar o nível de conhecimento de idioma.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Escritório do funcionário.</inlineHelpText>
-    <label>Office</label>
+    <inlineHelpText>Nível de conhecimento do idioma</inlineHelpText>
+    <label>Knowledge Level</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -13,29 +13,29 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Campinas</fullName>
+                <fullName>Básico</fullName>
                 <default>false</default>
-                <label>Campinas</label>
+                <label>Básico</label>
             </value>
             <value>
-                <fullName>Distrito Federal</fullName>
+                <fullName>Intermediário</fullName>
                 <default>false</default>
-                <label>Distrito Federal</label>
+                <label>Intermediário</label>
             </value>
             <value>
-                <fullName>Rio de Janeiro</fullName>
+                <fullName>Avançado</fullName>
                 <default>false</default>
-                <label>Rio de Janeiro</label>
+                <label>Avançado</label>
             </value>
             <value>
-                <fullName>São Paulo</fullName>
+                <fullName>Fluente</fullName>
                 <default>false</default>
-                <label>São Paulo</label>
+                <label>Fluente</label>
             </value>
             <value>
-                <fullName>Recife</fullName>
+                <fullName>Nativo</fullName>
                 <default>false</default>
-                <label>Recife</label>
+                <label>Nativo</label>
             </value>
         </valueSetDefinition>
     </valueSet>
