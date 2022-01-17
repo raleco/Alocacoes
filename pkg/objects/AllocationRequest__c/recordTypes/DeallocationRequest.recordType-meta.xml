@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DeallocationRequest</fullName>
+    <active>true</active>
+    <label>Deallocation Request</label>
+    <picklistValues>
+        <picklist>RequestStatus__c</picklist>
+        <values>
+            <fullName>Aguardando retorno do solicitante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atendida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em andamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em entrevista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Role__c</picklist>
+        <values>
+            <fullName>Desenvolvedor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funcional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lider Técnico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QA e Tester</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrum Master</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UX%2FUI%2C Design</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SalesforceCoreCloud__c</picklist>
+        <values>
+            <fullName>Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>App Builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Service Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integração</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pardot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philantropy Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vlocity</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seniority__c</picklist>
+        <values>
+            <fullName>Consultor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Especialista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PNT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pleno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
