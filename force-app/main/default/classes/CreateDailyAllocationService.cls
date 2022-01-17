@@ -20,7 +20,7 @@ public class CreateDailyAllocationService {
         DateTime endDate = DateTime.newInstance(allocation.EndDate__c, Time.newInstance(12, 0, 0, 0));
         
         // Holiday
-        List<Holiday> holidaystb = [select activitydate from holiday];
+        List<Holiday> holidaystb = CreateDailyAllocationSelector.returnsHolidays();
         List<date> holidays = new list<date>();
         for(holiday h : holidaystb)
             holidays.add(h.activitydate);        
@@ -32,8 +32,10 @@ public class CreateDailyAllocationService {
             
             if (startDate.format('E') == 'Sat') startDate = startDate.addDays(2);
             else if (startDate.format('E') == 'Sun') startDate = startDate.addDays(1);
+            
             dailyAll.Date__c = startDate.date();
-            //dailyAll.NumberHoursDay__c = allocation.NumberHoursDay__c;
+            //dailyAll.NumberHoursDay__c = allocation.NumberHoursDay__c; //formula field
+            
             if(startDate <= endDate) {
                 if( ! holidays.contains(dailyAll.Date__c) )
                 	dailyAllocation.add(dailyAll);
