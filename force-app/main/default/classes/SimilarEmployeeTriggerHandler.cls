@@ -4,7 +4,6 @@ public class SimilarEmployeeTriggerHandler extends TriggerHandler {
     private Map<Id, SimilarEmployeeProfile__c> oldSimilarEmployeeProfileMap;
     private List<SimilarEmployeeProfile__c> listSimilarEmployeeProfile;
     
-
     public SimilarEmployeeTriggerHandler() {
         this.newSimilarEmployeeProfileMap = (Map<Id, SimilarEmployeeProfile__c>) Trigger.newMap;
         this.oldSimilarEmployeeProfileMap = (Map<Id, SimilarEmployeeProfile__c>) Trigger.oldMap;
@@ -12,7 +11,7 @@ public class SimilarEmployeeTriggerHandler extends TriggerHandler {
         this.setMaxLoopCount(5);
     } 
     
-    public override void beforeInsert(){
-        SimilarEmployeeTriggerHelper.validateDuplicateRecord(listSimilarEmployeeProfile[0]);
+    public override void beforeInsert() {
+        SimilarEmployeeService.validateDuplicateRecord(listSimilarEmployeeProfile[0]);
     }
 }

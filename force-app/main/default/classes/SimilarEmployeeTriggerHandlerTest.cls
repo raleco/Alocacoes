@@ -11,7 +11,7 @@ public class SimilarEmployeeTriggerHandlerTest {
         newEmployee2.Name = 'Test2';
         insert newEmployee2;
         
-        try{
+        try {
             
             SimilarEmployeeProfile__c newSimilarEmployeeProfile1 = new SimilarEmployeeProfile__c();
             newSimilarEmployeeProfile1.SourceEmployee__c = newEmployee1.Id;
@@ -23,10 +23,10 @@ public class SimilarEmployeeTriggerHandlerTest {
             newSimilarEmployeeProfile2.SimilarEmployee__c = newEmployee2.Id;
             insert newSimilarEmployeeProfile2;
             
-        }catch(Exception e){
+        }catch(Exception e) {
             
             system.debug(e.getMessage());
-            Boolean expectExceptionThrown = e.getMessage().contains('Não foi possivel salvar o registro.' + '\n' + 'Registro duplicado!') ? true : false;
+            Boolean expectExceptionThrown = e.getMessage().contains(System.Label.DuplicateRegistryError) ? true : false;
             system.assertEquals(expectExceptionThrown, true);
             
         }
