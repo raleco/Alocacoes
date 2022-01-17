@@ -16,6 +16,8 @@ force-app/main/default/pages
 force-app/main/default/applications
 force-app/main/default/flexipages
 force-app/main/default/layouts
+force-app/main/default/lwc
+
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
