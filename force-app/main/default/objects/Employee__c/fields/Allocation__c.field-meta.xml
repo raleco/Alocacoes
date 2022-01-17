@@ -8,7 +8,7 @@
     <label>Allocation</label>
     <referenceTo>Alocation__c</referenceTo>
     <relationshipLabel>Employees</relationshipLabel>
-    <relationshipName>Funcion_rios</relationshipName>
+    <relationshipName>Employees</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>
