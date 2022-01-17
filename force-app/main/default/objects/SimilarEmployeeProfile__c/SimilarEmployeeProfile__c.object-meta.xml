@@ -141,9 +141,9 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>CompactInformation</compactLayoutAssignment>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Objeto responsável por gerenciar funcionários.</description>
+    <description>Objeto responsável por gerenciar perfis semelhantes dos funcionários.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -153,19 +153,16 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <gender>Masculine</gender>
-    <label>Employee</label>
+    <label>Similar Employee Profile</label>
     <nameField>
-        <label>Employee Name</label>
-        <type>Text</type>
+        <displayFormat>PS-{0000}</displayFormat>
+        <label>Código do Perfil Semelhante</label>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Employees</pluralLabel>
-    <searchLayouts>
-        <searchResultsAdditionalFields>Email__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Roles__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    <pluralLabel>Similar Employee Profiles</pluralLabel>
+    <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

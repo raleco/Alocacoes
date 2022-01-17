@@ -141,9 +141,9 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>CompactInformation</compactLayoutAssignment>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Objeto responsável por gerenciar funcionários.</description>
+    <description>Objeto responsável por gerenciar idiomas do funcionário.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -153,19 +153,16 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <gender>Masculine</gender>
-    <label>Employee</label>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <gender>Feminine</gender>
+    <label>Employee Language</label>
     <nameField>
-        <label>Employee Name</label>
-        <type>Text</type>
+        <displayFormat>IF-{0000}</displayFormat>
+        <label>Código do Idioma</label>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Employees</pluralLabel>
-    <searchLayouts>
-        <searchResultsAdditionalFields>Email__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Roles__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <pluralLabel>Employee Language</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
