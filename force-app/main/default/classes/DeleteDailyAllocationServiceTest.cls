@@ -1,4 +1,4 @@
-@istest public class DeleteDailyAllocationTest {
+@istest public class DeleteDailyAllocationServiceTest {
     @istest public static void DeleteDailyAllocation(){
         List<DailyAllocation__c> listDays;
         Integer workingDays;
@@ -43,7 +43,7 @@
         delete [select id from DailyAllocation__c where Allocation__c = :allocation.id];
         
         //Call the invoked method
-        CreateDailyAllocation.CreateDailyAllocation(new List<Alocation__c>{allocation});
+        CreateDailyAllocationService.CreateDailyAllocation(new List<Alocation__c>{allocation});
         
         //testing if everything is ok so far.
         listDays = [select id, Date__c from DailyAllocation__c where date__c >= :allocation.StartDate__c and date__c <= :allocation.EndDate__c and Allocation__c = :allocation.id order by date__c ASC];
@@ -54,7 +54,7 @@
         allocation.EndDate__c = date.today()+92;//It will be exactly 11 weeks
         
         test.startTest();
-        DeleteDailyAllocation.DeleteDailyAllocation(new List<Alocation__c>{allocation});
+        DeleteDailyAllocationService.DeleteDailyAllocation(new List<Alocation__c>{allocation});
         test.stopTest();
         
         listDays = [select id, date__c from DailyAllocation__c where date__c >= :allocation.StartDate__c and date__c <= :allocation.EndDate__c and Allocation__c = :allocation.id order by date__c ASC];

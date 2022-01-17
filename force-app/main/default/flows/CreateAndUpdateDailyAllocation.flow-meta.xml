@@ -6,7 +6,7 @@
         <label>Create new Daily Allocation</label>
         <locationX>132</locationX>
         <locationY>512</locationY>
-        <actionName>CreateDailyAllocation</actionName>
+        <actionName>CreateDailyAllocationService</actionName>
         <actionType>apex</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
@@ -22,7 +22,7 @@
         <label>Delete Daily Allocation</label>
         <locationX>419</locationX>
         <locationY>512</locationY>
-        <actionName>DeleteDailyAllocation</actionName>
+        <actionName>DeleteDailyAllocationService</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>CreateNewDailyAllocation</targetReference>

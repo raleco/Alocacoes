@@ -1,4 +1,4 @@
-public class CreateDailyAllocation {
+public class CreateDailyAllocationService {
 
     @InvocableMethod(label='createDailyAllocation')
     public static void createDailyAllocation (List<Alocation__c> allocations){
@@ -19,7 +19,7 @@ public class CreateDailyAllocation {
         DateTime startDate = DateTime.newInstance(allocation.StartDate__c, Time.newInstance(0, 0, 0, 0));
         DateTime endDate = DateTime.newInstance(allocation.EndDate__c, Time.newInstance(12, 0, 0, 0));
         
-        // Feriado
+        // Holiday
         List<Holiday> holidaystb = [select activitydate from holiday];
         List<date> holidays = new list<date>();
         for(holiday h : holidaystb)

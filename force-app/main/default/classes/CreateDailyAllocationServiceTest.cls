@@ -1,4 +1,4 @@
-@istest public class CreateDailyAllocationTest {
+@istest public class CreateDailyAllocationServiceTest {
 	@istest public static void CreateDailyAllocation(){
         
         Employee__c employee = new Employee__c();
@@ -41,7 +41,7 @@
         delete [select id, Date__c from DailyAllocation__c where Date__c >= :allocation.StartDate__c and Date__c <= :allocation.EndDate__c and Allocation__c = :allocation.id order by Date__c ASC];
         
         test.startTest();
-        CreateDailyAllocation.CreateDailyAllocation(new List<Alocation__c>{allocation});
+        CreateDailyAllocationService.CreateDailyAllocation(new List<Alocation__c>{allocation});
         test.stopTest();
         
         List<DailyAllocation__c> listDay = [select id, Date__c from DailyAllocation__c where Date__c >= :allocation.StartDate__c and date__c <= :allocation.EndDate__c and Allocation__c = :allocation.id order by date__c ASC];

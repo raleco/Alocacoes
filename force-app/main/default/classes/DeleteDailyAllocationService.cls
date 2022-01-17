@@ -1,4 +1,4 @@
-public class DeleteDailyAllocation {
+public class DeleteDailyAllocationService {
     @InvocableMethod(label='deleteDailyAllocation')
     public static void DeleteDailyAllocation(List<Alocation__c> allocations)
     {
