@@ -2,9 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Client__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
-    <description>Account of the client.</description>
+    <description>Project-related customer account.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Account of the client.</inlineHelpText>
+    <inlineHelpText>Project-related customer account.</inlineHelpText>
     <label>Client</label>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Projects</relationshipLabel>
