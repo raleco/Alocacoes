@@ -17,25 +17,30 @@
     </taskdef>
 
     <!-- Shows check only; never actually saves to the server -->
-    <target name="deployCodeCheckOnly">
-      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="pkg" checkOnly="true"/>
-    </target>
+    <!-- <target name="deployCodeCheckOnly"> -->
+      <!-- <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="pkg" checkOnly="true"/> -->
+    <!-- </target> -->
 
     <!-- Shows deploying code & running tests for code in directory -->
     <!-- <target name="deployCode"> -->
       <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
-      <!-- <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="codepkg" testLevel="RunSpecifiedTests" rollbackOnError="true"> -->
+      <!-- <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="pkg" testLevel="RunSpecifiedTests" rollbackOnError="true"> -->
       	 <!-- <runTest>SampleDeployClass</runTest>  -->
       <!-- </sf:deploy> -->
     <!-- </target> -->
 	
 	 <!-- Shows deploying code with no TestLevel sepcified -->
     <!-- <target name="deployCodeNoTestLevelSpecified"> -->
-      <!-- <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="codepkg" rollbackOnError="true"/> -->
+      <!-- <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="pkg" rollbackOnError="true"/> -->
     <!-- </target> -->
 	
 	<!-- Shows deploying code and running tests only within the org namespace -->
 	<!-- <target name="deployCodeRunLocalTests"> -->
-	  <!-- <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="codepkg" rollbackOnError="true"  testlevel="RunLocalTests"/> -->
+	  <!-- <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="pkg" rollbackOnError="true"  testlevel="RunLocalTests"/> -->
 	<!-- </target> -->
+	
+    <!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization's namespace only-->
+    <target name="deployUnpackaged">
+      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="pkg" rollbackOnError="true"/>
+    </target>
 </project>
