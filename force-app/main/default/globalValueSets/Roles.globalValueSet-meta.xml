@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Desenvolvedor</fullName>
+        <default>false</default>
+        <label>Desenvolvedor</label>
+    </customValue>
+    <customValue>
+        <fullName>Funcional</fullName>
+        <default>false</default>
+        <label>Funcional</label>
+    </customValue>
+    <customValue>
+        <fullName>Scrum Master</fullName>
+        <default>false</default>
+        <label>Scrum Master</label>
+    </customValue>
+    <customValue>
+        <fullName>Gerente</fullName>
+        <default>false</default>
+        <label>Gerente</label>
+    </customValue>
+    <customValue>
+        <fullName>Lider Técnico</fullName>
+        <default>false</default>
+        <label>Lider Técnico</label>
+    </customValue>
+    <customValue>
+        <fullName>UX/UI, Design</fullName>
+        <default>false</default>
+        <label>UX/UI, Design</label>
+    </customValue>
+    <customValue>
+        <fullName>QA e Tester</fullName>
+        <default>false</default>
+        <label>QA e Tester</label>
+    </customValue>
+    <description>Employee roles</description>
+    <masterLabel>Roles</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
