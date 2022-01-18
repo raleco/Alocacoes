@@ -27,7 +27,7 @@
         
         Alocation__c allocation = new Alocation__c();
         allocation.Employee__c = employee.Id;
-        allocation.ProjectName__c = project.Id;
+        allocation.Project_Name__c = project.Id;
         allocation.Account__c = account.id;
         allocation.StartDate__c = date.today()+5;
         allocation.EndDate__c = date.today()+74;//It will take exactly 10 weeks
