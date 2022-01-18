@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActingAs__c</fullName>
+    <description>Campo para descrever a atuação do funcionário.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Area atual do funcionário.</inlineHelpText>
+    <label>Acting As</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

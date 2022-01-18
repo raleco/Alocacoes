@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidateDateOfBirth</fullName>
+    <active>true</active>
+    <description>Validation of the date of birth field</description>
+    <errorConditionFormula>OR (
+				DateOfBirth__c &gt; TODAY(),
+				DateOfBirth__c &gt; AdmissionDate__c
+)</errorConditionFormula>
+    <errorDisplayField>DateOfBirth__c</errorDisplayField>
+    <errorMessage>The date of birth cannot be higher than the current or higher date than the date of admission.</errorMessage>
+</ValidationRule>

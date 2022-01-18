@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+<<<<<<<< HEAD:force-app/main/default/objects/Project__c/fields/ContractStartDate__c.field-meta.xml
+    <fullName>ContractStartDate__c</fullName>
+    <description>Project Contract start date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Project Contract start date.</inlineHelpText>
+    <label>Contract start date</label>
+========
+    <fullName>StartDate__c</fullName>
+    <description>Allocation Start Date</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Allocation Start Date</inlineHelpText>
+    <label>Start date</label>
+>>>>>>>> remotes/origin/dev:force-app/main/default/objects/Alocation__c/fields/StartDate__c.field-meta.xml
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vertical__c</fullName>
+    <description>Vertical</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Vertical</inlineHelpText>
+    <label>Vertical</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Especialidade</fullName>
+                <default>false</default>
+                <label>Especialidade</label>
+            </value>
+            <value>
+                <fullName>Extra</fullName>
+                <default>false</default>
+                <label>Extra</label>
+            </value>
+            <value>
+                <fullName>Funcional</fullName>
+                <default>false</default>
+                <label>Funcional</label>
+            </value>
+            <value>
+                <fullName>Industria</fullName>
+                <default>false</default>
+                <label>Industria</label>
+            </value>
+            <value>
+                <fullName>Itens do Y (Desenvolvedor)</fullName>
+                <default>false</default>
+                <label>Itens do Y (Desenvolvedor)</label>
+            </value>
+            <value>
+                <fullName>Itens do Y (Funcional)</fullName>
+                <default>false</default>
+                <label>Itens do Y (Funcional)</label>
+            </value>
+            <value>
+                <fullName>Itens do Y (Scrum e PMO)</fullName>
+                <default>false</default>
+                <label>Itens do Y (Scrum e PMO)</label>
+            </value>
+            <value>
+                <fullName>Nuvem Salesforce</fullName>
+                <default>false</default>
+                <label>Nuvem Salesforce</label>
+            </value>
+            <value>
+                <fullName>Snapshot</fullName>
+                <default>false</default>
+                <label>Snapshot</label>
+            </value>
+            <value>
+                <fullName>Soft Skill</fullName>
+                <default>false</default>
+                <label>Soft Skill</label>
+            </value>
+            <value>
+                <fullName>Técnica</fullName>
+                <default>false</default>
+                <label>Técnica</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreviousEndDateTheInitialDate</fullName>
+    <active>true</active>
+    <description>The Allocation end date cannot be earlier than the Allocation start date.</description>
+    <errorConditionFormula>OR(
+  YEAR(EndDate__c)&lt; YEAR(StartDate__c),
+ AND(
+  DAY(EndDate__c) &lt; DAY(StartDate__c) , 
+  MONTH(EndDate__c)= MONTH(StartDate__c),
+  YEAR(EndDate__c)= YEAR(StartDate__c)
+ ),
+ AND( 
+  MONTH(EndDate__c)&lt; MONTH(StartDate__c),
+  YEAR(EndDate__c)= YEAR(StartDate__c)
+ )
+)</errorConditionFormula>
+    <errorDisplayField>EndDate__c</errorDisplayField>
+    <errorMessage>The Allocation end date cannot be earlier than the Allocation start date.</errorMessage>
+</ValidationRule>

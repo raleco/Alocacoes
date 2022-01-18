@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidateShutdownDate</fullName>
+    <active>true</active>
+    <description>Validation of the shutdown of date field</description>
+    <errorConditionFormula>OR( 
+				ShutdownDate__c  &lt;=  AdmissionDate__c, 
+    ShutdownDate__c &gt; TODAY()
+)</errorConditionFormula>
+    <errorDisplayField>ShutdownDate__c</errorDisplayField>
+    <errorMessage>The shutdown date cannot be higher than the current date or lower than the admission date.</errorMessage>
+</ValidationRule>

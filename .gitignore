@@ -8,6 +8,17 @@
 .localdevserver/
 deploy-options.json
 
+force-app/main/default/profiles
+#force-app/main/default/classes
+#force-app/main/default/triggers
+force-app/main/default/components
+force-app/main/default/pages
+force-app/main/default/applications
+force-app/main/default/flexipages
+force-app/main/default/layouts
+force-app/main/default/lwc
+
+
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
 

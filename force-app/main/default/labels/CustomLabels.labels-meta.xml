@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>DuplicateRegistryError</fullName>
+        <categories>Error</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Registry Error Message</shortDescription>
+        <value>Duplicated key.</value>
+    </labels>
+</CustomLabels>

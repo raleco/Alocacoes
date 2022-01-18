@@ -154,13 +154,13 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <gender>Feminine</gender>
-    <label>Ausência</label>
+    <label>Time Off</label>
     <nameField>
         <displayFormat>F - {000000}</displayFormat>
         <label>Name</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Ausências</pluralLabel>
+    <pluralLabel>Time Off</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JobCategory__c</fullName>
+    <description>Campo que demonstra a categoria do cargo do funcionário.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+(ISPICKVAL(Roles__c, &quot;DIRETOR&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE 1&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE 2&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE DE SISTEMAS 1&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE ESPECIALISTA&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE SENIOR&quot;)
+|| ISPICKVAL(Roles__c,&quot;SOCIO&quot;)),&quot;EXECUTIVO&quot;, &quot;STAFF&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Categoria do cargo do funcionário.</inlineHelpText>
+    <label>JobCategory</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
