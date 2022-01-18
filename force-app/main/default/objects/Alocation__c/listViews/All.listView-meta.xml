@@ -6,7 +6,7 @@
     <columns>NAME</columns>
     <columns>Employee__c</columns>
     <columns>Responsability__c</columns>
-    <columns>Project_Name__c</columns>
+    <columns>Project__c</columns>
     <columns>Data_de_Termino__c</columns>
     <columns>Carga_Horaria__c</columns>
     <filterScope>Everything</filterScope>
