@@ -28,7 +28,7 @@ variables:
 # each stage has a condition - it will be skipped if the condition is not achieved. The conditions were already calculated before.
 stages:
 - stage: QA01_VALIDATE
-  condition: eq(variables.isPR2Develop, true)
+  # condition: eq(variables.isPR2Develop, true)
   jobs:
   - job: QA01_BUILD_VALIDATE_DEPLOY
     steps:
