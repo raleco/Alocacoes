@@ -1,25 +1,26 @@
-# Node.js
-# Build a general Node.js project with npm.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+# Ant
+# Build your Java projects and run tests with Apache Ant.
+# Add steps that save build artifacts and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- main
+- azure-pipelines_2
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: NodeTool@0
+- checkout: self
+
+- script: |
+    echo "Build Type: $(BUILD_TYPE)"
+  displayName: 'Confirming Variables'
+
+- task: Ant@1
   inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
-
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
-
-- script: |
-    npm install sfdx-cli --global
-  displayName: 'sfdx-cli install (Deloitte)'
+    buildFile: 'build.xml'
+    options: 
+    targets: 'deployUnpackaged'
+    publishJUnitResults: false
+    javaHomeOption: 'JDKVersion'
+    displayName: 'Deploy to the target Org'
