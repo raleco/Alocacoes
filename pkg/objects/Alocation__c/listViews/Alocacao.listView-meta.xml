@@ -3,14 +3,14 @@
     <fullName>Alocacao</fullName>
     <columns>NAME</columns>
     <columns>Employee__c</columns>
-    <columns>Project_Name__c</columns>
+    <columns>Project__c</columns>
     <columns>Data_De_Inicio__c</columns>
     <columns>Data_de_Termino__c</columns>
     <columns>Engagement__c</columns>
     <columns>Alocado_Projeto__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
-        <field>Project_Name__c</field>
+        <field>Project__c</field>
         <operation>startsWith</operation>
         <value>Claro - Segunda Fase</value>
     </filters>

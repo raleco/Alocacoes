@@ -3,7 +3,7 @@
     <fullName>Aloca_o_de_PNTs</fullName>
     <columns>NAME</columns>
     <columns>Employee__c</columns>
-    <columns>Project_Name__c</columns>
+    <columns>Project__c</columns>
     <columns>Data_De_Inicio__c</columns>
     <columns>Data_de_Termino__c</columns>
     <columns>Engagement__c</columns>
@@ -15,7 +15,7 @@
         <value>1</value>
     </filters>
     <filters>
-        <field>Project_Name__c</field>
+        <field>Project__c</field>
         <operation>equals</operation>
         <value>PROMOTION</value>
     </filters>
