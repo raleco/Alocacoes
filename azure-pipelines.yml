@@ -2,8 +2,7 @@
 trigger:
   branches:
     include:
-    - develop
-    - feature/*
+    - azure-pipelines_2
 
 # Executing pipeline on pull requests
 pr:
