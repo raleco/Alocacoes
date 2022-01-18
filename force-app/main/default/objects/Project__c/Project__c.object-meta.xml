@@ -14,12 +14,12 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ReadWrite</externalSharingModel>
     <gender>Feminine</gender>
-    <label>Projeto</label>
+    <label>Project</label>
     <nameField>
-        <label>Nome do Projeto</label>
+        <label>Project name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Projetos</pluralLabel>
+    <pluralLabel>Projects</pluralLabel>
     <searchLayouts>
         <lookupDialogsAdditionalFields>OWNER.FIRST_NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Engagement__c</lookupDialogsAdditionalFields>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Status__c</fullName>
+    <description>Stage the project is in.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Stage the project is in.</inlineHelpText>
     <label>Status</label>
     <required>true</required>
     <trackTrending>false</trackTrending>
@@ -11,24 +13,58 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Proposta</fullName>
+                <fullName>Fixed</fullName>
                 <default>false</default>
-                <label>Proposta</label>
+                <label>Fixed</label>
+            </value>
+            <value>
+                <fullName>Not started</fullName>
+                <default>false</default>
+                <label>Not started</label>
+            </value>
+            <value>
+                <fullName>In progress</fullName>
+                <default>false</default>
+                <label>In progress</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Stagnant</fullName>
+                <default>false</default>
+                <label>Stagnant</label>
+            </value>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <label>Canceled</label>
             </value>
             <value>
                 <fullName>Em desenvolvimento</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Em desenvolvimento</label>
             </value>
             <value>
                 <fullName>Entregue</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Entregue</label>
             </value>
             <value>
                 <fullName>Inativo</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Inativo</label>
+            </value>
+            <value>
+                <fullName>Proposta</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Proposta</label>
             </value>
         </valueSetDefinition>
     </valueSet>
