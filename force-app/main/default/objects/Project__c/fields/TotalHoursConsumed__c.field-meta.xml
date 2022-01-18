@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Total_Horas_Consumidas__c</fullName>
-    <description>Total de Horas consumidas no projeto.</description>
+    <fullName>TotalHoursConsumed__c</fullName>
+    <description>Total Hours consumed in the project.</description>
     <externalId>false</externalId>
-    <label>Total de Horas Consumidas</label>
+    <inlineHelpText>Total Hours consumed in the project.</inlineHelpText>
+    <label>Total Hours Consumed</label>
     <summarizedField>Apontamento_de_Horas__c.Horas_Apontadas__c</summarizedField>
     <summaryForeignKey>Apontamento_de_Horas__c.Projeto__c</summaryForeignKey>
     <summaryOperation>sum</summaryOperation>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ProjectType__c</fullName>
+    <description>Determines what type of the project is.</description>
     <externalId>false</externalId>
-    <label>Tipo de Projeto</label>
+    <inlineHelpText>Determines what type of the project is.</inlineHelpText>
+    <label>Project type</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -11,19 +13,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Implementação</fullName>
+                <fullName>Investment</fullName>
                 <default>false</default>
-                <label>Implementação</label>
+                <label>Investment</label>
             </value>
             <value>
-                <fullName>Extensão</fullName>
+                <fullName>Implementation</fullName>
                 <default>false</default>
-                <label>Extensão</label>
+                <label>Implementation</label>
             </value>
             <value>
-                <fullName>Suporte</fullName>
+                <fullName>Extension</fullName>
                 <default>false</default>
-                <label>Suporte</label>
+                <label>Extension</label>
+            </value>
+            <value>
+                <fullName>Support</fullName>
+                <default>false</default>
+                <label>Support</label>
             </value>
             <value>
                 <fullName>MPV</fullName>
@@ -34,6 +41,26 @@
                 <fullName>Discovery</fullName>
                 <default>false</default>
                 <label>Discovery</label>
+            </value>
+            <value>
+                <fullName>Sustention</fullName>
+                <default>false</default>
+                <label>Sustention</label>
+            </value>
+            <value>
+                <fullName>Assessment</fullName>
+                <default>false</default>
+                <label>Assessment</label>
+            </value>
+            <value>
+                <fullName>Inside</fullName>
+                <default>false</default>
+                <label>Inside</label>
+            </value>
+            <value>
+                <fullName>Evolution</fullName>
+                <default>false</default>
+                <label>Evolution</label>
             </value>
         </valueSetDefinition>
     </valueSet>
