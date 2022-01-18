@@ -157,8 +157,8 @@
     <gender>Masculine</gender>
     <label>Similar Employee Profile</label>
     <nameField>
-        <displayFormat>PS-{0000}</displayFormat>
-        <label>Código do Perfil Semelhante</label>
+        <displayFormat>SE-{0000}</displayFormat>
+        <label>Similar Profile Code</label>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Similar Employee Profiles</pluralLabel>
