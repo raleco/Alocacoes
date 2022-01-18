@@ -24,3 +24,25 @@ variables:
   value: $[eq(variables['Build.SourceBranch'], 'refs/heads/develop')]
 - name: isMain
   value: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')]
+
+# each stage has a condition - it will be skipped if the condition is not achieved. The conditions were already calculated before.
+stages:
+- stage: QA01_VALIDATE
+  condition: eq(variables.isPR2Develop, true)
+  jobs:
+  - job: QA01_BUILD_VALIDATE_DEPLOY
+    steps:
+    - task: sfdx-orgdev-build-deploy@1
+      displayName: 'QA01 - Build & Deploy'
+      inputs:
+        type: 'production'
+        privateKeyPath: 'auth-pipelines/server.key.enc'
+        decryptionKey: $(NONPROD_DECRYPTION_KEY)
+        decryptionIV: $(NONPROD_DECRYPTION_IV)
+        clientID: $(QA01_CLIENTID)
+        username: $(QA01_USERNAME)
+        checkonly: true
+        manifestFiles: 'manifest/package.xml,manifest/package2.xml'
+        preDestructivePath: 'destructive/preDestructiveChanges.xml'
+        postDestructivePath: 'destructive/postDestructiveChanges.xml'
+        anonymousApex: 'scripts/apex/hello.apex'
