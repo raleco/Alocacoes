@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>VacationDeadline__c</fullName>
+    <description>Vacation Deadline</description>
     <externalId>false</externalId>
-    <label>Data Limite Para Férias</label>
+    <inlineHelpText>Vacation Deadline</inlineHelpText>
+    <label>Vacation Deadline</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Date</type>

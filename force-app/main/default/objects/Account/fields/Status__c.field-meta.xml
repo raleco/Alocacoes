@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>WithdrawalStatus__c</fullName>
+    <fullName>Status__c</fullName>
     <description>Status</description>
     <externalId>false</externalId>
     <inlineHelpText>Status</inlineHelpText>
     <label>Status</label>
     <required>false</required>
-    <trackTrending>false</trackTrending>
+    <trackFeedHistory>false</trackFeedHistory>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>UnderReview</fullName>
+                <fullName>Ativa</fullName>
                 <default>false</default>
-                <label>Em análise</label>
+                <label>Ativa</label>
             </value>
             <value>
-                <fullName>RequestGranted</fullName>
+                <fullName>Inativa</fullName>
                 <default>false</default>
-                <label>Solicitação Atendida</label>
-            </value>
-            <value>
-                <fullName>RequestDenied</fullName>
-                <default>false</default>
-                <label>Solicitação Negada</label>
+                <label>Inativa</label>
             </value>
         </valueSetDefinition>
     </valueSet>

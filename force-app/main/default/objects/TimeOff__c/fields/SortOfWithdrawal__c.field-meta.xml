@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Sort_of_Withdrawal__c</fullName>
+    <fullName>SortOfWithdrawal__c</fullName>
+    <description>Sort of Withdrawal</description>
     <externalId>false</externalId>
-    <label>Tipo de Ausência</label>
+    <inlineHelpText>Sort of Withdrawal</inlineHelpText>
+    <label>Sort of Withdrawal</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -39,6 +41,16 @@
                 <fullName>Happy Day</fullName>
                 <default>false</default>
                 <label>Happy Day</label>
+            </value>
+            <value>
+                <fullName>Licença Médica</fullName>
+                <default>false</default>
+                <label>Licença Médica</label>
+            </value>
+            <value>
+                <fullName>Ausência Pontual</fullName>
+                <default>false</default>
+                <label>Ausência Pontual</label>
             </value>
         </valueSetDefinition>
     </valueSet>
