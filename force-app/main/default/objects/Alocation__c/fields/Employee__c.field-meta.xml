@@ -4,7 +4,7 @@
     <description>Identification of the Employee linked to this Allocation.</description>
     <externalId>false</externalId>
     <inlineHelpText>Identification of the Employee linked to this Allocation.</inlineHelpText>
-    <label>Employee</label>
+    <label>Professional</label>
     <referenceTo>Employee__c</referenceTo>
     <relationshipLabel>Alocations (Funcionário)</relationshipLabel>
     <relationshipName>Allocations</relationshipName>
