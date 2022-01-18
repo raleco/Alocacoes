@@ -1,0 +1,3301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>CompactInformation</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>CompactInformation</fullName>
+        <fields>Name</fields>
+        <fields>Status__c</fields>
+        <fields>Roles__c</fields>
+        <label>Compact Information</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>CompactLayoutEmployee</fullName>
+        <fields>Name</fields>
+        <fields>Status__c</fields>
+        <fields>Time__c</fields>
+        <fields>ProfileDPNLink__c</fields>
+        <label>Compact Layout Employee</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Objeto responsável por gerenciar funcionários.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>ActingAs__c</fullName>
+        <description>Campo para descrever a atuação do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Area atual do funcionário.</inlineHelpText>
+        <label>Acting As</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>AdmissionDate__c</fullName>
+        <description>Campo para registrar a data de admissão do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Data de admissão do funcionário</inlineHelpText>
+        <label>Admission Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>AdmissionYear__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Year( AdmissionDate__c ),
+2000, &quot;00&quot;,
+2001, &quot;01&quot;,
+2002, &quot;02&quot;, 
+2003, &quot;03&quot;, 
+2004, &quot;04&quot;, 
+2005, &quot;05&quot;,
+2006, &quot;06&quot;,
+2007, &quot;07&quot;,
+2008, &quot;08&quot;,
+2017, &quot;17&quot;,
+2018, &quot;18&quot;,
+2019, &quot;19&quot;,
+2020, &quot;20&quot;,
+&quot;None&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ano de Admissão</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Advertising_Studio__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Advertising Studio</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Aeronautica__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Aeronáutica</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Age__c</fullName>
+        <description>Campo para registrar a idade do funcionário.</description>
+        <externalId>false</externalId>
+        <formula>IF( NOT( ISBLANK(  DateOfBirth__c  ) ) ,
+
+  IF( DATE( 2000 , MONTH( DateOfBirth__c ) , DAY( DateOfBirth__c ) ) &lt;= DATE( 2000 , MONTH( TODAY() ) , DAY( TODAY() ) ),
+
+     YEAR (Today()) - YEAR ( DateOfBirth__c ),
+
+     YEAR (Today()) - YEAR ( DateOfBirth__c ) -1 ),
+
+  null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Idade do funcionário</inlineHelpText>
+        <label>Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Agronegocio__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Agronegócio</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Alimenticia__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Alimentícia</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AllocatedEmployee__c</fullName>
+        <description>Campo para registrar se o funcionário está alocado.</description>
+        <externalId>false</externalId>
+        <formula>IF( Alocacoes_Ativas__c &gt;= 1 ,&quot;Alocado&quot;, IF (Alocacoes_Ativas__c = 0 || NULL, &quot;Não Alocado&quot;, &quot;ERRO&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Registrar se o funcionário está alocado.</inlineHelpText>
+        <label>Allocated Employee</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Allocation__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Campo para registrar a alocação do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Alocação do funcionário.</inlineHelpText>
+        <label>Allocation</label>
+        <referenceTo>Alocation__c</referenceTo>
+        <relationshipLabel>Employees</relationshipLabel>
+        <relationshipName>Employees</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Alocacao__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Alocação</label>
+        <referenceTo>Alocation__c</referenceTo>
+        <relationshipName>Funcion_rios</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Alocacoes_Ativas__c</fullName>
+        <externalId>false</externalId>
+        <label>Alocações Ativas</label>
+        <summaryFilterItems>
+            <field>Alocation__c.Alocado_Projeto__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Alocation__c.Employee__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Alocation__c</fullName>
+        <externalId>false</externalId>
+        <label>UF da Alocação</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SP</fullName>
+                    <default>false</default>
+                    <label>SP</label>
+                </value>
+                <value>
+                    <fullName>RJ</fullName>
+                    <default>false</default>
+                    <label>RJ</label>
+                </value>
+                <value>
+                    <fullName>CP</fullName>
+                    <default>false</default>
+                    <label>CP</label>
+                </value>
+                <value>
+                    <fullName>DF</fullName>
+                    <default>false</default>
+                    <label>DF</label>
+                </value>
+                <value>
+                    <fullName>PE</fullName>
+                    <default>false</default>
+                    <label>PE</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Analytics__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Analytics</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>App_Builder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>App Builder</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Audience_Builder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Audience Builder</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Automation_Studio__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Automation Studio</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Automotive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Consumer</inlineHelpText>
+        <label>Automotive</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Aviacao__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Aviação</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Bairro__c</fullName>
+        <externalId>false</externalId>
+        <label>Bairro</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Banking_and_Capital_Markets__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Financial Services</inlineHelpText>
+        <label>Banking and Capital Markets</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CDP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CDP</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CEP__c</fullName>
+        <externalId>false</externalId>
+        <label>CEP</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CPQ</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cargo_Ajustado__c</fullName>
+        <externalId>false</externalId>
+        <label>Cargo Ajustado</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sócio</fullName>
+                    <default>false</default>
+                    <label>Sócio</label>
+                </value>
+                <value>
+                    <fullName>Diretor</fullName>
+                    <default>false</default>
+                    <label>Diretor</label>
+                </value>
+                <value>
+                    <fullName>Gerente Sênior</fullName>
+                    <default>false</default>
+                    <label>Gerente Sênior</label>
+                </value>
+                <value>
+                    <fullName>Gerente</fullName>
+                    <default>false</default>
+                    <label>Gerente</label>
+                </value>
+                <value>
+                    <fullName>Sênior</fullName>
+                    <default>false</default>
+                    <label>Sênior</label>
+                </value>
+                <value>
+                    <fullName>Pleno</fullName>
+                    <default>false</default>
+                    <label>Pleno</label>
+                </value>
+                <value>
+                    <fullName>Junior</fullName>
+                    <default>false</default>
+                    <label>Junior</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Categoria__c</fullName>
+        <externalId>false</externalId>
+        <label>Categoria</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DIRETOR</fullName>
+                    <default>false</default>
+                    <label>DIRETOR</label>
+                </value>
+                <value>
+                    <fullName>GERENTE</fullName>
+                    <default>false</default>
+                    <label>GERENTE</label>
+                </value>
+                <value>
+                    <fullName>GERENTE SR</fullName>
+                    <default>false</default>
+                    <label>GERENTE SR</label>
+                </value>
+                <value>
+                    <fullName>SENIOR</fullName>
+                    <default>false</default>
+                    <label>SENIOR</label>
+                </value>
+                <value>
+                    <fullName>SOCIO</fullName>
+                    <default>false</default>
+                    <label>SOCIO</label>
+                </value>
+                <value>
+                    <fullName>STAFF</fullName>
+                    <default>false</default>
+                    <label>STAFF</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CertificationsNumber__c</fullName>
+        <description>Campo para registrar o número de certificações do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Número de certificações do funcionário.</inlineHelpText>
+        <label>Certifications Number</label>
+        <summaryForeignKey>Certification__c.Employee_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Cidade__c</fullName>
+        <externalId>false</externalId>
+        <label>Cidade</label>
+        <length>55</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <description>Campo para registrar a cidade do funcionário</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Cidade do funcionário</inlineHelpText>
+        <label>City</label>
+        <length>55</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Civil_Government__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Government and Public Services</inlineHelpText>
+        <label>Civil Government</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Coachs__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Campo para registrar o coach do funcionário</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Coach do funcionário</inlineHelpText>
+        <label>Coach</label>
+        <referenceTo>Employee__c</referenceTo>
+        <relationshipName>Funcion_rios</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Codigo_de_Verificacao__c</fullName>
+        <description>Código para verificação do usuário na comunidade.</description>
+        <externalId>false</externalId>
+        <label>Código de Verificação</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comercial__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Comercial</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Comercio_Exterior__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Comércio Exterior</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Community_Builder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Community Builder</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Complement__c</fullName>
+        <description>Campo para registrar o complemento do endereço do funcionário</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Complemento do endereço do funcionário</inlineHelpText>
+        <label>Complement</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Complemento__c</fullName>
+        <externalId>false</externalId>
+        <label>Complemento</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consumer_Products__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Consumer</inlineHelpText>
+        <label>Consumer Products</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Builder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Contact Builder</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Content_Builder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Content Builder</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CostCenter__c</fullName>
+        <description>Campo para registrar o centro de custo dos funcionários.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Centro de custo dos funcionários</inlineHelpText>
+        <label>Cost Center</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2000081</fullName>
+                    <default>false</default>
+                    <label>2000081</label>
+                </value>
+                <value>
+                    <fullName>1008101</fullName>
+                    <default>false</default>
+                    <label>1008101</label>
+                </value>
+                <value>
+                    <fullName>1008261</fullName>
+                    <default>false</default>
+                    <label>1008261</label>
+                </value>
+                <value>
+                    <fullName>9008101</fullName>
+                    <default>false</default>
+                    <label>9008101</label>
+                </value>
+                <value>
+                    <fullName>3008101</fullName>
+                    <default>false</default>
+                    <label>3008101</label>
+                </value>
+                <value>
+                    <fullName>1008271</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>1008271</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Criterio_de_Avaliacao__c</fullName>
+        <externalId>false</externalId>
+        <label>Critério de Avaliação</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Apoio Técnico</fullName>
+                    <default>false</default>
+                    <label>Apoio Técnico</label>
+                </value>
+                <value>
+                    <fullName>Capacitação</fullName>
+                    <default>false</default>
+                    <label>Capacitação</label>
+                </value>
+                <value>
+                    <fullName>Coach</fullName>
+                    <default>false</default>
+                    <label>Coach</label>
+                </value>
+                <value>
+                    <fullName>Coworking</fullName>
+                    <default>false</default>
+                    <label>Coworking</label>
+                </value>
+                <value>
+                    <fullName>KPI</fullName>
+                    <default>false</default>
+                    <label>KPI</label>
+                </value>
+                <value>
+                    <fullName>Métodos</fullName>
+                    <default>false</default>
+                    <label>Métodos</label>
+                </value>
+                <value>
+                    <fullName>People</fullName>
+                    <default>false</default>
+                    <label>People</label>
+                </value>
+                <value>
+                    <fullName>Pré Vendas</fullName>
+                    <default>false</default>
+                    <label>Pré Vendas</label>
+                </value>
+                <value>
+                    <fullName>Vendas</fullName>
+                    <default>false</default>
+                    <label>Vendas</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Cross_Cloud_Products__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cross-Cloud Products</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Data_Atualizacao__c</fullName>
+        <externalId>false</externalId>
+        <label>Data de Atualização</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Data_Management_and_Analytics__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Data Management and Analytics</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Data_Studio__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Data Studio</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Data_do_Ultimo_Acesso_no_Portal__c</fullName>
+        <description>Última data que o funcionário acessou o portal da comunidade.</description>
+        <externalId>false</externalId>
+        <label>Data do Último Acesso no Portal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DateOfBirth__c</fullName>
+        <description>Campo para registrar a data de nascimento do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Data de nascimento  do funcionário</inlineHelpText>
+        <label>Date Of Birth</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Datorama__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Datorama</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Defense_Security_and_Justice__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Government and Public Services</inlineHelpText>
+        <label>Defense, Security and Justice</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Design_Thinking__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Design Thinking</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Distribuiu_Pontos__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF((Pontos_distribuidos__c) &gt; 0 ,true,false) || IF((Escolheu_Nao_Distribuir_Pontos__c) = true, true, false)</formula>
+        <label>Distribuiu Pontos?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Editora__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Editora</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Eduacacao__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Eduacação</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Eletrodomesticos__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Eletrodomésticos</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Campo para registrar o email do funcionário.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Email do funcionário</inlineHelpText>
+        <label>E-mail</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>EndDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Data de Término</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Engenharia__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Engenharia</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EnglishLevel__c</fullName>
+        <externalId>false</externalId>
+        <label>Nível de Inglês</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advanced</fullName>
+                    <default>false</default>
+                    <label>Advanced</label>
+                </value>
+                <value>
+                    <fullName>Higher Intermediate</fullName>
+                    <default>false</default>
+                    <label>Higher Intermediate</label>
+                </value>
+                <value>
+                    <fullName>Intermediate</fullName>
+                    <default>false</default>
+                    <label>Intermediate</label>
+                </value>
+                <value>
+                    <fullName>Pre-Intermediate</fullName>
+                    <default>false</default>
+                    <label>Pre-Intermediate</label>
+                </value>
+                <value>
+                    <fullName>Elementary</fullName>
+                    <default>false</default>
+                    <label>Elementary</label>
+                </value>
+                <value>
+                    <fullName>Beginner</fullName>
+                    <default>false</default>
+                    <label>Basic</label>
+                </value>
+                <value>
+                    <fullName>Sem Teste</fullName>
+                    <default>false</default>
+                    <label>Sem Teste</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Escolheu_Nao_Distribuir_Pontos__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Escolheu Não Distribuir Pontos</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Estado__c</fullName>
+        <externalId>false</externalId>
+        <label>Estado</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AC</fullName>
+                    <default>false</default>
+                    <label>AC</label>
+                </value>
+                <value>
+                    <fullName>AL</fullName>
+                    <default>false</default>
+                    <label>AL</label>
+                </value>
+                <value>
+                    <fullName>AP</fullName>
+                    <default>false</default>
+                    <label>AP</label>
+                </value>
+                <value>
+                    <fullName>AM</fullName>
+                    <default>false</default>
+                    <label>AM</label>
+                </value>
+                <value>
+                    <fullName>BA</fullName>
+                    <default>false</default>
+                    <label>BA</label>
+                </value>
+                <value>
+                    <fullName>CE</fullName>
+                    <default>false</default>
+                    <label>CE</label>
+                </value>
+                <value>
+                    <fullName>DF</fullName>
+                    <default>false</default>
+                    <label>DF</label>
+                </value>
+                <value>
+                    <fullName>ES</fullName>
+                    <default>false</default>
+                    <label>ES</label>
+                </value>
+                <value>
+                    <fullName>GO</fullName>
+                    <default>false</default>
+                    <label>GO</label>
+                </value>
+                <value>
+                    <fullName>MA</fullName>
+                    <default>false</default>
+                    <label>MA</label>
+                </value>
+                <value>
+                    <fullName>MT</fullName>
+                    <default>false</default>
+                    <label>MT</label>
+                </value>
+                <value>
+                    <fullName>MS</fullName>
+                    <default>false</default>
+                    <label>MS</label>
+                </value>
+                <value>
+                    <fullName>MG</fullName>
+                    <default>false</default>
+                    <label>MG</label>
+                </value>
+                <value>
+                    <fullName>PA</fullName>
+                    <default>false</default>
+                    <label>PA</label>
+                </value>
+                <value>
+                    <fullName>PB</fullName>
+                    <default>false</default>
+                    <label>PB</label>
+                </value>
+                <value>
+                    <fullName>PR</fullName>
+                    <default>false</default>
+                    <label>PR</label>
+                </value>
+                <value>
+                    <fullName>PE</fullName>
+                    <default>false</default>
+                    <label>PE</label>
+                </value>
+                <value>
+                    <fullName>PI</fullName>
+                    <default>false</default>
+                    <label>PI</label>
+                </value>
+                <value>
+                    <fullName>RJ</fullName>
+                    <default>false</default>
+                    <label>RJ</label>
+                </value>
+                <value>
+                    <fullName>RN</fullName>
+                    <default>false</default>
+                    <label>RN</label>
+                </value>
+                <value>
+                    <fullName>RS</fullName>
+                    <default>false</default>
+                    <label>RS</label>
+                </value>
+                <value>
+                    <fullName>RO</fullName>
+                    <default>false</default>
+                    <label>RO</label>
+                </value>
+                <value>
+                    <fullName>RR</fullName>
+                    <default>false</default>
+                    <label>RR</label>
+                </value>
+                <value>
+                    <fullName>SC</fullName>
+                    <default>false</default>
+                    <label>SC</label>
+                </value>
+                <value>
+                    <fullName>SP</fullName>
+                    <default>false</default>
+                    <label>SP</label>
+                </value>
+                <value>
+                    <fullName>SE</fullName>
+                    <default>false</default>
+                    <label>SE</label>
+                </value>
+                <value>
+                    <fullName>TO</fullName>
+                    <default>false</default>
+                    <label>TO</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Field_Service__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Field Service</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Financeiro__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Financeiro</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Financial_Service_Cloud__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Financial Service Cloud</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Foto__c</fullName>
+        <externalId>false</externalId>
+        <label>Foto</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Funcionario_Alocado__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Alocacoes_Ativas__c &gt;= 1 ,&quot;Alocado&quot;, IF (Alocacoes_Ativas__c = 0 || NULL, &quot;Não Alocado&quot;, &quot;ERRO&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Funcionário Alocado</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <description>Campo para registrar o gênero do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gênero do funcionário</inlineHelpText>
+        <label>Gender</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Masculino</fullName>
+                    <default>false</default>
+                    <label>Masculino</label>
+                </value>
+                <value>
+                    <fullName>Feminino</fullName>
+                    <default>false</default>
+                    <label>Feminino</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Genero__c</fullName>
+        <externalId>false</externalId>
+        <label>Gênero</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Masculino</fullName>
+                    <default>false</default>
+                    <label>Masculino</label>
+                </value>
+                <value>
+                    <fullName>Feminino</fullName>
+                    <default>false</default>
+                    <label>Feminino</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Health_Care__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Life Sciences and Health Care</inlineHelpText>
+        <label>Health Care</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Health_Cloud__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Health Cloud</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Health_and_Social_Care__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Government and Public Services</inlineHelpText>
+        <label>Health and Social Care</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hospitality_and_Services__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Consumer</inlineHelpText>
+        <label>Hospitality and Services</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Idade__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( NOT( ISBLANK(  DateOfBirth__c  ) ) ,
+
+  IF( DATE( 2000 , MONTH( DateOfBirth__c ) , DAY( DateOfBirth__c ) ) &lt;= DATE( 2000 , MONTH( TODAY() ) , DAY( TODAY() ) ),
+
+     YEAR (Today()) - YEAR ( DateOfBirth__c ),
+
+     YEAR (Today()) - YEAR ( DateOfBirth__c ) -1 ),
+
+  null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Idade</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Incorporacao__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Incorporação</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Industrial_Products_and_Constructions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Energy, Resources and Industrials</inlineHelpText>
+        <label>Industrial Products and Constructions</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Industrias__c</fullName>
+        <externalId>false</externalId>
+        <label>Indústrias</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Banking and Capital Markets</fullName>
+                    <default>false</default>
+                    <label>Banking and Capital Markets</label>
+                </value>
+                <value>
+                    <fullName>Civil Government</fullName>
+                    <default>false</default>
+                    <label>Civil Government</label>
+                </value>
+                <value>
+                    <fullName>Consumer Products</fullName>
+                    <default>false</default>
+                    <label>Consumer Products</label>
+                </value>
+                <value>
+                    <fullName>Defense, Security and Justice</fullName>
+                    <default>false</default>
+                    <label>Defense, Security and Justice</label>
+                </value>
+                <value>
+                    <fullName>Health and Social Care</fullName>
+                    <default>false</default>
+                    <label>Health and Social Care</label>
+                </value>
+                <value>
+                    <fullName>Health Care</fullName>
+                    <default>false</default>
+                    <label>Health Care</label>
+                </value>
+                <value>
+                    <fullName>Industrial Products and Constructions</fullName>
+                    <default>false</default>
+                    <label>Industrial Products and Constructions</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>International Donor Organizations</fullName>
+                    <default>false</default>
+                    <label>International Donor Organizations</label>
+                </value>
+                <value>
+                    <fullName>Investment Management</fullName>
+                    <default>false</default>
+                    <label>Investment Management</label>
+                </value>
+                <value>
+                    <fullName>Life Sciences</fullName>
+                    <default>false</default>
+                    <label>Life Sciences</label>
+                </value>
+                <value>
+                    <fullName>Media and Entertainment</fullName>
+                    <default>false</default>
+                    <label>Media and Entertainment</label>
+                </value>
+                <value>
+                    <fullName>Mining and Metals</fullName>
+                    <default>false</default>
+                    <label>Mining and Metals</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Oil, Gas and Chemicals</fullName>
+                    <default>false</default>
+                    <label>Oil, Gas and Chemicals</label>
+                </value>
+                <value>
+                    <fullName>Power and Utilities</fullName>
+                    <default>false</default>
+                    <label>Power and Utilities</label>
+                </value>
+                <value>
+                    <fullName>Real Estate</fullName>
+                    <default>false</default>
+                    <label>Real Estate</label>
+                </value>
+                <value>
+                    <fullName>Retail, Wholesale and Distribution</fullName>
+                    <default>false</default>
+                    <label>Retail, Wholesale and Distribution</label>
+                </value>
+                <value>
+                    <fullName>Technology</fullName>
+                    <default>false</default>
+                    <label>Technology</label>
+                </value>
+                <value>
+                    <fullName>Transport</fullName>
+                    <default>false</default>
+                    <label>Transport</label>
+                </value>
+                <value>
+                    <fullName>Transportation, Hospitality and Services</fullName>
+                    <default>false</default>
+                    <label>Transportation, Hospitality and Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Insurance__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Financial Services</inlineHelpText>
+        <label>Insurance</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Integracao__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Integração</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interaction_Studio__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Interaction Studio</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>International_Donor_Organizations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Government and Public Services</inlineHelpText>
+        <label>International Donor Organizations</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Investment_Management__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Financial Services</inlineHelpText>
+        <label>Investment Management</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>JobCategory__c</fullName>
+        <description>Campo que demonstra a categoria do cargo do funcionário.</description>
+        <externalId>false</externalId>
+        <formula>IF(
+(ISPICKVAL(Roles__c, &quot;DIRETOR&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE 1&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE 2&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE DE SISTEMAS 1&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE ESPECIALISTA&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE SENIOR&quot;)
+|| ISPICKVAL(Roles__c,&quot;SOCIO&quot;)),&quot;EXECUTIVO&quot;, &quot;STAFF&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Categoria do cargo do funcionário.</inlineHelpText>
+        <label>JobCategory</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>JobLevel__c</fullName>
+        <description>Campo formula para definiçao do nível do cargo do funcionário.</description>
+        <externalId>false</externalId>
+        <formula>IF(
+(ISPICKVAL(Roles__c, &quot;ANALISTA DE NEGOCIOS 1&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE NEGOCIOS 2&quot;)),&quot;ANALISTA DE NEGOCIOS&quot;,
+IF((ISPICKVAL(Roles__c, &quot;ADMINISTRATIVO&quot;)),&quot;ADMINISTRATIVO&quot;,
+IF((ISPICKVAL(Roles__c, &quot;ANALISTA DE SISTEMAS JUNIOR 1&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS JUNIOR 2&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS JUNIOR 3&quot;)
+|| ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS PLENO 1&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS PLENO 2&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS PLENO 3&quot;)
+|| ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS SENIOR 1&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS SENIOR 2&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS SENIOR 3&quot;)
+|| ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS SENIOR 4&quot;) || ISPICKVAL(Roles__c,&quot;ANALISTA DE SISTEMAS SENIOR ESPECIALISTA&quot;)),&quot;ANALISTA DE SISTEMAS&quot;,
+IF((ISPICKVAL(Roles__c, &quot;ARQUITETO ESPECIALISTA DE SOLUÇÕES 1&quot;) || ISPICKVAL(Roles__c,&quot;ARQUITETO ESPECIALISTA DE SOLUÇÕES 2&quot;)
+|| ISPICKVAL(Roles__c,&quot;ARQUITETO ESPECIALISTA DE SOLUÇÕES 3&quot;) || ISPICKVAL(Roles__c,&quot;ARQUITETO ESPECIALISTA DE SOLUÇÕES 4&quot;)),&quot;ARQUITETO ESPECIALISTA DE SOLUÇÕES&quot;,
+IF((ISPICKVAL(Roles__c, &quot;CONSULTOR 1&quot;) || ISPICKVAL(Roles__c,&quot;CONSULTOR 2&quot;) || ISPICKVAL(Roles__c,&quot;CONSULTOR SENIOR 1&quot;)
+|| ISPICKVAL(Roles__c,&quot;CONSULTOR SENIOR 2&quot;) || ISPICKVAL(Roles__c,&quot;CONSULTOR SENIOR ESPECIALISTA&quot;)),&quot;CONSULTOR&quot;,
+IF((ISPICKVAL(Roles__c, &quot;COORDENADOR DE SISTEMAS 1&quot;) || ISPICKVAL(Roles__c,&quot;COORDENADOR DE SISTEMAS 2&quot;)),&quot;COORDENADOR DE SISTEMAS&quot;,
+IF((ISPICKVAL(Roles__c, &quot;DIRETOR&quot;)),&quot;DIRETOR&quot;,
+IF((ISPICKVAL(Roles__c, &quot;GERENTE 1&quot;) || ISPICKVAL(Roles__c,&quot;GERENTE 2&quot;) || ISPICKVAL(Roles__c,&quot;GERENTE DE SISTEMAS 1&quot;)
+|| ISPICKVAL(Roles__c,&quot;GERENTE ESPECIALISTA&quot;) || ISPICKVAL(Roles__c,&quot;GERENTE SENIOR&quot;)),&quot;GERENTE&quot;,
+IF((ISPICKVAL(Roles__c, &quot;PROGRAMADOR JUNIOR 1&quot;) || ISPICKVAL(Roles__c,&quot;PROGRAMADOR JUNIOR 2&quot;) || ISPICKVAL(Roles__c,&quot;PROGRAMADOR JUNIOR 3&quot;)
+|| ISPICKVAL(Roles__c,&quot;PROGRAMADOR PLENO 1&quot;) || ISPICKVAL(Roles__c,&quot;PROGRAMADOR PLENO 2&quot;)
+|| ISPICKVAL(Roles__c,&quot;PROGRAMADOR SENIOR 1&quot;) || ISPICKVAL(Roles__c,&quot;PROGRAMADOR SENIOR 2&quot;)),&quot;PROGRAMADOR&quot;,
+IF((ISPICKVAL(Roles__c, &quot;SOCIO&quot;)),&quot;SOCIO&quot;,&quot;&quot;)))))))))
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Nível do cargo do funcionário</inlineHelpText>
+        <label>JobLevel</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Jornalismo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Jornalismo</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Journey_Builder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Journey Builder</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LGPD__c</fullName>
+        <externalId>false</externalId>
+        <label>LGPD</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sim</fullName>
+                    <default>false</default>
+                    <label>Sim</label>
+                </value>
+                <value>
+                    <fullName>Não</fullName>
+                    <default>false</default>
+                    <label>Não</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Life_Sciences__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Life Sciences and Health Care</inlineHelpText>
+        <label>Life Sciences</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MacroArea__c</fullName>
+        <externalId>false</externalId>
+        <label>Macro Área</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CUSTOMER &amp; MARKETING</fullName>
+                    <default>false</default>
+                    <label>CUSTOMER &amp; MARKETING</label>
+                </value>
+                <value>
+                    <fullName>ENTERPRISE TECHNOLOGY &amp; PERFORMANCE</fullName>
+                    <default>false</default>
+                    <label>ENTERPRISE TECHNOLOGY &amp; PERFORMANCE</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Manufatura__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Manufatura</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Cloud_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Marketing Cloud Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Cloud_External_Integrations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Marketing Cloud External Integrations</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Cloud_Scripting_Languages__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Marketing Cloud Scripting Languages</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Cloud__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Marketing Cloud</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Marketing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Marketing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Media_and_Entertainment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Technology, Media and Telecom</inlineHelpText>
+        <label>Media and Entertainment</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mining_and_Metals__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Energy, Resources and Industrials</inlineHelpText>
+        <label>Mining and Metals</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_Studio__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Mobile Studio</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MonthAdmission__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH( AdmissionDate__c ),
+1, &quot;Jan&quot;,
+2, &quot;Feb&quot;,
+3, &quot;Mar&quot;,
+4, &quot;Apr&quot;,
+5, &quot;May&quot;,
+6, &quot;June&quot;,
+7, &quot;July&quot;,
+8, &quot;Aug&quot;,
+9, &quot;Sept&quot;,
+10, &quot;Oct&quot;,
+11, &quot;Nov&quot;,
+12, &quot;Dec&quot;,
+&quot;None&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mês de Admissão</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MonthYearAdmission__c</fullName>
+        <externalId>false</externalId>
+        <formula>MonthAdmission__c &amp; &quot;/&quot; &amp; AdmissionYear__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mês/Ano de Admissão</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Neighborhood__c</fullName>
+        <description>Campo para registrar o bairro do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bairro do funcionário</inlineHelpText>
+        <label>Neighborhood</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NotaToeic__c</fullName>
+        <externalId>false</externalId>
+        <label>Nota TOEIC</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Numero_da_Residencia__c</fullName>
+        <externalId>false</externalId>
+        <label>Número da Residência</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Numero_de_Certificacoes__c</fullName>
+        <externalId>false</externalId>
+        <label>Número de Certificações</label>
+        <summaryForeignKey>Certification__c.Employee_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Offering__c</fullName>
+        <externalId>false</externalId>
+        <label>Offering</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DIGITAL CUSTOMER</fullName>
+                    <default>false</default>
+                    <label>DIGITAL CUSTOMER</label>
+                </value>
+                <value>
+                    <fullName>ENTERPRISE TECHNOLOGY &amp; PERFORMANCE RJ</fullName>
+                    <default>false</default>
+                    <label>ENTERPRISE TECHNOLOGY &amp; PERFORMANCE RJ</label>
+                </value>
+                <value>
+                    <fullName>TECHNOLOGY PROGRAMMES</fullName>
+                    <default>false</default>
+                    <label>TECHNOLOGY PROGRAMMES</label>
+                </value>
+                <value>
+                    <fullName>DELIVERY CENTER RE</fullName>
+                    <default>false</default>
+                    <label>DELIVERY CENTER RE</label>
+                </value>
+                <value>
+                    <fullName>OPERATE</fullName>
+                    <default>false</default>
+                    <label>OPERATE</label>
+                </value>
+                <value>
+                    <fullName>APPLICATION DC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>APPLICATION DC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Office__c</fullName>
+        <description>Campo para registrar o escritório do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Escritório do funcionário.</inlineHelpText>
+        <label>Office</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Campinas</fullName>
+                    <default>false</default>
+                    <label>Campinas</label>
+                </value>
+                <value>
+                    <fullName>Distrito Federal</fullName>
+                    <default>false</default>
+                    <label>Distrito Federal</label>
+                </value>
+                <value>
+                    <fullName>Rio de Janeiro</fullName>
+                    <default>false</default>
+                    <label>Rio de Janeiro</label>
+                </value>
+                <value>
+                    <fullName>São Paulo</fullName>
+                    <default>false</default>
+                    <label>São Paulo</label>
+                </value>
+                <value>
+                    <fullName>Recife</fullName>
+                    <default>false</default>
+                    <label>Recife</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Oil_Gas_and_Chemicals__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Energy, Resources and Industrials</inlineHelpText>
+        <label>Oil/Gas/Chemicals</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pardot__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Pardot</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Patio__c</fullName>
+        <description>Campo para registrar o logradouro do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Logradouro do funcionário.</inlineHelpText>
+        <label>Patio</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Personalization_Builder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Personalization Builder</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Philantropy_Cloud__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Philantropy Cloud</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <description>Campo para registrar o telefone do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Telefone do funcionário</inlineHelpText>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Pillar__c</fullName>
+        <description>Campo para registrar o Pilar do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Pilar do funcionário.</inlineHelpText>
+        <label>Pillar</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Salesforce</fullName>
+                    <default>false</default>
+                    <label>Salesforce</label>
+                </value>
+                <value>
+                    <fullName>CS&amp;AD</fullName>
+                    <default>false</default>
+                    <label>CS&amp;AD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pontos_de_Alocacao__c</fullName>
+        <externalId>false</externalId>
+        <formula>NULL</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pontos de Alocação</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pontos_de_Certificacao__c</fullName>
+        <externalId>false</externalId>
+        <formula>NULL</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pontos de Certificação</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pontos_de_Requisicoes__c</fullName>
+        <description>Somatória dos pontos das requisições do funcionário.</description>
+        <externalId>false</externalId>
+        <label>Pontos de Requisições</label>
+        <summarizedField>Requisicoes__c.Pontos__c</summarizedField>
+        <summaryForeignKey>Requisicoes__c.Requerente__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Pontos_distribuidos__c</fullName>
+        <externalId>false</externalId>
+        <label>Pontos distribuídos</label>
+        <summarizedField>Gameficacao__c.Ponto__c</summarizedField>
+        <summaryForeignKey>Gameficacao__c.Distribuidor__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Pontos_recebidos__c</fullName>
+        <externalId>false</externalId>
+        <label>Pontos recebidos</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pontuacao_Recebida_Max_Permitida__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Pontos_recebidos__c &gt;= 500, 500, Pontos_recebidos__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pontuação Recebida (Max. Permitida)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pontuacao_Snapshot__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (  Quantidade_de_Snapshots__c &gt;= 3, 50, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pontuação Snapshot</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pontuacao_TOEIC__c</fullName>
+        <externalId>false</externalId>
+        <formula>NotaToeic__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pontuação TOEIC</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pontuacao_das_Requisicoes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Pontos por requisição caso o documento foi utilizado nos últimos 30 dias.</inlineHelpText>
+        <label>Pontuação das Requisições (30 dias)</label>
+        <summarizedField>Requisicoes__c.Ponto_por_utilizacao__c</summarizedField>
+        <summaryForeignKey>Requisicoes__c.Requerente__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Pontuacao_das_Revisoes__c</fullName>
+        <description>Pontuação referente às revisões sugeridas pelo funcionário.</description>
+        <externalId>false</externalId>
+        <label>Pontuação das Revisões</label>
+        <summarizedField>Revisoes_Documentais__c.Pontos__c</summarizedField>
+        <summaryForeignKey>Revisoes_Documentais__c.Revisor__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Power_and_Utilities__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Energy, Resources and Industrials</inlineHelpText>
+        <label>Power and Utilities</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Practice__c</fullName>
+        <externalId>false</externalId>
+        <label>Prática</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DC - ALL</fullName>
+                    <default>false</default>
+                    <label>DC - ALL</label>
+                </value>
+                <value>
+                    <fullName>DC - ORACLE</fullName>
+                    <default>false</default>
+                    <label>DC - ORACLE</label>
+                </value>
+                <value>
+                    <fullName>DC - Premmia</fullName>
+                    <default>false</default>
+                    <label>DC - Premmia</label>
+                </value>
+                <value>
+                    <fullName>DC - SALESFORCE / Angular Frond End</fullName>
+                    <default>false</default>
+                    <label>DC - SALESFORCE/Angular Frond End</label>
+                </value>
+                <value>
+                    <fullName>DC - SAP</fullName>
+                    <default>false</default>
+                    <label>DC - SAP</label>
+                </value>
+                <value>
+                    <fullName>DC - SERASA</fullName>
+                    <default>false</default>
+                    <label>DC - SERASA</label>
+                </value>
+                <value>
+                    <fullName>DC - SI</fullName>
+                    <default>false</default>
+                    <label>DC - SI</label>
+                </value>
+                <value>
+                    <fullName>DC - SUCCESSFACTORS</fullName>
+                    <default>false</default>
+                    <label>DC - SUCCESSFACTORS</label>
+                </value>
+                <value>
+                    <fullName>OPERATE - SALESFORCE</fullName>
+                    <default>false</default>
+                    <label>OPERATE - SALESFORCE</label>
+                </value>
+                <value>
+                    <fullName>OPERATE - VLOCITY</fullName>
+                    <default>false</default>
+                    <label>OPERATE - VLOCITY</label>
+                </value>
+                <value>
+                    <fullName>SALESFORCE/DIGITAL SOLUTIONS</fullName>
+                    <default>false</default>
+                    <label>SALESFORCE/DIGITAL SOLUTIONS</label>
+                </value>
+                <value>
+                    <fullName>SALESFORCE/DIGITAL SOLUTIONS / EA SAP</fullName>
+                    <default>false</default>
+                    <label>SALESFORCE/DIGITAL SOLUTIONS / EA SAP</label>
+                </value>
+                <value>
+                    <fullName>SALESFORCE/DIGITAL SOLUTIONS / EA SAP / TSA</fullName>
+                    <default>false</default>
+                    <label>SALESFORCE/DIGITAL SOLUTIONS/EA SAP/TSA</label>
+                </value>
+                <value>
+                    <fullName>SALESFORCE/DIGITAL SOLUTIONS/MOBILE</fullName>
+                    <default>false</default>
+                    <label>SALESFORCE/DIGITAL SOLUTIONS/MOBILE</label>
+                </value>
+                <value>
+                    <fullName>SALESFORCE/DIGITAL SOLUTIONS / TMT</fullName>
+                    <default>false</default>
+                    <label>SALESFORCE/DIGITAL SOLUTIONS / TMT</label>
+                </value>
+                <value>
+                    <fullName>SALESFORCE/DIGITAL SOLUTIONS / TS&amp;T</fullName>
+                    <default>false</default>
+                    <label>SALESFORCE/DIGITAL SOLUTIONS / TS&amp;T</label>
+                </value>
+                <value>
+                    <fullName>SALESFORCE/EA SAP</fullName>
+                    <default>false</default>
+                    <label>SALESFORCE/EA SAP</label>
+                </value>
+                <value>
+                    <fullName>SALESFORCE/TSA</fullName>
+                    <default>false</default>
+                    <label>SALESFORCE/TSA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ProfileDPNLink__c</fullName>
+        <description>Campo URL para acesso ao perfil DPN do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>DPN do funcionário.</inlineHelpText>
+        <label>Profile DPN Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Projeto_test__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Projeto test</label>
+        <referenceTo>Project__c</referenceTo>
+        <relationshipName>Funcion_rios</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quantidade_de_Snapshots__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantidade de Snapshots</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Real_Estate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Financial Services</inlineHelpText>
+        <label>Real Estate</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Recebeu_de_3_pessoas_ou_mais__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  Recebeu_de_quantas_pessoas__c &gt;= 3, true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Recebeu de 3 pessoas ou mais?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Recebeu_de_quantas_pessoas__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Recebeu de quantas pessoas?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ResidenceNumber__c</fullName>
+        <description>Campo para registrar o número da residência do funcionário</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Número de residência do funcionário</inlineHelpText>
+        <label>Residence Number</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Retail_Wholesale_and_Distribution__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Consumer</inlineHelpText>
+        <label>Varejo/Atacado/Distribuição</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Roles__c</fullName>
+        <description>Campo para registrar o cargo do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Cargo do funcionário</inlineHelpText>
+        <label>Roles</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ADMINISTRATIVO</fullName>
+                    <default>false</default>
+                    <label>ADMINISTRATIVO</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE NEGOCIOS 1</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE NEGOCIOS 1</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE NEGOCIOS 2</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE NEGOCIOS 2</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE SISTEMAS JUNIOR 1</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE SISTEMAS JUNIOR 1</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE SISTEMAS JUNIOR 2</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE SISTEMAS JUNIOR 2</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE SISTEMAS JUNIOR 3</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE SISTEMAS JUNIOR 3</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE SISTEMAS PLENO 1</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE SISTEMAS PLENO 1</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE SISTEMAS PLENO 2</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE SISTEMAS PLENO 2</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE SISTEMAS PLENO 3</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE SISTEMAS PLENO 3</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE SISTEMAS SENIOR 1</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE SISTEMAS SENIOR 1</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE SISTEMAS SENIOR 2</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE SISTEMAS SENIOR 2</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE SISTEMAS SENIOR 3</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE SISTEMAS SENIOR 3</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE SISTEMAS SENIOR 4</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE SISTEMAS SENIOR 4</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA DE SISTEMAS SENIOR ESPECIALISTA</fullName>
+                    <default>false</default>
+                    <label>ANALISTA DE SISTEMAS SENIOR ESPECIALISTA</label>
+                </value>
+                <value>
+                    <fullName>ARQUITETO ESPECIALISTA DE SOLUÇÕES 1</fullName>
+                    <default>false</default>
+                    <label>ARQUITETO ESPECIALISTA DE SOLUÇÕES 1</label>
+                </value>
+                <value>
+                    <fullName>ARQUITETO ESPECIALISTA DE SOLUÇÕES 2</fullName>
+                    <default>false</default>
+                    <label>ARQUITETO ESPECIALISTA DE SOLUÇÕES 2</label>
+                </value>
+                <value>
+                    <fullName>ARQUITETO ESPECIALISTA DE SOLUÇÕES 3</fullName>
+                    <default>false</default>
+                    <label>ARQUITETO ESPECIALISTA DE SOLUÇÕES 3</label>
+                </value>
+                <value>
+                    <fullName>ARQUITETO ESPECIALISTA DE SOLUÇÕES 4</fullName>
+                    <default>false</default>
+                    <label>ARQUITETO ESPECIALISTA DE SOLUÇÕES 4</label>
+                </value>
+                <value>
+                    <fullName>CONSULTOR 1</fullName>
+                    <default>false</default>
+                    <label>CONSULTOR 1</label>
+                </value>
+                <value>
+                    <fullName>CONSULTOR 2</fullName>
+                    <default>false</default>
+                    <label>CONSULTOR 2</label>
+                </value>
+                <value>
+                    <fullName>CONSULTOR SENIOR 1</fullName>
+                    <default>false</default>
+                    <label>CONSULTOR SENIOR 1</label>
+                </value>
+                <value>
+                    <fullName>CONSULTOR SENIOR 2</fullName>
+                    <default>false</default>
+                    <label>CONSULTOR SENIOR 2</label>
+                </value>
+                <value>
+                    <fullName>CONSULTOR SENIOR ESPECIALISTA</fullName>
+                    <default>false</default>
+                    <label>CONSULTOR SENIOR ESPECIALISTA</label>
+                </value>
+                <value>
+                    <fullName>COORDENADOR DE SISTEMAS 1</fullName>
+                    <default>false</default>
+                    <label>COORDENADOR DE SISTEMAS 1</label>
+                </value>
+                <value>
+                    <fullName>COORDENADOR DE SISTEMAS 2</fullName>
+                    <default>false</default>
+                    <label>COORDENADOR DE SISTEMAS 2</label>
+                </value>
+                <value>
+                    <fullName>DIRETOR</fullName>
+                    <default>false</default>
+                    <label>DIRETOR</label>
+                </value>
+                <value>
+                    <fullName>GERENTE 1</fullName>
+                    <default>false</default>
+                    <label>GERENTE 1</label>
+                </value>
+                <value>
+                    <fullName>GERENTE 2</fullName>
+                    <default>false</default>
+                    <label>GERENTE 2</label>
+                </value>
+                <value>
+                    <fullName>GERENTE DE SISTEMAS 1</fullName>
+                    <default>false</default>
+                    <label>GERENTE DE SISTEMAS 1</label>
+                </value>
+                <value>
+                    <fullName>GERENTE ESPECIALISTA</fullName>
+                    <default>false</default>
+                    <label>GERENTE ESPECIALISTA</label>
+                </value>
+                <value>
+                    <fullName>GERENTE SENIOR</fullName>
+                    <default>false</default>
+                    <label>GERENTE SENIOR</label>
+                </value>
+                <value>
+                    <fullName>PROGRAMADOR JUNIOR 1</fullName>
+                    <default>false</default>
+                    <label>PROGRAMADOR JUNIOR 1</label>
+                </value>
+                <value>
+                    <fullName>PROGRAMADOR JUNIOR 2</fullName>
+                    <default>false</default>
+                    <label>PROGRAMADOR JUNIOR 2</label>
+                </value>
+                <value>
+                    <fullName>PROGRAMADOR JUNIOR 3</fullName>
+                    <default>false</default>
+                    <label>PROGRAMADOR JUNIOR 3</label>
+                </value>
+                <value>
+                    <fullName>PROGRAMADOR PLENO 1</fullName>
+                    <default>false</default>
+                    <label>PROGRAMADOR PLENO 1</label>
+                </value>
+                <value>
+                    <fullName>PROGRAMADOR PLENO 2</fullName>
+                    <default>false</default>
+                    <label>PROGRAMADOR PLENO 2</label>
+                </value>
+                <value>
+                    <fullName>PROGRAMADOR SENIOR 1</fullName>
+                    <default>false</default>
+                    <label>PROGRAMADOR SENIOR 1</label>
+                </value>
+                <value>
+                    <fullName>PROGRAMADOR SENIOR 2</fullName>
+                    <default>false</default>
+                    <label>PROGRAMADOR SENIOR 2</label>
+                </value>
+                <value>
+                    <fullName>PROGRAMADOR SENIOR ESPECIALISTA</fullName>
+                    <default>false</default>
+                    <label>PROGRAMADOR SENIOR ESPECIALISTA</label>
+                </value>
+                <value>
+                    <fullName>SOCIO</fullName>
+                    <default>false</default>
+                    <label>SOCIO</label>
+                </value>
+                <value>
+                    <fullName>ANALISTA ADMINISTRATIVO PLENO</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>ANALISTA ADMINISTRATIVO PLENO</label>
+                </value>
+                <value>
+                    <fullName>COORDENADOR DE SISTEMAS</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>COORDENADOR DE SISTEMAS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rua__c</fullName>
+        <externalId>false</externalId>
+        <label>Endereço</label>
+        <length>155</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Cloud__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sales Cloud</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Salesforce_DMP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Salesforce DMP</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Salesforce_Platform__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Salesforce Platform</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sector__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(
+ISPICKVAL(Roles__c,&quot;GERENTE SENIOR&quot;),
+ISPICKVAL(Roles__c,&quot;GERENTE 1&quot;),
+ISPICKVAL(Roles__c,&quot;GERENTE 2&quot;),
+ISPICKVAL(Roles__c,&quot;SOCIO&quot;)), &quot;GESTAO&quot;, &quot;STAFF&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Setor</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Segmento__c</fullName>
+        <externalId>false</externalId>
+        <label>Segmento</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Consumer</fullName>
+                    <default>false</default>
+                    <label>Consumer</label>
+                </value>
+                <value>
+                    <fullName>Energy, Resources and Industrials</fullName>
+                    <default>false</default>
+                    <label>Energy, Resources and Industrials</label>
+                </value>
+                <value>
+                    <fullName>Financial Services</fullName>
+                    <default>false</default>
+                    <label>Financial Services</label>
+                </value>
+                <value>
+                    <fullName>Life Science and Health Care</fullName>
+                    <default>false</default>
+                    <label>Life Science and Health Care</label>
+                </value>
+                <value>
+                    <fullName>Government and Public Groups</fullName>
+                    <default>false</default>
+                    <label>Government and Public Groups</label>
+                </value>
+                <value>
+                    <fullName>Technology, Media and Telecom</fullName>
+                    <default>false</default>
+                    <label>Technology, Media and Telecom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Service_Cloud__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Service Cloud</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ShutdownDate__c</fullName>
+        <description>Campo para registrar a data de desligamento do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Data de desligamento do funcionário.</inlineHelpText>
+        <label>Shutdown Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Social_Studio__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Social Studio</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SortOfWithdrawal__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo de Ausência</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Férias</fullName>
+                    <default>false</default>
+                    <label>Férias</label>
+                </value>
+                <value>
+                    <fullName>Doença</fullName>
+                    <default>false</default>
+                    <label>Doença</label>
+                </value>
+                <value>
+                    <fullName>Acidente De Trabalho</fullName>
+                    <default>false</default>
+                    <label>Acidente De Trabalho</label>
+                </value>
+                <value>
+                    <fullName>Maternidade</fullName>
+                    <default>false</default>
+                    <label>Maternidade</label>
+                </value>
+                <value>
+                    <fullName>Amamentação</fullName>
+                    <default>false</default>
+                    <label>Amamentação</label>
+                </value>
+                <value>
+                    <fullName>Happy Day</fullName>
+                    <default>false</default>
+                    <label>Happy Day</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Srcum_Master__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Srcum Master</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>StartDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Data de Início</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <description>Campo para registrar o estado do funcionário.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Estado do funcionário</inlineHelpText>
+        <label>State</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AC</fullName>
+                    <default>false</default>
+                    <label>AC</label>
+                </value>
+                <value>
+                    <fullName>AL</fullName>
+                    <default>false</default>
+                    <label>AL</label>
+                </value>
+                <value>
+                    <fullName>AP</fullName>
+                    <default>false</default>
+                    <label>AP</label>
+                </value>
+                <value>
+                    <fullName>AM</fullName>
+                    <default>false</default>
+                    <label>AM</label>
+                </value>
+                <value>
+                    <fullName>BA</fullName>
+                    <default>false</default>
+                    <label>BA</label>
+                </value>
+                <value>
+                    <fullName>CE</fullName>
+                    <default>false</default>
+                    <label>CE</label>
+                </value>
+                <value>
+                    <fullName>DF</fullName>
+                    <default>false</default>
+                    <label>DF</label>
+                </value>
+                <value>
+                    <fullName>ES</fullName>
+                    <default>false</default>
+                    <label>ES</label>
+                </value>
+                <value>
+                    <fullName>GO</fullName>
+                    <default>false</default>
+                    <label>GO</label>
+                </value>
+                <value>
+                    <fullName>MA</fullName>
+                    <default>false</default>
+                    <label>MA</label>
+                </value>
+                <value>
+                    <fullName>MT</fullName>
+                    <default>false</default>
+                    <label>MT</label>
+                </value>
+                <value>
+                    <fullName>MS</fullName>
+                    <default>false</default>
+                    <label>MS</label>
+                </value>
+                <value>
+                    <fullName>MG</fullName>
+                    <default>false</default>
+                    <label>MG</label>
+                </value>
+                <value>
+                    <fullName>PA</fullName>
+                    <default>false</default>
+                    <label>PA</label>
+                </value>
+                <value>
+                    <fullName>PB</fullName>
+                    <default>false</default>
+                    <label>PB</label>
+                </value>
+                <value>
+                    <fullName>PR</fullName>
+                    <default>false</default>
+                    <label>PR</label>
+                </value>
+                <value>
+                    <fullName>PE</fullName>
+                    <default>false</default>
+                    <label>PE</label>
+                </value>
+                <value>
+                    <fullName>PI</fullName>
+                    <default>false</default>
+                    <label>PI</label>
+                </value>
+                <value>
+                    <fullName>RJ</fullName>
+                    <default>false</default>
+                    <label>RJ</label>
+                </value>
+                <value>
+                    <fullName>RN</fullName>
+                    <default>false</default>
+                    <label>RN</label>
+                </value>
+                <value>
+                    <fullName>RS</fullName>
+                    <default>false</default>
+                    <label>RS</label>
+                </value>
+                <value>
+                    <fullName>RO</fullName>
+                    <default>false</default>
+                    <label>RO</label>
+                </value>
+                <value>
+                    <fullName>RR</fullName>
+                    <default>false</default>
+                    <label>RR</label>
+                </value>
+                <value>
+                    <fullName>SC</fullName>
+                    <default>false</default>
+                    <label>SC</label>
+                </value>
+                <value>
+                    <fullName>SP</fullName>
+                    <default>false</default>
+                    <label>SP</label>
+                </value>
+                <value>
+                    <fullName>SE</fullName>
+                    <default>false</default>
+                    <label>SE</label>
+                </value>
+                <value>
+                    <fullName>TO</fullName>
+                    <default>false</default>
+                    <label>TO</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Ativo</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inativo</label>
+                </value>
+                <value>
+                    <fullName>Pendente</fullName>
+                    <default>false</default>
+                    <label>Pendente</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Segmento__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Segmento</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Experience</fullName>
+                    <default>false</default>
+                    <label>No Experience</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Consumer Products</fullName>
+                    <default>false</default>
+                    <label>Consumer Products</label>
+                </value>
+                <value>
+                    <fullName>Retail, Wholesale and Distribution</fullName>
+                    <default>false</default>
+                    <label>Retail, Wholesale and Distribution</label>
+                </value>
+                <value>
+                    <fullName>Transportation, Hospitality and Services</fullName>
+                    <default>false</default>
+                    <label>Transportation, Hospitality and Services</label>
+                </value>
+                <value>
+                    <fullName>Industrial Products and Construction</fullName>
+                    <default>false</default>
+                    <label>Industrial Products and Construction</label>
+                </value>
+                <value>
+                    <fullName>Power and Utilities</fullName>
+                    <default>false</default>
+                    <label>Power and Utilities</label>
+                </value>
+                <value>
+                    <fullName>Mining and Metals</fullName>
+                    <default>false</default>
+                    <label>Mining and Metals</label>
+                </value>
+                <value>
+                    <fullName>Oil, Gas and Chemicals</fullName>
+                    <default>false</default>
+                    <label>Oil, Gas and Chemicals</label>
+                </value>
+                <value>
+                    <fullName>Banking and Capital Markets</fullName>
+                    <default>false</default>
+                    <label>Banking and Capital Markets</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>Real Estate</fullName>
+                    <default>false</default>
+                    <label>Real Estate</label>
+                </value>
+                <value>
+                    <fullName>Investment Management</fullName>
+                    <default>false</default>
+                    <label>Investment Management</label>
+                </value>
+                <value>
+                    <fullName>Life Sciences</fullName>
+                    <default>false</default>
+                    <label>Life Sciences</label>
+                </value>
+                <value>
+                    <fullName>Health Care</fullName>
+                    <default>false</default>
+                    <label>Health Care</label>
+                </value>
+                <value>
+                    <fullName>Civil Government</fullName>
+                    <default>false</default>
+                    <label>Civil Government</label>
+                </value>
+                <value>
+                    <fullName>International Donor Organizations</fullName>
+                    <default>false</default>
+                    <label>International Donor Organizations</label>
+                </value>
+                <value>
+                    <fullName>Health and Social Care</fullName>
+                    <default>false</default>
+                    <label>Health and Social Care</label>
+                </value>
+                <value>
+                    <fullName>Defense, Security and Justice</fullName>
+                    <default>false</default>
+                    <label>Defense, Security and Justice</label>
+                </value>
+                <value>
+                    <fullName>Transport</fullName>
+                    <default>false</default>
+                    <label>Transport</label>
+                </value>
+                <value>
+                    <fullName>Technology</fullName>
+                    <default>false</default>
+                    <label>Technology</label>
+                </value>
+                <value>
+                    <fullName>Media and Entertainment</fullName>
+                    <default>false</default>
+                    <label>Media and Entertainment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Subtotal__c</fullName>
+        <externalId>false</externalId>
+        <formula>Pontos_distribuidos__c +  Pontuacao_Recebida_Max_Permitida__c + (IF ( Distribuiu_Pontos__c = true, 0, -50))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Subtotal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Technology__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Technology, Media and Telecom</inlineHelpText>
+        <label>Technology</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Telecomunicacao__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Telecomunicação</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Telefone__c</fullName>
+        <externalId>false</externalId>
+        <label>Telefone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Time__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Time</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Transport__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Industry - Government and Public Services</inlineHelpText>
+        <label>Transport</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UpdateDataLoader__c</fullName>
+        <externalId>false</externalId>
+        <label>Update Data Loader</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>VacationDeadline__c</fullName>
+        <description>Data limite para o funcionário tirar férias.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Data limite de férias.</inlineHelpText>
+        <label>VacationDeadline</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Vlocity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Vlocity</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Web_Studio__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Web Studio</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WithdrawalStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Status da Ausência</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Em análise</fullName>
+                    <default>false</default>
+                    <label>Em análise</label>
+                </value>
+                <value>
+                    <fullName>Solicitação Atendida</fullName>
+                    <default>false</default>
+                    <label>Solicitação Atendida</label>
+                </value>
+                <value>
+                    <fullName>Solicitação Negada</fullName>
+                    <default>false</default>
+                    <label>Solicitação Negada</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>YearnsFor__c</fullName>
+        <description>Campo para descrever a area que o funcionário anseia.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Area que o funcionário anseia.</inlineHelpText>
+        <label>Yearns For</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ZipCode__c</fullName>
+        <description>Campo para registrar o CEP do funcionário</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CEP do funcionário</inlineHelpText>
+        <label>Zip Code</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Employee</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Cargo_Ajustado__c</columns>
+        <columns>Time__c</columns>
+        <columns>Email__c</columns>
+        <columns>Roles__c</columns>
+        <columns>Status__c</columns>
+        <columns>Coachs__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>Tudo</label>
+    </listViews>
+    <listViews>
+        <fullName>Analistas_Juniores</fullName>
+        <columns>Time__c</columns>
+        <columns>NAME</columns>
+        <columns>Roles__c</columns>
+        <columns>Alocation__c</columns>
+        <columns>Email__c</columns>
+        <columns>Phone__c</columns>
+        <columns>CertificationsNumber__c</columns>
+        <columns>AdmissionDate__c</columns>
+        <columns>Alocacoes_Ativas__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Roles__c</field>
+            <operation>equals</operation>
+            <value>ANALISTA DE NEGOCIOS 1,ANALISTA DE NEGOCIOS 2</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active,Ativo</value>
+        </filters>
+        <label>Analistas Juniores</label>
+    </listViews>
+    <listViews>
+        <fullName>Desligados</fullName>
+        <columns>NAME</columns>
+        <columns>Practice__c</columns>
+        <columns>Roles__c</columns>
+        <columns>ShutdownDate__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Inactive,Pendente</value>
+        </filters>
+        <label>Desligados</label>
+    </listViews>
+    <listViews>
+        <fullName>Funcionario_por_Industria</fullName>
+        <columns>NAME</columns>
+        <columns>Automotive__c</columns>
+        <columns>Banking_and_Capital_Markets__c</columns>
+        <columns>Defense_Security_and_Justice__c</columns>
+        <columns>Industrial_Products_and_Constructions__c</columns>
+        <columns>Insurance__c</columns>
+        <columns>Investment_Management__c</columns>
+        <columns>Life_Sciences__c</columns>
+        <columns>Media_and_Entertainment__c</columns>
+        <columns>Oil_Gas_and_Chemicals__c</columns>
+        <columns>Technology__c</columns>
+        <columns>Transport__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Funcionario por Industria</label>
+    </listViews>
+    <listViews>
+        <fullName>Funcionario_por_nuvem</fullName>
+        <columns>NAME</columns>
+        <columns>Analytics__c</columns>
+        <columns>App_Builder__c</columns>
+        <columns>CPQ__c</columns>
+        <columns>Community_Builder__c</columns>
+        <columns>Financial_Service_Cloud__c</columns>
+        <columns>Marketing_Cloud__c</columns>
+        <columns>Salesforce_Platform__c</columns>
+        <columns>Sales_Cloud__c</columns>
+        <columns>Vlocity__c</columns>
+        <columns>Field_Service__c</columns>
+        <columns>Pardot__c</columns>
+        <columns>Service_Cloud__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Inactive</value>
+        </filters>
+        <filters>
+            <field>Practice__c</field>
+            <operation>notContain</operation>
+            <value>DC - ORACLE,DC - Premmia,DC - SALESFORCE,DC - SALESFORCE/Angular Frond End,DC - SAP,DC - SERASA,DC - SI,DC - SUCCESSFACTORS,DC - ALL</value>
+        </filters>
+        <filters>
+            <field>Alocation__c</field>
+            <operation>equals</operation>
+            <value>SP</value>
+        </filters>
+        <label>Funcionario por nuvem</label>
+    </listViews>
+    <listViews>
+        <fullName>Funcionarios_Alocados</fullName>
+        <columns>Alocacoes_Ativas__c</columns>
+        <columns>NAME</columns>
+        <columns>Roles__c</columns>
+        <columns>Email__c</columns>
+        <columns>Alocation__c</columns>
+        <columns>Quantidade_de_Snapshots__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Alocacoes_Ativas__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active,Ativo</value>
+        </filters>
+        <filters>
+            <field>Roles__c</field>
+            <operation>equals</operation>
+            <value>ANALISTA DE NEGOCIOS 1</value>
+        </filters>
+        <label>Funcionários Alocados</label>
+    </listViews>
+    <listViews>
+        <fullName>Funcionarios_Nao_Alocados</fullName>
+        <columns>NAME</columns>
+        <columns>Roles__c</columns>
+        <columns>Email__c</columns>
+        <columns>Alocation__c</columns>
+        <columns>Practice__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Inactive</value>
+        </filters>
+        <filters>
+            <field>Practice__c</field>
+            <operation>equals</operation>
+            <value>SALESFORCE/DIGITAL SOLUTIONS,SALESFORCE/DIGITAL SOLUTIONS/MOBILE,SALESFORCE/DIGITAL SOLUTIONS / TMT,SALESFORCE/EA SAP,SALESFORCE/DIGITAL SOLUTIONS / EA SAP / TSA,SALESFORCE/DIGITAL SOLUTIONS / EA SAP,SALESFORCE/DIGITAL SOLUTIONS / TS&amp;T</value>
+        </filters>
+        <filters>
+            <field>Alocation__c</field>
+            <operation>equals</operation>
+            <value>SP</value>
+        </filters>
+        <filters>
+            <field>Alocacoes_Ativas__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Funcionários Não Alocados</label>
+    </listViews>
+    <nameField>
+        <label>Employee Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Employees</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Email__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Roles__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>ValidateAdmissionDate</fullName>
+        <active>true</active>
+        <description>Validation of the admission of date field</description>
+        <errorConditionFormula>AdmissionDate__c &gt; TODAY()</errorConditionFormula>
+        <errorDisplayField>AdmissionDate__c</errorDisplayField>
+        <errorMessage>The admission date cannot be higher than the current date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ValidateDateOfBirth</fullName>
+        <active>true</active>
+        <description>Validation of the date of birth field</description>
+        <errorConditionFormula>OR (
+				DateOfBirth__c &gt; TODAY(),
+				DateOfBirth__c &gt; AdmissionDate__c
+)</errorConditionFormula>
+        <errorDisplayField>DateOfBirth__c</errorDisplayField>
+        <errorMessage>The date of birth cannot be higher than the current or higher date than the date of admission.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ValidateShutdownDate</fullName>
+        <active>true</active>
+        <description>Validation of the shutdown of date field</description>
+        <errorConditionFormula>OR( 
+				ShutdownDate__c  &lt;=  AdmissionDate__c, 
+    ShutdownDate__c &gt; TODAY()
+)</errorConditionFormula>
+        <errorDisplayField>ShutdownDate__c</errorDisplayField>
+        <errorMessage>The shutdown date cannot be higher than the current date or lower than the admission date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VerificacaoDataDemissao</fullName>
+        <active>true</active>
+        <errorConditionFormula>ShutdownDate__c  &lt;=  AdmissionDate__c</errorConditionFormula>
+        <errorDisplayField>ShutdownDate__c</errorDisplayField>
+        <errorMessage>A data de desligamento não pode ser inferior a data de admissão.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

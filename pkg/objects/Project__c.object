@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Projeto_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Projeto_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>ProjectCompLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>ProjectCompLayout</fullName>
+        <fields>Name</fields>
+        <fields>Engagement__c</fields>
+        <fields>Status__c</fields>
+        <fields>ProjectType__c</fields>
+        <label>ProjectCompLayout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Client__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Project-related customer account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Project-related customer account.</inlineHelpText>
+        <label>Client</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Projects</relationshipLabel>
+        <relationshipName>Projects</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CloudPlatform__c</fullName>
+        <description>Refers to the cloud used in the project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Refers to the cloud used in the project.</inlineHelpText>
+        <label>Cloud</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Marketing Cloud</fullName>
+                    <default>false</default>
+                    <label>Marketing Cloud</label>
+                </value>
+                <value>
+                    <fullName>Service Cloud</fullName>
+                    <default>false</default>
+                    <label>Service Cloud</label>
+                </value>
+                <value>
+                    <fullName>Sales Cloud</fullName>
+                    <default>false</default>
+                    <label>Sales Cloud</label>
+                </value>
+                <value>
+                    <fullName>Financial Service Cloud</fullName>
+                    <default>false</default>
+                    <label>Financial Service Cloud</label>
+                </value>
+                <value>
+                    <fullName>Health Cloud</fullName>
+                    <default>false</default>
+                    <label>Health Cloud</label>
+                </value>
+                <value>
+                    <fullName>Philantropy Cloud</fullName>
+                    <default>false</default>
+                    <label>Philantropy Cloud</label>
+                </value>
+                <value>
+                    <fullName>Salesforce Platform</fullName>
+                    <default>false</default>
+                    <label>Salesforce Platform</label>
+                </value>
+                <value>
+                    <fullName>CPQ</fullName>
+                    <default>false</default>
+                    <label>CPQ</label>
+                </value>
+                <value>
+                    <fullName>Analytics</fullName>
+                    <default>false</default>
+                    <label>Analytics</label>
+                </value>
+                <value>
+                    <fullName>App Builder</fullName>
+                    <default>false</default>
+                    <label>App Builder</label>
+                </value>
+                <value>
+                    <fullName>Community Builder</fullName>
+                    <default>false</default>
+                    <label>Community Builder</label>
+                </value>
+                <value>
+                    <fullName>Pardot</fullName>
+                    <default>false</default>
+                    <label>Pardot</label>
+                </value>
+                <value>
+                    <fullName>Integration</fullName>
+                    <default>false</default>
+                    <label>Integration</label>
+                </value>
+                <value>
+                    <fullName>Field Service</fullName>
+                    <default>false</default>
+                    <label>Field Service</label>
+                </value>
+                <value>
+                    <fullName>Vlocity</fullName>
+                    <default>false</default>
+                    <label>Vlocity</label>
+                </value>
+                <value>
+                    <fullName>Integração</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Integração</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ContractCode__c</fullName>
+        <description>Contract Code CMS (Contract Management System)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract Code CMS (Contract Management System)</inlineHelpText>
+        <label>Contract code (CMS)</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContractEndDate__c</fullName>
+        <description>End date of the Project Contract.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>End date of the Project Contract.</inlineHelpText>
+        <label>Contract end date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ContractStartDate__c</fullName>
+        <description>Project Contract start date.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Project Contract start date.</inlineHelpText>
+        <label>Contract start date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract__c</fullName>
+        <description>Link to the Contract within the Contract Management System.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the Contract within the Contract Management System.</inlineHelpText>
+        <label>Contract</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>CostCenter__c</fullName>
+        <description>Type of Cost Center for the Project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Cost Center for the Project.</inlineHelpText>
+        <label>Cost center</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Nefeles</fullName>
+                    <default>false</default>
+                    <label>Nefeles</label>
+                </value>
+                <value>
+                    <fullName>Customer &amp; Marketing</fullName>
+                    <default>false</default>
+                    <label>Customer &amp; Marketing</label>
+                </value>
+                <value>
+                    <fullName>Operate</fullName>
+                    <default>false</default>
+                    <label>Operate</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Data_Fim_Real__c</fullName>
+        <description>Data efetiva do fim do projeto.</description>
+        <externalId>false</externalId>
+        <label>Data Fim (Real)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>EndDateReal__c</fullName>
+        <description>Effective end date of the project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Effective end date of the project.</inlineHelpText>
+        <label>End date (Real)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>EndDate__c</fullName>
+        <description>Expected date for the end of the development of the Project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Expected date for the end of the development of the Project.</inlineHelpText>
+        <label>End date (Expected)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Engagement__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Code used in Billing defines the cost/investment of a project.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Code used in Billing defines the cost/investment of a project.</inlineHelpText>
+        <label>Engagement</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Implementation__c</fullName>
+        <description>The number of hours worked on the project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of hours worked on the project.</inlineHelpText>
+        <label>Implementation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityAttachments__c</fullName>
+        <description>Link to attachments to watch out for.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to attachments to watch out for.</inlineHelpText>
+        <label>Opportunity &amp; Attachments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityCode__c</fullName>
+        <description>The code corresponds to the Opportunity linked to the Project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The code corresponds to the Opportunity linked to the Project.</inlineHelpText>
+        <label>Opportunity Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PercentageHoursConsumed__c</fullName>
+        <description>Percentage of Project Hours already allocated.</description>
+        <externalId>false</externalId>
+        <formula>TotalHoursConsumed__c  / TotalAmountHoursPAF__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Percentage of Project Hours already allocated.</inlineHelpText>
+        <label>Percentage of Hours Consumed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ProjectType__c</fullName>
+        <description>Determines what type of the project is.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines what type of the project is.</inlineHelpText>
+        <label>Project type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Investment</fullName>
+                    <default>false</default>
+                    <label>Investment</label>
+                </value>
+                <value>
+                    <fullName>Implementation</fullName>
+                    <default>false</default>
+                    <label>Implementation</label>
+                </value>
+                <value>
+                    <fullName>Extension</fullName>
+                    <default>false</default>
+                    <label>Extension</label>
+                </value>
+                <value>
+                    <fullName>Support</fullName>
+                    <default>false</default>
+                    <label>Support</label>
+                </value>
+                <value>
+                    <fullName>MPV</fullName>
+                    <default>false</default>
+                    <label>MPV</label>
+                </value>
+                <value>
+                    <fullName>Discovery</fullName>
+                    <default>false</default>
+                    <label>Discovery</label>
+                </value>
+                <value>
+                    <fullName>Sustention</fullName>
+                    <default>false</default>
+                    <label>Sustention</label>
+                </value>
+                <value>
+                    <fullName>Assessment</fullName>
+                    <default>false</default>
+                    <label>Assessment</label>
+                </value>
+                <value>
+                    <fullName>Inside</fullName>
+                    <default>false</default>
+                    <label>Inside</label>
+                </value>
+                <value>
+                    <fullName>Evolution</fullName>
+                    <default>false</default>
+                    <label>Evolution</label>
+                </value>
+                <value>
+                    <fullName>Extensão</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Extensão</label>
+                </value>
+                <value>
+                    <fullName>Implementação</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Implementação</label>
+                </value>
+                <value>
+                    <fullName>Suporte</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Suporte</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Realiza_o__c</fullName>
+        <description>Quantidade de horas realizadas no projeto.</description>
+        <externalId>false</externalId>
+        <label>Realização</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ResponsibleFunctional__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>The Functional Leader responsible for the Project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Functional Leader responsible for the Project.</inlineHelpText>
+        <label>Responsible Functional</label>
+        <referenceTo>Employee__c</referenceTo>
+        <relationshipLabel>Projects (Funcional Responsável)</relationshipLabel>
+        <relationshipName>Projetos3</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ResponsibleManager__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Project Manager Code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Project Manager Code.</inlineHelpText>
+        <label>Responsible Manager</label>
+        <referenceTo>Employee__c</referenceTo>
+        <relationshipLabel>Projects (Responsible Manager)</relationshipLabel>
+        <relationshipName>Projects</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ResponsibleTechnician__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Technical Leader responsible for the Project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Technical Leader responsible for the Project.</inlineHelpText>
+        <label>Responsible Technician</label>
+        <referenceTo>Employee__c</referenceTo>
+        <relationshipLabel>Projects (Técnico Responsável)</relationshipLabel>
+        <relationshipName>Projetos2</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SeniorManagerResponsible__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Senior Manager responsible for the Project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Senior Manager responsible for the Project.</inlineHelpText>
+        <label>Senior Manager Responsible</label>
+        <referenceTo>Employee__c</referenceTo>
+        <relationshipLabel>Projects (Gerente Sênior Responsável)</relationshipLabel>
+        <relationshipName>Projetos1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SolutionAndFeature__c</fullName>
+        <description>Solutions and resources used in the Project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Solutions and resources used in the Project.</inlineHelpText>
+        <label>Functionalities</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Omni-Channel</fullName>
+                    <default>false</default>
+                    <label>Omni-Channel</label>
+                </value>
+                <value>
+                    <fullName>Field Service</fullName>
+                    <default>false</default>
+                    <label>Field Service</label>
+                </value>
+                <value>
+                    <fullName>Community</fullName>
+                    <default>false</default>
+                    <label>Community</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>StartDate__c</fullName>
+        <description>Date when the development of the Project started.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date when the development of the Project started.</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Stage the project is in.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stage the project is in.</inlineHelpText>
+        <label>Status</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed</fullName>
+                    <default>false</default>
+                    <label>Fixed</label>
+                </value>
+                <value>
+                    <fullName>Not started</fullName>
+                    <default>false</default>
+                    <label>Not started</label>
+                </value>
+                <value>
+                    <fullName>In progress</fullName>
+                    <default>false</default>
+                    <label>In progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Stagnant</fullName>
+                    <default>false</default>
+                    <label>Stagnant</label>
+                </value>
+                <value>
+                    <fullName>Canceled</fullName>
+                    <default>false</default>
+                    <label>Canceled</label>
+                </value>
+                <value>
+                    <fullName>Em desenvolvimento</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Em desenvolvimento</label>
+                </value>
+                <value>
+                    <fullName>Entregue</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Entregue</label>
+                </value>
+                <value>
+                    <fullName>Inativo</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Inativo</label>
+                </value>
+                <value>
+                    <fullName>Proposta</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Proposta</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>StoppageDate__c</fullName>
+        <description>Field to be filled in if the Project is stopped.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field to be filled in if the Project is stopped.</inlineHelpText>
+        <label>Stoppage date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>StoppageEndDate__c</fullName>
+        <description>Date to be filled in when the end of a Project stoppage occurs.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date to be filled in when the end of a Project stoppage occurs.</inlineHelpText>
+        <label>Stoppage end date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TotalAmountHoursPAF__c</fullName>
+        <description>The total amount of project hours.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total amount of project hours.</inlineHelpText>
+        <label>Total amount of hours PAF</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalHoursConsumed__c</fullName>
+        <description>Total Hours consumed in the project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Hours consumed in the project.</inlineHelpText>
+        <label>Total Hours Consumed</label>
+        <summarizedField>Apontamento_de_Horas__c.Horas_Apontadas__c</summarizedField>
+        <summaryForeignKey>Apontamento_de_Horas__c.Projeto__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_de_Horas_PAF__c</fullName>
+        <description>Quantidade total de horas do projeto.</description>
+        <externalId>false</externalId>
+        <label>Total de Horas PAF</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TypeContract__c</fullName>
+        <description>Determines which type of Project Contract.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines which type of Project Contract.</inlineHelpText>
+        <label>Type of contract</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Time Material</fullName>
+                    <default>false</default>
+                    <label>Time Material</label>
+                </value>
+                <value>
+                    <fullName>Closed Scope</fullName>
+                    <default>false</default>
+                    <label>Closed Scope</label>
+                </value>
+                <value>
+                    <fullName>Squad</fullName>
+                    <default>false</default>
+                    <label>Squad</label>
+                </value>
+                <value>
+                    <fullName>Delivery Pipeline</fullName>
+                    <default>false</default>
+                    <label>Delivery Pipeline</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TypeOfIndustry__c</fullName>
+        <description>Type of Industry involved in the Project.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Industry involved in the Project.</inlineHelpText>
+        <label>Type of Industry</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Consumer Products</fullName>
+                    <default>false</default>
+                    <label>Consumer Products</label>
+                </value>
+                <value>
+                    <fullName>Retail, Wholesale and Distribution</fullName>
+                    <default>false</default>
+                    <label>Retail, Wholesale and Distribution</label>
+                </value>
+                <value>
+                    <fullName>Transportation, Hospitality and Services</fullName>
+                    <default>false</default>
+                    <label>Transportation, Hospitality and Services</label>
+                </value>
+                <value>
+                    <fullName>Industrial Products and Construction</fullName>
+                    <default>false</default>
+                    <label>Industrial Products and Construction</label>
+                </value>
+                <value>
+                    <fullName>Power and Utilities</fullName>
+                    <default>false</default>
+                    <label>Power and Utilities</label>
+                </value>
+                <value>
+                    <fullName>Mining and Metals</fullName>
+                    <default>false</default>
+                    <label>Mining and Metals</label>
+                </value>
+                <value>
+                    <fullName>Oil, Gas and Chemicals</fullName>
+                    <default>false</default>
+                    <label>Oil, Gas and Chemicals</label>
+                </value>
+                <value>
+                    <fullName>Banking and Capital Markets</fullName>
+                    <default>false</default>
+                    <label>Banking and Capital Markets</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>Real Estate</fullName>
+                    <default>false</default>
+                    <label>Real Estate</label>
+                </value>
+                <value>
+                    <fullName>Investment Management</fullName>
+                    <default>false</default>
+                    <label>Investment Management</label>
+                </value>
+                <value>
+                    <fullName>Life Sciences</fullName>
+                    <default>false</default>
+                    <label>Life Sciences</label>
+                </value>
+                <value>
+                    <fullName>Health Care</fullName>
+                    <default>false</default>
+                    <label>Health Care</label>
+                </value>
+                <value>
+                    <fullName>Civil Government</fullName>
+                    <default>false</default>
+                    <label>Civil Government</label>
+                </value>
+                <value>
+                    <fullName>International Donor Organizations</fullName>
+                    <default>false</default>
+                    <label>International Donor Organizations</label>
+                </value>
+                <value>
+                    <fullName>Health and Social Care</fullName>
+                    <default>false</default>
+                    <label>Health and Social Care</label>
+                </value>
+                <value>
+                    <fullName>Defense, Security and Justice</fullName>
+                    <default>false</default>
+                    <label>Defense, Security and Justice</label>
+                </value>
+                <value>
+                    <fullName>Transport</fullName>
+                    <default>false</default>
+                    <label>Transport</label>
+                </value>
+                <value>
+                    <fullName>Technology</fullName>
+                    <default>false</default>
+                    <label>Technology</label>
+                </value>
+                <value>
+                    <fullName>Media and Entertainment</fullName>
+                    <default>false</default>
+                    <label>Media and Entertainment</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Consumer &amp; Industrial Products</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Consumer &amp; Industrial Products</label>
+                </value>
+                <value>
+                    <fullName>Energy &amp; Resources</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Energy &amp; Resources</label>
+                </value>
+                <value>
+                    <fullName>Financial Services</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Financial Services</label>
+                </value>
+                <value>
+                    <fullName>Life Sciences &amp; Health Care</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Life Sciences &amp; Health Care</label>
+                </value>
+                <value>
+                    <fullName>Public Sector</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Public Sector</label>
+                </value>
+                <value>
+                    <fullName>Technology, Media &amp; Telecommunications</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Technology, Media &amp; Telecommunications</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Project</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Engagement__c</columns>
+        <columns>StartDate__c</columns>
+        <columns>EndDate__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Projetos</fullName>
+        <columns>NAME</columns>
+        <columns>Engagement__c</columns>
+        <columns>Status__c</columns>
+        <columns>ProjectType__c</columns>
+        <columns>TypeOfIndustry__c</columns>
+        <columns>StartDate__c</columns>
+        <columns>EndDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Projetos</label>
+    </listViews>
+    <nameField>
+        <label>Project name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Projects</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>OWNER.FIRST_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Engagement__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Engagement__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>StartDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>EndDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>FinalDateContractPreviousTheInitialDate</fullName>
+        <active>true</active>
+        <description>The end date of the Agreement cannot be earlier than the start date of the Agreement.</description>
+        <errorConditionFormula>OR(
+ YEAR(ContractStartDate__c)&gt; YEAR(ContractEndDate__c),
+ AND(
+  DAY(ContractStartDate__c) &gt; DAY(ContractEndDate__c) ,
+  MONTH(ContractStartDate__c)= MONTH(ContractEndDate__c),
+  YEAR(ContractStartDate__c)= YEAR(ContractEndDate__c)
+ ),
+ AND(
+  MONTH(ContractStartDate__c)&gt; MONTH(ContractEndDate__c),
+  YEAR(ContractStartDate__c)= YEAR(ContractEndDate__c)
+ )
+)</errorConditionFormula>
+        <errorDisplayField>ContractEndDate__c</errorDisplayField>
+        <errorMessage>The end date of the Agreement cannot be earlier than the start date of the Agreement.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FinalDatePreviousProjectAInitialDate</fullName>
+        <active>true</active>
+        <description>The expected end or actual end date cannot be less than the Project start date.</description>
+        <errorConditionFormula>OR(
+ YEAR(EndDate__c)&lt; YEAR(StartDate__c),
+ AND(
+  DAY(EndDate__c) &lt; DAY(StartDate__c) , 
+  MONTH(EndDate__c)= MONTH(StartDate__c),
+  YEAR(EndDate__c)= YEAR(StartDate__c)
+ ),
+ AND( 
+  MONTH(EndDate__c)&lt; MONTH(StartDate__c),
+  YEAR(EndDate__c)= YEAR(StartDate__c)
+ ),
+ YEAR(EndDateReal__c)&lt; YEAR(StartDate__c),
+ AND(
+  DAY(EndDateReal__c) &lt; DAY(StartDate__c) , 
+  MONTH(EndDateReal__c)= MONTH(StartDate__c),
+  YEAR(EndDateReal__c)= YEAR(StartDate__c)
+ ),
+ AND( 
+  MONTH(EndDateReal__c)&lt; MONTH(StartDate__c),
+  YEAR(EndDateReal__c)= YEAR(StartDate__c)
+ )
+)</errorConditionFormula>
+        <errorMessage>The expected end or actual end date cannot be less than the Project start date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FinalDateStoppingPreviousTheInitialDate</fullName>
+        <active>true</active>
+        <description>The end date of the Outage cannot be earlier than the start date of the Outage.</description>
+        <errorConditionFormula>OR(
+ YEAR(StoppageEndDate__c)&lt; YEAR(StoppageDate__c),
+ AND(
+  DAY(StoppageEndDate__c) &lt; DAY(StoppageDate__c) , 
+  MONTH(StoppageEndDate__c)= MONTH(StoppageDate__c),
+  YEAR(StoppageEndDate__c)= YEAR(StoppageDate__c)
+ ),
+ AND( 
+  MONTH(StoppageEndDate__c)&lt; MONTH(StoppageDate__c),
+  YEAR(StoppageEndDate__c)= YEAR(StoppageDate__c)
+ )
+)</errorConditionFormula>
+        <errorDisplayField>StoppageEndDate__c</errorDisplayField>
+        <errorMessage>The end date of the Outage cannot be earlier than the start date of the Outage.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RealDate</fullName>
+        <active>true</active>
+        <description>If the project status is inactive or delivered, the final (actual) date field must be filled in.</description>
+        <errorConditionFormula>AND(ISPICKVAL( Status__c , &quot;Inativo&quot;) || ISPICKVAL( Status__c , &quot;Entregue&quot;),
+ISBLANK( EndDateReal__c ))</errorConditionFormula>
+        <errorDisplayField>EndDateReal__c</errorDisplayField>
+        <errorMessage>Insert End Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ValidaFillingEngagement</fullName>
+        <active>true</active>
+        <description>Every project must have an Engagement number.</description>
+        <errorConditionFormula>ISBLANK( Engagement__c )</errorConditionFormula>
+        <errorDisplayField>Engagement__c</errorDisplayField>
+        <errorMessage>Please fill in the Engagement field.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

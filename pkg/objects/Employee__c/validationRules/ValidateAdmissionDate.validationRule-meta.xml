@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>ValidateAdmissionDate</fullName>
-    <active>true</active>
-    <description>Validation of the admission of date field</description>
-    <errorConditionFormula>AdmissionDate__c &gt; TODAY()</errorConditionFormula>
-    <errorDisplayField>AdmissionDate__c</errorDisplayField>
-    <errorMessage>The admission date cannot be higher than the current date.</errorMessage>
-</ValidationRule>
