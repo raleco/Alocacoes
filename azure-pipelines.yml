@@ -18,16 +18,9 @@ steps:
 
 - task: Ant@1
   inputs:
-    # workingDirectory: ''
-    # buildFile: 'build.xml'
-    # javaHomeOption: 'JDKVersion'
-    # jdkVersionOption: '1.8'
-    # jdkArchitectureOption: 'x64'
-    # publishJUnitResults: false
-    # testResultsFiles: '**/TEST-*.xml'
     buildFile: 'build.xml'
     options: 
-    targets: 'deployCodeCheckOnly'
+    targets: 'deployUnpackaged'
     publishJUnitResults: false
     javaHomeOption: 'JDKVersion'
     displayName: 'Deploy to the target Org'
