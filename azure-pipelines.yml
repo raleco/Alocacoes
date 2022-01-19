@@ -20,7 +20,7 @@ stages:
         image: salesforce/salesforcedx:latest-full
         # endpoint: 'ACR Salesforce'
       
-      # environment: 'PRD'
+      environment: 'dev'
       # strategy:
       #   runOnce:
       #     deploy:
