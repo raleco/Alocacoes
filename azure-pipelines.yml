@@ -47,4 +47,3 @@ stages:
                     sfdx force:config:set defaultusername=$(Build.SourceBranch)
                     exit 0
                   fi
-                # displayName: 'Autorizando ambiente Salesforce'
