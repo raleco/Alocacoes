@@ -47,10 +47,10 @@ stages:
                   fi
                 displayName: 'Autorizando ambiente Salesforce'
               - script: |
-                  echo "sfdx force:source:convert --manifest './manifest/packageToDeploy.xml' --outputdir ./src --json"
+                  echo "sfdx force:source:convert --manifest './manifest/package.xml' --outputdir ./src --json"
 
                   # Convert source code to metadata format
-                  cmd=$(sfdx force:source:convert --manifest './manifest/packageToDeploy.xml' --outputdir ./src --json)
+                  cmd=$(sfdx force:source:convert --manifest './manifest/package.xml' --outputdir ./src --json)
 
                   exit_code=$(jq -r '.status' <<< "$cmd")
 
