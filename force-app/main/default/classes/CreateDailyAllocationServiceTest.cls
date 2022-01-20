@@ -23,7 +23,7 @@
         project.Status__c = 'In progress';
 		insert project;
         
-        Alocation__c allocation = new Alocation__c();
+        Allocation__c allocation = new Allocation__c();
         allocation.Employee__c = employee.Id;
         allocation.Project__c = project.Id;
         allocation.Account__c = account.id;
@@ -41,7 +41,7 @@
         delete [select id, Date__c from DailyAllocation__c where Date__c >= :allocation.StartDate__c and Date__c <= :allocation.EndDate__c and Allocation__c = :allocation.id order by Date__c ASC];
         
         test.startTest();
-        CreateDailyAllocationService.CreateDailyAllocation(new List<Alocation__c>{allocation});
+        CreateDailyAllocationService.CreateDailyAllocation(new List<Allocation__c>{allocation});
         test.stopTest();
         
         List<DailyAllocation__c> listDay = [select id, Date__c from DailyAllocation__c where Date__c >= :allocation.StartDate__c and date__c <= :allocation.EndDate__c and Allocation__c = :allocation.id order by date__c ASC];

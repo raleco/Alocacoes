@@ -4,7 +4,7 @@
     <columns>Time__c</columns>
     <columns>NAME</columns>
     <columns>Roles__c</columns>
-    <columns>Alocation__c</columns>
+    <columns>Allocation__c</columns>
     <columns>Email__c</columns>
     <columns>Phone__c</columns>
     <columns>CertificationsNumber__c</columns>

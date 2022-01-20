@@ -20,7 +20,7 @@
         <label>Allocation code</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Alocations</pluralLabel>
+    <pluralLabel>Allocations</pluralLabel>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

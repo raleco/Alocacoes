@@ -5,7 +5,7 @@
     <columns>NAME</columns>
     <columns>Roles__c</columns>
     <columns>Email__c</columns>
-    <columns>Alocation__c</columns>
+    <columns>Allocation__c</columns>
     <columns>Quantidade_de_Snapshots__c</columns>
     <filterScope>Everything</filterScope>
     <filters>

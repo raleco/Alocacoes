@@ -4,11 +4,11 @@
     <externalId>false</externalId>
     <label>Alocações Ativas</label>
     <summaryFilterItems>
-        <field>Alocation__c.Alocado_Projeto__c</field>
+        <field>Allocation__c.Alocado_Projeto__c</field>
         <operation>equals</operation>
         <value>1</value>
     </summaryFilterItems>
-    <summaryForeignKey>Alocation__c.Employee__c</summaryForeignKey>
+    <summaryForeignKey>Allocation__c.Employee__c</summaryForeignKey>
     <summaryOperation>count</summaryOperation>
     <trackTrending>false</trackTrending>
     <type>Summary</type>

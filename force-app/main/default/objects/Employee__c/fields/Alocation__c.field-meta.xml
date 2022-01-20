@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Alocation__c</fullName>
+    <fullName>Allocation__c</fullName>
     <externalId>false</externalId>
     <label>UF da Alocação</label>
     <required>false</required>

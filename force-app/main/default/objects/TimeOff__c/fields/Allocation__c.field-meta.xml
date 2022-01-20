@@ -6,7 +6,7 @@
     <externalId>false</externalId>
     <inlineHelpText>Allocation</inlineHelpText>
     <label>Allocation</label>
-    <referenceTo>Alocation__c</referenceTo>
+    <referenceTo>Allocation__c</referenceTo>
     <relationshipLabel>Time Off</relationshipLabel>
     <relationshipName>Ausencias</relationshipName>
     <required>false</required>
