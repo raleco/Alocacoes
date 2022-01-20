@@ -84,4 +84,4 @@ stages:
 
                     exit 0
                   fi
-                displayName: 'Deploy realizado em dev'
+                displayName: 'Deploy em dev'
