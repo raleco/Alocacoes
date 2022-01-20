@@ -65,26 +65,26 @@ stages:
                     exit 0
                   fi
                 displayName: 'Convertendo metadados para deploy'
-              # - script: |
-              #     cmd=$(sfdx force:mdapi:deploy --testlevel RunLocalTests --deploydir ./src -c --targetusername $(Build.SourceBranch) --wait 60 --json) 
+              - script: |
+                  cmd=$(sfdx force:mdapi:deploy --testlevel RunLocalTests --deploydir ./src -c --targetusername $(Build.SourceBranch) --wait 60 --json) 
 
-              #     exit_code=$(jq -r '.status' <<< "$cmd")
+                  exit_code=$(jq -r '.status' <<< "$cmd")
 
-              #     if [[ $exit_code -gt 0 ]]; then
-              #       echo "FALHA na execução dos testes."
+                  if [[ $exit_code -gt 0 ]]; then
+                    echo "FALHA na execução dos testes."
 
-              #       message=$(jq -r '.message' <<< "$cmd")
-              #       echo $message
-              #       exit 1
-              #     else
-              #       echo "Testes executados com sucesso."
+                    message=$(jq -r '.message' <<< "$cmd")
+                    echo $message
+                    exit 1
+                  else
+                    echo "Testes executados com sucesso."
 
-              #       jobid=$(jq -r '.result.id' <<< "$cmd")
-              #       echo "##vso[task.setvariable variable=JobId]${jobid}"
+                    jobid=$(jq -r '.result.id' <<< "$cmd")
+                    echo "##vso[task.setvariable variable=JobId]${jobid}"
 
-              #       exit 0
-              #     fi
-              #   displayName: 'Validando metadados (Testes unitários)'
+                    exit 0
+                  fi
+                displayName: 'Validando metadados (Testes unitários)'
               # - script: |
               #     echo "Deployment JobId $(JobId)"
               #     echo "sfdx force:mdapi:deploy --validateddeployrequestid $(JobId) --targetusername $(Build.SourceBranch) --wait 10 --json" 
