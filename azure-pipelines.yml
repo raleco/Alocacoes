@@ -85,23 +85,23 @@ stages:
                     exit 0
                   fi
                 displayName: 'Validando metadados (Testes unitários)'
-              # - script: |
-              #     echo "Deployment JobId $(JobId)"
-              #     echo "sfdx force:mdapi:deploy --validateddeployrequestid $(JobId) --targetusername $(Build.SourceBranch) --wait 10 --json" 
+              - script: |
+                  echo "Deployment JobId $(JobId)"
+                  echo "sfdx force:mdapi:deploy --validateddeployrequestid $(JobId) --targetusername $(Build.SourceBranch) --wait 10 --json" 
 
-              #     # Run deploy command passing JobId already validated
-              #     cmd=$(sfdx force:mdapi:deploy --validateddeployrequestid $(JobId) --targetusername $(Build.SourceBranch) --wait 10 --json)
+                  # Run deploy command passing JobId already validated
+                  cmd=$(sfdx force:mdapi:deploy --validateddeployrequestid $(JobId) --targetusername $(Build.SourceBranch) --wait 10 --json)
 
-              #     exit_code=$(jq -r '.status' <<< "$cmd")
+                  exit_code=$(jq -r '.status' <<< "$cmd")
 
-              #     if [[ $exit_code -gt 0 ]]; then
-              #       echo "Falha no deploy."
+                  if [[ $exit_code -gt 0 ]]; then
+                    echo "Falha no deploy."
 
-              #       message=$(jq -r '.message' <<< "$cmd")
-              #       echo $message
-              #       exit 1
-              #     else
-              #       echo "Deploy realizado com sucesso."
-              #       exit 0
-              #     fi
-              #   displayName: 'Publicando metadados para Produção'
+                    message=$(jq -r '.message' <<< "$cmd")
+                    echo $message
+                    exit 1
+                  else
+                    echo "Deploy realizado com sucesso."
+                    exit 0
+                  fi
+                displayName: 'Implantado em dev'
