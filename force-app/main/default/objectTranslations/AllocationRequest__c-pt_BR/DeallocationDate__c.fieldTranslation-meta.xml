@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Informe a data de desalocação</help>
+    <label>Data de Desalocação</label>
+    <name>DeallocationDate__c</name>
+</CustomFieldTranslation>

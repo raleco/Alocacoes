@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Informe a data prevista para o início da alocação</help>
+    <label>Data Prevista de Fim da Alocação</label>
+    <name>ForecastStartDateAllocation__c</name>
+</CustomFieldTranslation>
