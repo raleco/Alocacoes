@@ -10,8 +10,8 @@ trigger:
 stages:        
   - stage: TESTE
     jobs:
-    - deployment: 'deployToProduction'
-      displayName: 'teste Alexandre'
+    - deployment: 'deployDev'
+      displayName: 'Deploy em dev'
       # condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/dev'))
       pool:
         vmImage: 'ubuntu-latest'
@@ -71,37 +71,17 @@ stages:
                   exit_code=$(jq -r '.status' <<< "$cmd")
 
                   if [[ $exit_code -gt 0 ]]; then
-                    echo "FALHA na execução dos testes."
+                    echo "FALHA na execução do deploy."
 
                     message=$(jq -r '.message' <<< "$cmd")
                     echo $message
                     exit 1
                   else
-                    echo "Testes executados com sucesso."
+                    echo "Deploy executado com sucesso."
 
                     jobid=$(jq -r '.result.id' <<< "$cmd")
                     echo "##vso[task.setvariable variable=JobId]${jobid}"
 
                     exit 0
                   fi
-                displayName: 'Validando metadados (Testes unitários)'
-              # - script: |
-              #     echo "Deployment JobId $(JobId)"
-              #     echo "sfdx force:mdapi:deploy --validateddeployrequestid $(JobId) --targetusername $(Build.SourceBranch) --wait 10 --json" 
-
-              #     # Run deploy command passing JobId already validated
-              #     cmd=$(sfdx force:mdapi:deploy --validateddeployrequestid $(JobId) --targetusername $(Build.SourceBranch) --wait 10 --json)
-
-              #     exit_code=$(jq -r '.status' <<< "$cmd")
-
-              #     if [[ $exit_code -gt 0 ]]; then
-              #       echo "Falha no deploy."
-
-              #       message=$(jq -r '.message' <<< "$cmd")
-              #       echo $message
-              #       exit 1
-              #     else
-              #       echo "Deploy realizado com sucesso."
-              #       exit 0
-              #     fi
-              #   displayName: 'Publicando metadados para dev'
+                displayName: 'Deploy realizado em dev'
