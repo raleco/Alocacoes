@@ -36,7 +36,7 @@ stages:
                   exit_code=$(jq -r '.status' <<< "$cmd")
 
                   if [[ $exit_code -gt 0 ]]; then
-                    echo "Falha na autenticação com ambiente."
+                    echo "Erro ao autenticar com sandbox."
                     exit 1
                   else
                     echo "Autenticação realizada com sucesso."
@@ -45,7 +45,7 @@ stages:
                     sfdx force:config:set defaultusername=$(Build.SourceBranch)
                     exit 0
                   fi
-                displayName: 'Autorizando ambiente Salesforce'
+                displayName: 'Autenticação'
               - script: |
                   echo "sfdx force:source:convert --manifest './manifest/package.xml' --outputdir ./src --json"
 
@@ -55,23 +55,23 @@ stages:
                   exit_code=$(jq -r '.status' <<< "$cmd")
 
                   if [[ $exit_code -gt 0 ]]; then
-                    echo "Falha ao converter os metadados."
+                    echo "Erro ao converter os metadados."
                     
                     message=$(jq -r '.message' <<< "$cmd")
                     echo $message
                     exit 1
                   else
-                    echo "Metadados convertidos com sucesso."
+                    echo "Conversão de metadados bem-sucedida."
                     exit 0
                   fi
-                displayName: 'Convertendo metadados para deploy'
+                displayName: 'Converter metadados'
               - script: |
                   cmd=$(sfdx force:mdapi:deploy -l NoTestRun --deploydir ./src --targetusername $(Build.SourceBranch) --wait 60 --json) 
 
                   exit_code=$(jq -r '.status' <<< "$cmd")
 
                   if [[ $exit_code -gt 0 ]]; then
-                    echo "FALHA na execução do deploy."
+                    echo "Erro ao realizar deploy."
 
                     message=$(jq -r '.message' <<< "$cmd")
                     echo $message
@@ -84,4 +84,4 @@ stages:
 
                     exit 0
                   fi
-                displayName: 'Deploy em dev'
+                displayName: 'Deploy org'
