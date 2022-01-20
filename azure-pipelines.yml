@@ -29,8 +29,7 @@ stages:
                 displayName: 'Checkout files at $(Build.SourceBranch)'
               - script: |
                   destdir=./auth.txt
-                #  cat <<< "$(sfdxUrlProd)" > "$destdir"
-                cat <<< "$(sfdxUrlProd)" > "$destdir"
+                  cat <<< "$(sfdxUrlProd)" > "$destdir"
 
                   echo "sfdx auth:sfdxurl:store --sfdxurlfile $destdir --setalias $(Build.SourceBranch) --json"
                   cmd=$(sfdx auth:sfdxurl:store --sfdxurlfile $destdir --setalias $(Build.SourceBranch) --json)
@@ -47,3 +46,63 @@ stages:
                     sfdx force:config:set defaultusername=$(Build.SourceBranch)
                     exit 0
                   fi
+                displayName: 'Autorizando ambiente Salesforce'
+              # - script: |
+              #     echo "sfdx force:source:convert --manifest './manifest/packageToDeploy.xml' --outputdir ./src --json"
+
+              #     # Convert source code to metadata format
+              #     cmd=$(sfdx force:source:convert --manifest './manifest/packageToDeploy.xml' --outputdir ./src --json)
+
+              #     exit_code=$(jq -r '.status' <<< "$cmd")
+
+              #     if [[ $exit_code -gt 0 ]]; then
+              #       echo "Falha ao converter os metadados."
+                    
+              #       message=$(jq -r '.message' <<< "$cmd")
+              #       echo $message
+              #       exit 1
+              #     else
+              #       echo "Metadados convertidos com sucesso."
+              #       exit 0
+              #     fi
+              #   displayName: 'Convertendo metadados para deploy'  
+              # - script: |
+              #     cmd=$(sfdx force:mdapi:deploy --testlevel RunLocalTests --deploydir ./src -c --targetusername $(Build.SourceBranch) --wait 60 --json) 
+
+              #     exit_code=$(jq -r '.status' <<< "$cmd")
+
+              #     if [[ $exit_code -gt 0 ]]; then
+              #       echo "FALHA na execução dos testes."
+
+              #       message=$(jq -r '.message' <<< "$cmd")
+              #       echo $message
+              #       exit 1
+              #     else
+              #       echo "Testes executados com sucesso."
+
+              #       jobid=$(jq -r '.result.id' <<< "$cmd")
+              #       echo "##vso[task.setvariable variable=JobId]${jobid}"
+
+              #       exit 0
+              #     fi
+              #   displayName: 'Validando metadados (Testes unitários)'
+              # - script: |
+              #     echo "Deployment JobId $(JobId)"
+              #     echo "sfdx force:mdapi:deploy --validateddeployrequestid $(JobId) --targetusername $(Build.SourceBranch) --wait 10 --json" 
+
+              #     # Run deploy command passing JobId already validated
+              #     cmd=$(sfdx force:mdapi:deploy --validateddeployrequestid $(JobId) --targetusername $(Build.SourceBranch) --wait 10 --json)
+
+              #     exit_code=$(jq -r '.status' <<< "$cmd")
+
+              #     if [[ $exit_code -gt 0 ]]; then
+              #       echo "Falha no deploy."
+
+              #       message=$(jq -r '.message' <<< "$cmd")
+              #       echo $message
+              #       exit 1
+              #     else
+              #       echo "Deploy realizado com sucesso."
+              #       exit 0
+              #     fi
+              #   displayName: 'Publicando metadados para Produção'
