@@ -28,7 +28,7 @@ stages:
                 displayName: 'Checkout files at $(Build.SourceBranch)'
               - script: |
                   destdir=./auth.txt
-                  cat <<< "$(sfdxUrlProd)" > "$destdir"
+                  cat <<< "$(sfdxUrlDev)" > "$destdir"
 
                   echo "sfdx auth:sfdxurl:store --sfdxurlfile $destdir --setalias $(Build.SourceBranch) --json"
                   cmd=$(sfdx auth:sfdxurl:store --sfdxurlfile $destdir --setalias $(Build.SourceBranch) --json)
