@@ -8,11 +8,11 @@ trigger:
       - force-app/*
       - manifest/*
 stages:        
-  - stage: TESTE
+  - stage: DEV
     jobs:
     - deployment: 'deployDev'
       displayName: 'Deploy em dev'
-      # condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/dev'))
+      condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/dev'))
       pool:
         vmImage: 'ubuntu-latest'
 
