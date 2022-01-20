@@ -1,23 +1,107 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- main
+  batch: true
+  branches:
+    include:
+    - dev
+  paths:
+    include:
+      - force-app/*
+      - manifest/*
+stages:        
+  - stage: TESTE
+    jobs:
+    - deployment: 'deployToProduction'
+      displayName: 'teste Alexandre'
+      # condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/dev'))
+      pool:
+        vmImage: 'ubuntu-latest'
 
-pool:
-  vmImage: ubuntu-latest
+      container:
+        image: salesforce/salesforcedx:latest-full
+      
+      environment: 'dev'
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+              - checkout: self
+                displayName: 'Checkout files at $(Build.SourceBranch)'
+              - script: |
+                  destdir=./auth.txt
+                  cat <<< "$(sfdxUrlProd)" > "$destdir"
 
-steps:
-- script: echo SCRATCH ORG
-  displayName: 'Criar Scratch Org'
+                  echo "sfdx auth:sfdxurl:store --sfdxurlfile $destdir --setalias $(Build.SourceBranch) --json"
+                  cmd=$(sfdx auth:sfdxurl:store --sfdxurlfile $destdir --setalias $(Build.SourceBranch) --json)
 
-- script: echo TEST
-  displayName: 'Testes do apex'
+                  exit_code=$(jq -r '.status' <<< "$cmd")
 
-- script: echo DEPLOY DEV
-  displayName: 'Deploy em dev'
+                  if [[ $exit_code -gt 0 ]]; then
+                    echo "Falha na autenticação com ambiente."
+                    exit 1
+                  else
+                    echo "Autenticação realizada com sucesso."
 
-- script: echo DEPLOY HOMOLOG
-  displayName: 'Deploy em homolog'
+                    echo "force:config:set defaultusername=$(Build.SourceBranch)"
+                    sfdx force:config:set defaultusername=$(Build.SourceBranch)
+                    exit 0
+                  fi
+                displayName: 'Autorizando ambiente Salesforce'
+              - script: |
+                  echo "sfdx force:source:convert --manifest './manifest/packageToDeploy.xml' --outputdir ./src --json"
+
+                  # Convert source code to metadata format
+                  cmd=$(sfdx force:source:convert --manifest './manifest/packageToDeploy.xml' --outputdir ./src --json)
+
+                  exit_code=$(jq -r '.status' <<< "$cmd")
+
+                  if [[ $exit_code -gt 0 ]]; then
+                    echo "Falha ao converter os metadados."
+                    
+                    message=$(jq -r '.message' <<< "$cmd")
+                    echo $message
+                    exit 1
+                  else
+                    echo "Metadados convertidos com sucesso."
+                    exit 0
+                  fi
+                displayName: 'Convertendo metadados para deploy'
+              # - script: |
+              #     cmd=$(sfdx force:mdapi:deploy --testlevel RunLocalTests --deploydir ./src -c --targetusername $(Build.SourceBranch) --wait 60 --json) 
+
+              #     exit_code=$(jq -r '.status' <<< "$cmd")
+
+              #     if [[ $exit_code -gt 0 ]]; then
+              #       echo "FALHA na execução dos testes."
+
+              #       message=$(jq -r '.message' <<< "$cmd")
+              #       echo $message
+              #       exit 1
+              #     else
+              #       echo "Testes executados com sucesso."
+
+              #       jobid=$(jq -r '.result.id' <<< "$cmd")
+              #       echo "##vso[task.setvariable variable=JobId]${jobid}"
+
+              #       exit 0
+              #     fi
+              #   displayName: 'Validando metadados (Testes unitários)'
+              # - script: |
+              #     echo "Deployment JobId $(JobId)"
+              #     echo "sfdx force:mdapi:deploy --validateddeployrequestid $(JobId) --targetusername $(Build.SourceBranch) --wait 10 --json" 
+
+              #     # Run deploy command passing JobId already validated
+              #     cmd=$(sfdx force:mdapi:deploy --validateddeployrequestid $(JobId) --targetusername $(Build.SourceBranch) --wait 10 --json)
+
+              #     exit_code=$(jq -r '.status' <<< "$cmd")
+
+              #     if [[ $exit_code -gt 0 ]]; then
+              #       echo "Falha no deploy."
+
+              #       message=$(jq -r '.message' <<< "$cmd")
+              #       echo $message
+              #       exit 1
+              #     else
+              #       echo "Deploy realizado com sucesso."
+              #       exit 0
+              #     fi
+              #   displayName: 'Publicando metadados para Produção'
