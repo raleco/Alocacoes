@@ -7,10 +7,10 @@
     <label>Project</label>
     <referenceTo>Project__c</referenceTo>
     <relationshipLabel>Alocations</relationshipLabel>
-    <relationshipName>ProjectAllocations</relationshipName>
-    <!-- <relationshipOrder>1</relationshipOrder> -->
+    <relationshipName>Allocations</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>
     <trackTrending>false</trackTrending>
-    <type>Lookup</type>
-    <!-- <writeRequiresMasterRead>false</writeRequiresMasterRead> -->
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
 </CustomField>
