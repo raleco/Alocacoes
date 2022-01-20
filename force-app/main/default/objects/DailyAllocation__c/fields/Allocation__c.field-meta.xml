@@ -6,7 +6,7 @@
     <externalId>false</externalId>
     <inlineHelpText>Allocation to which the daily allocation belongs.</inlineHelpText>
     <label>Allocation</label>
-    <referenceTo>Alocation__c</referenceTo>
+    <referenceTo>Allocation__c</referenceTo>
     <relationshipLabel>Daily Allocations</relationshipLabel>
     <relationshipName>Daily_Allocations</relationshipName>
     <required>false</required>

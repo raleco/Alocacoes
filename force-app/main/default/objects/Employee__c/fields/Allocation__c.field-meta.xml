@@ -6,7 +6,7 @@
     <externalId>false</externalId>
     <inlineHelpText>Alocação do funcionário.</inlineHelpText>
     <label>Allocation</label>
-    <referenceTo>Alocation__c</referenceTo>
+    <referenceTo>Allocation__c</referenceTo>
     <relationshipLabel>Employees</relationshipLabel>
     <relationshipName>Employees</relationshipName>
     <required>false</required>

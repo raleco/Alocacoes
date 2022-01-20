@@ -102,7 +102,7 @@
         <connector>
             <targetReference>CreateOrUpdate</targetReference>
         </connector>
-        <object>Alocation__c</object>
+        <object>Allocation__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>

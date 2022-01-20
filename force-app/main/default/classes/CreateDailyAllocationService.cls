@@ -1,11 +1,11 @@
 public class CreateDailyAllocationService {
 
     @InvocableMethod(label='createDailyAllocation')
-    public static void createDailyAllocation (List<Alocation__c> allocations){
+    public static void createDailyAllocation (List<Allocation__c> allocations){
         
         List<DailyAllocation__c> dailyAllocation = new List<DailyAllocation__c>();
         
-        for(Alocation__c all : allocations){
+        for(Allocation__c all : allocations){
             DailyAllocation__c[] dailyAll = returnsAllocationCalendar(all);
             dailyAllocation.addAll(dailyAll);
         }
@@ -13,7 +13,7 @@ public class CreateDailyAllocationService {
         if(dailyAllocation.size()>0) insert dailyAllocation;
     }
     
-    public static List<DailyAllocation__c> returnsAllocationCalendar(Alocation__c allocation) 
+    public static List<DailyAllocation__c> returnsAllocationCalendar(Allocation__c allocation) 
     {
         List<DailyAllocation__c> dailyAllocation = new List<DailyAllocation__c>();
         DateTime startDate = DateTime.newInstance(allocation.StartDate__c, Time.newInstance(0, 0, 0, 0));

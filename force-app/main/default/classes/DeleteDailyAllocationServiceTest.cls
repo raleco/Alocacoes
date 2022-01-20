@@ -25,7 +25,7 @@
         project.Status__c = 'In progress';
 		insert project;
         
-        Alocation__c allocation = new Alocation__c();
+        Allocation__c allocation = new Allocation__c();
         allocation.Employee__c = employee.Id;
         allocation.Project__c = project.Id;
         allocation.Account__c = account.id;
@@ -43,7 +43,7 @@
         delete [select id from DailyAllocation__c where Allocation__c = :allocation.id];
         
         //Call the invoked method
-        CreateDailyAllocationService.CreateDailyAllocation(new List<Alocation__c>{allocation});
+        CreateDailyAllocationService.CreateDailyAllocation(new List<Allocation__c>{allocation});
         
         //testing if everything is ok so far.
         listDays = [select id, Date__c from DailyAllocation__c where date__c >= :allocation.StartDate__c and date__c <= :allocation.EndDate__c and Allocation__c = :allocation.id order by date__c ASC];
@@ -54,7 +54,7 @@
         allocation.EndDate__c = date.today()+92;//It will be exactly 11 weeks
         
         test.startTest();
-        DeleteDailyAllocationService.DeleteDailyAllocation(new List<Alocation__c>{allocation});
+        DeleteDailyAllocationService.DeleteDailyAllocation(new List<Allocation__c>{allocation});
         test.stopTest();
         
         listDays = [select id, date__c from DailyAllocation__c where date__c >= :allocation.StartDate__c and date__c <= :allocation.EndDate__c and Allocation__c = :allocation.id order by date__c ASC];

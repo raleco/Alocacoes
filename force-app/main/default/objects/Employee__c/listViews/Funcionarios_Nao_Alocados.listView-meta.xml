@@ -4,7 +4,7 @@
     <columns>NAME</columns>
     <columns>Roles__c</columns>
     <columns>Email__c</columns>
-    <columns>Alocation__c</columns>
+    <columns>Allocation__c</columns>
     <columns>Practice__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
@@ -18,7 +18,7 @@
         <value>SALESFORCE/DIGITAL SOLUTIONS,SALESFORCE/DIGITAL SOLUTIONS/MOBILE,SALESFORCE/DIGITAL SOLUTIONS / TMT,SALESFORCE/EA SAP,SALESFORCE/DIGITAL SOLUTIONS / EA SAP / TSA,SALESFORCE/DIGITAL SOLUTIONS / EA SAP,SALESFORCE/DIGITAL SOLUTIONS / TS&amp;T</value>
     </filters>
     <filters>
-        <field>Alocation__c</field>
+        <field>Allocation__c</field>
         <operation>equals</operation>
         <value>SP</value>
     </filters>
