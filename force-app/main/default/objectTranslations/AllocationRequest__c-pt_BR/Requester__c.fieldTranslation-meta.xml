@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Informe o nome do profissional que fez a solicitação</help>
+    <label>Solicitante</label>
+    <name>Requester__c</name>
+    <relationshipLabel>Solicitações de Alocação (Solicitante)</relationshipLabel>
+</CustomFieldTranslation>
